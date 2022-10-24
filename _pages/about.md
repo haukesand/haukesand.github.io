@@ -21,3 +21,5 @@ Advised by the ascending [Qian Yang](https://qianyang.co/), and legendary [Wendy
 Background in Human Computer Interaction (M.Sc.) & Creative Technology (B.Sc.). Worked as a UX technologist in the VW Group Future Center to improve mobility for all. 
 
 Currently researching wicked design problems in Human-AI-Interaction to create an ethical future of automation. 
+
+Pre Ph.D. work can be seen at my [portfolio website](https://haukesandhaus.de/).
