@@ -19,3 +19,5 @@ social: true  # includes social icons at the bottom of the page
 
 Advised by the ascending [Qian Yang](https://qianyang.co/), and legendary [Wendy Ju](https://tech.cornell.edu/people/wendy-ju/). 
 Background in Human Computer Interaction (M.Sc.) & Creative Technology (B.Sc.). Worked as a UX technologist in the VW Group Future Center to improve mobility for all. 
+
+Currently researching wicked design problems in Human-AI-Interaction to create an ethical future of automation. 
