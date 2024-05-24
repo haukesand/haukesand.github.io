@@ -50,7 +50,7 @@ navbar_fixed: false
 footer_fixed: false
 
 # Dimensions
-max_width: 800px
+max_width: 930px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -274,7 +274,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt"]
+  exclude: ["robots.txt", "assets/js/search/*.js"]
   uglifier_args:
     harmony: true
 
