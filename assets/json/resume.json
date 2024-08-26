@@ -132,10 +132,7 @@
       "startDate": "2003",
       "endDate": "2011",
       "courses": [],
-      "highlights": [
-        "Graduated with majors in Art & Religion",
-        "Won in science competitions"
-      ]
+      "highlights": ["Graduated with majors in Art & Religion", "Won in science competitions"]
     }
   ],
   "awards": [
@@ -213,79 +210,37 @@
     {
       "name": "Coding",
       "level": "",
-      "keywords": [
-        "Python",
-        "Java",
-        "JavaScript",
-        "React.js",
-        "Node.js",
-        "Android",
-        "Unity3D",
-        "C#",
-        "Arduino",
-        "Open Frameworks"
-      ]
+      "keywords": ["Python", "Java", "JavaScript", "React.js", "Node.js", "Android", "Unity3D", "C#", "Arduino", "Open Frameworks"]
     },
     {
       "name": "Data analytics",
       "level": "",
-      "keywords": [
-        "Python data visualization",
-        "Tableau",
-        "R",
-        "Matlab",
-        "d3.js"
-      ]
+      "keywords": ["Python data visualization", "Tableau", "R", "Matlab", "d3.js"]
     },
     {
       "name": "Design",
       "level": "",
-      "keywords": [
-        "Interface design",
-        "Lottie",
-        "AE",
-        "3D modeling",
-        "PSD",
-        "Framer"
-      ]
+      "keywords": ["Interface design", "Lottie", "AE", "3D modeling", "PSD", "Framer"]
     },
     {
       "name": "Hardware",
       "level": "",
-      "keywords": [
-        "CAD",
-        "Rapid Prototyping"
-      ]
+      "keywords": ["CAD", "Rapid Prototyping"]
     },
     {
       "name": "Management",
       "level": "",
-      "keywords": [
-        "Team leadership",
-        "Conflict resolution",
-        "Strategy",
-        "Scaled agile methods (certified)",
-        "UX strategy"
-      ]
+      "keywords": ["Team leadership", "Conflict resolution", "Strategy", "Scaled agile methods (certified)", "UX strategy"]
     },
     {
       "name": "User research",
       "level": "",
-      "keywords": [
-        "Contextual & expert interviews",
-        "Ethnography",
-        "Surveys"
-      ]
+      "keywords": ["Contextual & expert interviews", "Ethnography", "Surveys"]
     },
     {
       "name": "UX",
       "level": "",
-      "keywords": [
-        "Personas",
-        "Wireframes",
-        "Focus groups",
-        "Human factors"
-      ]
+      "keywords": ["Personas", "Wireframes", "Focus groups", "Human factors"]
     }
   ],
   "languages": [
