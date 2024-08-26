@@ -1,200 +1,325 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Hauke Sandhaus",
+    "label": "HCI Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "hauke.sandhaus@web.de",
+    "phone": "",
+    "url": "https://haukesand.github.io",
+    "summary": "PhD Student in Information Science at Cornell Tech, focusing on transparent AI and autonomous vehicle interaction with a strong interest in designing interactions with positive societal impact.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "2 West Loop Road",
+      "postalCode": "10044",
+      "city": "New York",
       "countryCode": "US",
-      "region": "California"
+      "region": "New York"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Cornell Tech University",
+      "position": "Ph.D. Student in Information Science",
+      "url": "",
+      "startDate": "2021-08",
+      "endDate": "",
+      "summary": "Working under the advisement of assistant professor Qian Yang and co-advised by associate professor Wendy Ju, focusing on transparent AI & autonomous vehicle interaction.",
+      "highlights": []
+    },
+    {
+      "name": "Volkswagen Group Future Center",
+      "position": "UX Technologist",
+      "url": "",
+      "startDate": "2018-10",
+      "endDate": "2021-08",
+      "summary": "Led the design of inclusive user experiences for fully autonomous vehicles and developed next-generation driver interfaces. Involved in the creation and transformation of CARIAD.",
+      "highlights": []
+    },
+    {
+      "name": "Robert Bosch",
+      "position": "Intern & External Master Theses",
+      "url": "",
+      "startDate": "2017-08",
+      "endDate": "2018-01",
+      "summary": "Designed V2X interfaces and researched interfaces for autonomous vehicles tailored for older adults and disabled users.",
+      "highlights": []
+    },
+    {
+      "name": "ELIXIER",
+      "position": "Student Researcher",
+      "url": "",
+      "startDate": "2016-08",
+      "endDate": "2017-04",
+      "summary": "Conducted usability testing of multimodal and augmented workbenches for educational purposes and developed an AR manual for chemistry experiments.",
+      "highlights": []
+    },
+    {
+      "name": "100%FAT",
+      "position": "External Bachelor Theses",
+      "url": "",
+      "startDate": "2015-01",
+      "endDate": "2015-05",
+      "summary": "Designed, developed, and evaluated a prototype for a touchless interactive showcase in the DesignLab Twente.",
+      "highlights": []
+    },
+    {
+      "name": "Twente Academy",
+      "position": "Student Teacher",
+      "url": "",
+      "startDate": "2014-03",
+      "endDate": "2014-09",
+      "summary": "Taught upper secondary school pupils programming using the Arduino microprocessor.",
+      "highlights": []
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "WeDrive Proud",
+      "location": "Potsdam, Brandenburg, Germany",
+      "position": "Member",
+      "url": "",
+      "startDate": "2019",
+      "endDate": "2021",
+      "summary": "Member of the VW network advocating for being out at work.",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Bauhaus Universität Weimar",
+      "url": "",
+      "area": "Human-Computer Interaction",
+      "studyType": "M.Sc.",
+      "startDate": "2015",
+      "endDate": "2018",
+      "score": "Graduated with honors (GPA 3.9)",
+      "courses": [],
+      "highlights": [
+        "Master Thesis: An Ambient Display for Fully Autonomous Vehicles",
+        "Best Thesis of the Year",
+        "Publication: AWOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars"
+      ]
+    },
+    {
+      "institution": "Universiteit Twente",
+      "url": "",
+      "area": "Creative Technology",
+      "studyType": "B.Sc.",
+      "startDate": "2011",
+      "endDate": "2015",
+      "score": "Cum Laude (Thesis GP 4.0)",
+      "courses": [],
+      "highlights": [
+        "Bachelor Thesis: Development of a 3D Navigable Interface for a Touchless Showcase",
+        "Represented graduation year and gave graduation speech",
+        "Publication: open-access"
+      ]
+    },
+    {
+      "institution": "Czech Technical University",
+      "url": "",
+      "area": "",
+      "studyType": "Semester Abroad",
+      "startDate": "2013",
+      "endDate": "2014",
+      "courses": []
+    },
+    {
+      "institution": "Gymnasium im Schloss",
+      "url": "",
+      "area": "",
+      "studyType": "Abitur",
+      "startDate": "2003",
+      "endDate": "2011",
+      "courses": [],
+      "highlights": [
+        "Graduated with majors in Art & Religion",
+        "Won in science competitions"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "DLI Doctoral Fellow",
+      "date": "2023-2024",
+      "awarder": "Cornell Tech",
+      "summary": "Supporting the examination of the complexities and tensions in digital technologies involving ethics, policy, and quality of life."
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "Siegel Public Interest Technology Impact Fellowship",
+      "date": "2021-03",
+      "awarder": "",
+      "summary": "Funded to work for YAI, a large organization providing services for people with intellectual and developmental disabilities."
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "title": "Thesis of the Year",
+      "date": "2015-07",
+      "awarder": "Universiteit Twente",
+      "summary": "Selected to speak at the graduation ceremony and presented the bachelor thesis on behalf of the creative technology program."
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology",
+      "publisher": "CHI '24 Proceedings",
+      "releaseDate": "2024-01",
+      "url": "",
+      "summary": ""
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Job Interview Using a Gender-Swapped Avatar",
+      "publisher": "CSCW Companion",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": ""
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Promoting Bright Patterns",
+      "publisher": "CHI '23 Workshop: Designing Technology and Policy Simultaneously, arXiv [cs.HC]",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously",
+      "publisher": "CHI '23 Workshop: Designing Technology and Policy Simultaneously, arXiv [cs.HC]",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "AWOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars",
+      "publisher": "The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings",
+      "releaseDate": "2018-10",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Smart textiles in the performing arts",
+      "publisher": "Textiles, Identity and Innovation: Design the Future, CRC Press",
+      "releaseDate": "2018",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Development of a 3D navigable interface for a touchless showcase",
+      "publisher": "University of Twente",
+      "releaseDate": "2015",
+      "url": "",
+      "summary": "Still visible in the design gallery of the University of Twente."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Coding",
+      "level": "",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "Java",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "Android",
+        "Unity3D",
+        "C#",
+        "Arduino",
+        "Open Frameworks"
+      ]
+    },
+    {
+      "name": "Data analytics",
+      "level": "",
+      "keywords": [
+        "Python data visualization",
+        "Tableau",
+        "R",
+        "Matlab",
+        "d3.js"
+      ]
+    },
+    {
+      "name": "Design",
+      "level": "",
+      "keywords": [
+        "Interface design",
+        "Lottie",
+        "AE",
+        "3D modeling",
+        "PSD",
+        "Framer"
+      ]
+    },
+    {
+      "name": "Hardware",
+      "level": "",
+      "keywords": [
+        "CAD",
+        "Rapid Prototyping"
+      ]
+    },
+    {
+      "name": "Management",
+      "level": "",
+      "keywords": [
+        "Team leadership",
+        "Conflict resolution",
+        "Strategy",
+        "Scaled agile methods (certified)",
+        "UX strategy"
+      ]
+    },
+    {
+      "name": "User research",
+      "level": "",
+      "keywords": [
+        "Contextual & expert interviews",
+        "Ethnography",
+        "Surveys"
+      ]
+    },
+    {
+      "name": "UX",
+      "level": "",
+      "keywords": [
+        "Personas",
+        "Wireframes",
+        "Focus groups",
+        "Human factors"
       ]
     }
   ],
   "languages": [
     {
       "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Electronic music",
+      "keywords": []
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Independent movies",
+      "keywords": []
+    },
+    {
+      "name": "Technophile",
+      "keywords": []
+    },
+    {
+      "name": "Sporty",
+      "keywords": []
+    },
+    {
+      "name": "Nature-loving",
+      "keywords": []
     }
   ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
-  ]
+  "references": [],
+  "projects": []
 }
