@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications by categories in reversed chronological order. Also see my [scholar profile](https://scholar.google.com/citations?user=fZzd8BMAAAAJ&hl=en&oi=ao).
+description: Publications by categories in reversed chronological order. Also subscribe to my publications on my <a href="https://scholar.google.com/citations?user=fZzd8BMAAAAJ&hl=en&oi=ao" target="_blank">scholar profile</a>.
 nav_order: 2
 ---
 
