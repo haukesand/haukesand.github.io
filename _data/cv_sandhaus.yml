@@ -1,0 +1,325 @@
+{
+  "basics": {
+    "name": "Hauke Sandhaus",
+    "label": "HCI Researcher",
+    "image": "",
+    "email": "hauke.sandhaus@web.de",
+    "phone": "",
+    "url": "https://haukesand.github.io",
+    "summary": "PhD Student in Information Science at Cornell Tech, focusing on transparent AI and autonomous vehicle interaction with a strong interest in designing interactions with positive societal impact.",
+    "location": {
+      "address": "2 West Loop Road",
+      "postalCode": "10044",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "name": "Cornell Tech University",
+      "position": "Ph.D. Student in Information Science",
+      "url": "",
+      "startDate": "2021-08",
+      "endDate": "",
+      "summary": "Working under the advisement of assistant professor Qian Yang and co-advised by associate professor Wendy Ju, focusing on transparent AI & autonomous vehicle interaction.",
+      "highlights": []
+    },
+    {
+      "name": "Volkswagen Group Future Center",
+      "position": "UX Technologist",
+      "url": "",
+      "startDate": "2018-10",
+      "endDate": "2021-08",
+      "summary": "Led the design of inclusive user experiences for fully autonomous vehicles and developed next-generation driver interfaces. Involved in the creation and transformation of CARIAD.",
+      "highlights": []
+    },
+    {
+      "name": "Robert Bosch",
+      "position": "Intern & External Master Theses",
+      "url": "",
+      "startDate": "2017-08",
+      "endDate": "2018-01",
+      "summary": "Designed V2X interfaces and researched interfaces for autonomous vehicles tailored for older adults and disabled users.",
+      "highlights": []
+    },
+    {
+      "name": "ELIXIER",
+      "position": "Student Researcher",
+      "url": "",
+      "startDate": "2016-08",
+      "endDate": "2017-04",
+      "summary": "Conducted usability testing of multimodal and augmented workbenches for educational purposes and developed an AR manual for chemistry experiments.",
+      "highlights": []
+    },
+    {
+      "name": "100%FAT",
+      "position": "External Bachelor Theses",
+      "url": "",
+      "startDate": "2015-01",
+      "endDate": "2015-05",
+      "summary": "Designed, developed, and evaluated a prototype for a touchless interactive showcase in the DesignLab Twente.",
+      "highlights": []
+    },
+    {
+      "name": "Twente Academy",
+      "position": "Student Teacher",
+      "url": "",
+      "startDate": "2014-03",
+      "endDate": "2014-09",
+      "summary": "Taught upper secondary school pupils programming using the Arduino microprocessor.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "WeDrive Proud",
+      "location": "Potsdam, Brandenburg, Germany",
+      "position": "Member",
+      "url": "",
+      "startDate": "2019",
+      "endDate": "2021",
+      "summary": "Member of the VW network advocating for being out at work.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bauhaus Universität Weimar",
+      "url": "",
+      "area": "Human-Computer Interaction",
+      "studyType": "M.Sc.",
+      "startDate": "2015",
+      "endDate": "2018",
+      "score": "Graduated with honors (GPA 3.9)",
+      "courses": [],
+      "highlights": [
+        "Master Thesis: An Ambient Display for Fully Autonomous Vehicles",
+        "Best Thesis of the Year",
+        "Publication: AWOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars"
+      ]
+    },
+    {
+      "institution": "Universiteit Twente",
+      "url": "",
+      "area": "Creative Technology",
+      "studyType": "B.Sc.",
+      "startDate": "2011",
+      "endDate": "2015",
+      "score": "Cum Laude (Thesis GP 4.0)",
+      "courses": [],
+      "highlights": [
+        "Bachelor Thesis: Development of a 3D Navigable Interface for a Touchless Showcase",
+        "Represented graduation year and gave graduation speech",
+        "Publication: open-access"
+      ]
+    },
+    {
+      "institution": "Czech Technical University",
+      "url": "",
+      "area": "",
+      "studyType": "Semester Abroad",
+      "startDate": "2013",
+      "endDate": "2014",
+      "courses": []
+    },
+    {
+      "institution": "Gymnasium im Schloss",
+      "url": "",
+      "area": "",
+      "studyType": "Abitur",
+      "startDate": "2003",
+      "endDate": "2011",
+      "courses": [],
+      "highlights": [
+        "Graduated with majors in Art & Religion",
+        "Won in science competitions"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "DLI Doctoral Fellow",
+      "date": "2023-2024",
+      "awarder": "Cornell Tech",
+      "summary": "Supporting the examination of the complexities and tensions in digital technologies involving ethics, policy, and quality of life."
+    },
+    {
+      "title": "Siegel Public Interest Technology Impact Fellowship",
+      "date": "2021-03",
+      "awarder": "",
+      "summary": "Funded to work for YAI, a large organization providing services for people with intellectual and developmental disabilities."
+    },
+    {
+      "title": "Thesis of the Year",
+      "date": "2015-07",
+      "awarder": "Universiteit Twente",
+      "summary": "Selected to speak at the graduation ceremony and presented the bachelor thesis on behalf of the creative technology program."
+    }
+  ],
+  "publications": [
+    {
+      "name": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology",
+      "publisher": "CHI '24 Proceedings",
+      "releaseDate": "2024-01",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Job Interview Using a Gender-Swapped Avatar",
+      "publisher": "CSCW Companion",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Promoting Bright Patterns",
+      "publisher": "CHI '23 Workshop: Designing Technology and Policy Simultaneously, arXiv [cs.HC]",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously",
+      "publisher": "CHI '23 Workshop: Designing Technology and Policy Simultaneously, arXiv [cs.HC]",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "AWOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars",
+      "publisher": "The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings",
+      "releaseDate": "2018-10",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Smart textiles in the performing arts",
+      "publisher": "Textiles, Identity and Innovation: Design the Future, CRC Press",
+      "releaseDate": "2018",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Development of a 3D navigable interface for a touchless showcase",
+      "publisher": "University of Twente",
+      "releaseDate": "2015",
+      "url": "",
+      "summary": "Still visible in the design gallery of the University of Twente."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Coding",
+      "level": "",
+      "keywords": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "Android",
+        "Unity3D",
+        "C#",
+        "Arduino",
+        "Open Frameworks"
+      ]
+    },
+    {
+      "name": "Data analytics",
+      "level": "",
+      "keywords": [
+        "Python data visualization",
+        "Tableau",
+        "R",
+        "Matlab",
+        "d3.js"
+      ]
+    },
+    {
+      "name": "Design",
+      "level": "",
+      "keywords": [
+        "Interface design",
+        "Lottie",
+        "AE",
+        "3D modeling",
+        "PSD",
+        "Framer"
+      ]
+    },
+    {
+      "name": "Hardware",
+      "level": "",
+      "keywords": [
+        "CAD",
+        "Rapid Prototyping"
+      ]
+    },
+    {
+      "name": "Management",
+      "level": "",
+      "keywords": [
+        "Team leadership",
+        "Conflict resolution",
+        "Strategy",
+        "Scaled agile methods (certified)",
+        "UX strategy"
+      ]
+    },
+    {
+      "name": "User research",
+      "level": "",
+      "keywords": [
+        "Contextual & expert interviews",
+        "Ethnography",
+        "Surveys"
+      ]
+    },
+    {
+      "name": "UX",
+      "level": "",
+      "keywords": [
+        "Personas",
+        "Wireframes",
+        "Focus groups",
+        "Human factors"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Electronic music",
+      "keywords": []
+    },
+    {
+      "name": "Independent movies",
+      "keywords": []
+    },
+    {
+      "name": "Technophile",
+      "keywords": []
+    },
+    {
+      "name": "Sporty",
+      "keywords": []
+    },
+    {
+      "name": "Nature-loving",
+      "keywords": []
+    }
+  ],
+  "references": [],
+  "projects": []
+}
