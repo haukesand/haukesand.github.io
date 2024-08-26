@@ -3,6 +3,12 @@
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
 
+//swiss colors
+$swiss-red:           #f2511b !default;
+$red-color-dark:      #B71C1C !default;
+$light-swiss-red-color: lighten($swiss-red, 25%);
+
+
 // Colors
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
