@@ -244,6 +244,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _posts/
+  - _data/cv.yml
 keep_files:
   - CNAME
   - .nojekyll
