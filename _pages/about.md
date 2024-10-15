@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student in Information Science at Cornell Tech University
+subtitle: Ph.D. candidate in Information Science at Cornell Tech University
 
 profile:
   align: right
