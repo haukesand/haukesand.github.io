@@ -366,6 +366,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    tldr,
     video,
     website,
   ]
