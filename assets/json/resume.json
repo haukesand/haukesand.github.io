@@ -6,7 +6,7 @@
     "email": "hauke.sandhaus@web.de",
     "phone": "",
     "url": "https://haukesand.github.io",
-    "summary": "PhD Student in Information Science at Cornell Tech, focusing on transparent AI and autonomous vehicle interaction with a strong interest in designing interactions with positive societal impact.",
+    "summary": "PhD Candidate in Information Science at Cornell Tech,  working on enabling technology designers to develop for positive societal impact while navigating external influences, unaccounted for in today's user-centered design processes.",
     "location": {
       "address": "2 West Loop Road",
       "postalCode": "10044",
@@ -157,6 +157,13 @@
   ],
   "publications": [
     {
+      "name": "Modeling Social Situation Awareness in Driving Interactions",
+      "publisher": "AutoUI '24 Proceedings",
+      "releaseDate": "2024-09",
+      "url": "",
+      "summary": ""
+    },
+    {
       "name": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology",
       "publisher": "CHI '24 Proceedings",
       "releaseDate": "2024-01",
@@ -241,6 +248,12 @@
       "name": "UX",
       "level": "",
       "keywords": ["Personas", "Wireframes", "Focus groups", "Human factors"]
+    },
+    {
+      "name": "AI",
+      "level": "",
+      "keywords": ["fastai", "Pinecone", "Teachable Machines", "TensorFlow", "ml5.js", "OpenCV", "Sci- kit learn", "DepthAI"
+    ]
     }
   ],
   "languages": [
