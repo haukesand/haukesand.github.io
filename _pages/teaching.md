@@ -1,12 +1,36 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
+title: teaching & talks
+description: Courses taught and academic presentations.
+nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Teaching Experience
 
-Organize your courses by years, topics, or universities, however you like!
+### Cornell University
+- **INFO 4340: User Experience & User Research** (Fall 2023)  
+  *Teaching Assistant*  
+  Assisted in course development and led weekly studio sessions focusing on qualitative research methods.
+
+- **[Course Name]** (Term Year)  
+  *Role*  
+  Brief description of responsibilities and impact.
+
+## Selected Talks & Presentations
+
+### Conference Presentations
+- **[Talk Title]** (Month Year)  
+  *Conference Name, Location*  
+  Brief description or key points.
+
+### Invited Talks
+- **[Talk Title]** (Month Year)  
+  *Institution/Venue, Location*  
+  Brief description or key points.
+
+### Workshop Presentations
+- **[Workshop Title]** (Month Year)  
+  *Event Name, Location*  
+  Brief description of the workshop and your role.

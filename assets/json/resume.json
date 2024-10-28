@@ -252,8 +252,7 @@
     {
       "name": "AI",
       "level": "",
-      "keywords": ["fastai", "Pinecone", "Teachable Machines", "TensorFlow", "ml5.js", "OpenCV", "Sci- kit learn", "DepthAI"
-    ]
+      "keywords": ["fastai", "Pinecone", "Teachable Machines", "TensorFlow", "ml5.js", "OpenCV", "Sci- kit learn", "DepthAI"]
     }
   ],
   "languages": [
