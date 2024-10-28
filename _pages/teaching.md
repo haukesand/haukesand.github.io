@@ -15,13 +15,13 @@ nav_order: 6
    _Teaching Assistant for [Prof. Helen Nissenbaum](https://en.wikipedia.org/wiki/Helen_Nissenbaum) and [Prof. Vitaly Shmatikov](https://www.cs.cornell.edu/~shmat/)_  
   Graded assignments, created an in-class participatory assignment on privacy policy evaluation, and taught a lecture on usable privacy and design manipulation.
 
-  > This course introduces students to privacy technologies and surveys the current state of digital privacy from multiple perspectives, including technology, law, policy, ethics, economics, and surveillance.
+  _This course introduces students to privacy technologies and surveys the current state of digital privacy from multiple perspectives, including technology, law, policy, ethics, economics, and surveillance._
 
 - **INFO 5345 / CS 5424 / ECE 5413: Developing and Designing Interactive Devices** (Fall 2023)  
   _Teaching Assistant for [Prof. Wendy Ju](https://tech.cornell.edu/people/wendy-ju/)_  
   Revised all lab scripts and class content in the [interactive lab repository](https://github.com/FAR-Lab/Interactive-Lab-Hub) for updated hardware and more advanced libraries, enhancing usability. Established class infrastructure and managed grading.
-  > This course provides an introduction to the human-centered and technical workings behind interactive devices ranging from cell phones and video controllers to household appliances and smart cars. This is a hands-on, lab-based course. Topics include electronics prototyping, interface prototyping, sensors and actuators, microcontroller development, physical prototyping and user testing.  
-  > For the final project, students will build a functional interactive device of their own design, using single-board Linux computers, embedded microcontrollers, and other electronics components.
+  
+  _This course provides an introduction to the human-centered and technical workings behind interactive devices ranging from cell phones and video controllers to household appliances and smart cars. This is a hands-on, lab-based course. Topics include electronics prototyping, interface prototyping, sensors and actuators, microcontroller development, physical prototyping and user testing. For the final project, students will build a functional interactive device of their own design, using single-board Linux computers, embedded microcontrollers, and other electronics components._
 
 ### Cornell University
 
@@ -29,7 +29,7 @@ nav_order: 6
   _Teaching Assistant for [Prof. Gilly Leshed](https://leshed.infosci.cornell.edu/)_  
   Led in class activities. Oversaw grading activities.
 
-  > This course focuses on user experience design (UX) and the life cycle of interface design from the user perspective. We will discuss key aspects of the human-centered design process: understanding, analyzing, and formalizing user needs, exploring possible design solutions to address user needs, creating prototypes to externalize design ideas, and evaluating the usability of these prototypes.
+  _This course focuses on user experience design (UX) and the life cycle of interface design from the user perspective. We will discuss key aspects of the human-centered design process: understanding, analyzing, and formalizing user needs, exploring possible design solutions to address user needs, creating prototypes to externalize design ideas, and evaluating the usability of these prototypes._
 
 <!-- - **[Course Name]** (Term Year)
   *Role*
