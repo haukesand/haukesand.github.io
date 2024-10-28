@@ -1,0 +1,30 @@
+.teaching, .talks {
+  margin-bottom: 3rem;
+}
+
+.teaching-entry, .talk-entry {
+  margin-bottom: 2rem;
+  
+  .course-title, .talk-title {
+    margin-bottom: 0.5rem;
+    color: var(--global-theme-color);
+  }
+  
+  .course-meta, .talk-meta {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-description, .talk-description {
+    text-align: justify;
+  }
+}
+
+.talk-category {
+  margin-bottom: 2rem;
+  
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
