@@ -48,14 +48,12 @@ d-article {
   b i {
     display: inline;
   }
-  // Try to override blockquote style. 
-  blockquote, 
-  .teaching blockquote,
-  .post blockquote {
-    font-size: 0.8rem !important;
+  blockquote {
+    font-size: 0.9rem;
     margin: 0.5rem 0;
     padding: 0.5rem 1rem;
     border-left: 2px solid var(--global-theme-color) !important;
+    // color: var(--global-text-color-light);
   }
 
   // Style taken from code blocks
