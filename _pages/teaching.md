@@ -35,7 +35,9 @@ nav_order: 6
   *Role*
   Brief description of responsibilities and impact. -->
 
-## Selected Talks & Presentations
+
+## Invited Talks
+<!-- ## Selected Talks --  & Presentations -->
 
 <!-- ### Conference Presentations
 
@@ -43,18 +45,23 @@ nav_order: 6
   _Conference Name, Location_
   Brief description or key points. -->
 
-### Invited Talks
+<!-- ### Invited Talks -->
 
 - **Bright Patterns: Towards Extra Ethical User Experience Design** (March 2024)  
-   _Digital Life Initiative, Cornell Tech_  
-  Dark Patterns have received significant attention from the academic Human-Computer Interaction community since 2010, when Brignull launched darkpatterns.org and initially described them as "tricks used in websites and apps that make you do things that you didn’t mean to." In this presentation, DLI Doctoral Fellow Hauke Sandhaus will introduce two ongoing projects: firstly, his definition of Bright Patterns as an antonym to Dark Patterns, and secondly, an empirical study examining how the evaluation standards of user experience designers do not necessarily guide them towards ethical design practices. [Read more >](https://www.dli.tech.cornell.edu/seminars/%22bright-patterns%3A-towards-extra-ethical-user-experience-design%22-%26-%22explorable-explainable-ai%3A-improving-ai-understanding-for-community-health-workers-in-india%22)
+   _Digital Life Initiative, Cornell Tech, USA_ · [📑 Slides](https://docs.google.com/presentation/d/1HNU8c5veMYzNhvuhTO9g0KvuFStQ4ddr5ja7xKzAUBY/edit?usp=sharing)  
+  Dark Patterns have received significant attention from the academic Human-Computer Interaction community since 2010, when Brignull launched darkpatterns.org and initially described them as "tricks used in websites and apps that make you do things that you didn't mean to." In this presentation, DLI Doctoral Fellow Hauke Sandhaus will introduce two ongoing projects: firstly, his definition of Bright Patterns as an antonym to Dark Patterns, and secondly, an empirical study examining how the evaluation standards of user experience designers do not necessarily guide them towards ethical design practices. [Read more >](https://www.dli.tech.cornell.edu/seminars/%22bright-patterns%3A-towards-extra-ethical-user-experience-design%22-%26-%22explorable-explainable-ai%3A-improving-ai-understanding-for-community-health-workers-in-india%22)
 
-- **Conceptualizing Bright Patterns, Lightning Talk** (January 2024)  
-   _Lorentz Workshop on Fair Patterns, Leiden University_  
+- **Conceptualizing Bright Patterns** (January 2024)  
+   _Lorentz Workshop on Fair Patterns, Leiden University, Netherlands_ · [📑 Slides](https://docs.google.com/presentation/d/1_RUTMhAYq6cJlihzO3ZZUnPn76EKJkpYOBbG0FRyWE0/edit?usp=sharing)  
   This workshop brings together legal, human-computer interaction and economic experts coming from academia, businesses and enforcement agencies. Dark patterns, or deceptive design, are present on an overwhelming majority of digital services: they do not only clutter the interfaces of websites and mobile applications, but they are also widespread in emerging technologies such as voice assistants that provide personalized recommendations. [Read more >](https://www.lorentzcenter.nl/fair-patterns-for-online-interfaces.html)
+
+- **Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously** (October 2023)  
+   _Smart Cities as Knowledge Commons, Villanova University Charles Widger School of Law, USA_ · [📑 Slides](https://docs.google.com/presentation/d/1zOP5aSnHkJUmGMANGceYTDUmbuR60iRG/edit?usp=sharing&ouid=115041818286926436811&rtpof=true&sd=true)  
+   This Governing Knowledge Commons (GKC) workshop, to be followed by a book collecting case studies focused on Smart Cities and knowledge commons, offers a strategic opportunity to advance knowledge on how cities should respond to the challenges presented by digital networked technologies. Emerging smart cities will require trusted governance and engaged citizens. Integrating surveillance, AI, automation and smart tech within basic infrastructure as well as public and private services and spaces raises a complex set of ethical, economic, political, social, and technological questions [Read more >](https://knowledge-commons.net/projects/smart-cities/)
 
 <!-- ### Workshop Presentations
 
 - **[Workshop Title]** (Month Year)
   _Event Name, Location_
   Brief description of the workshop and your role. -->
+
