@@ -10,7 +10,7 @@
     "location": {
       "address": "2 West Loop Road",
       "postalCode": "10044",
-      "city": "New York",
+      "city": "New York City",
       "countryCode": "US",
       "region": "New York"
     },
@@ -18,8 +18,8 @@
   },
   "work": [
     {
-      "name": "Cornell Tech University",
-      "position": "Ph.D. Student in Information Science",
+      "name": "Cornell Tech",
+      "position": "Ph.D. Candidate in Information Science",
       "url": "",
       "startDate": "2021-08",
       "endDate": "",
@@ -100,55 +100,50 @@
       "highlights": []
     }
   ],
-  "volunteer": [
+  "Service and Teaching": [
     {
-      "organization": "Teaching Assistant in Privacy in the Digital Age",
-      "location": "Cornell Tech",
-      "position": "Head TA",
-      "url": "",
-      "startDate": "2024",
-      "endDate": "2024",
+      "organization": "Cornell Tech",
+      "location": "New York City",
+      "position": "Teaching Assistant in Privacy in the Digital Age",
+      "startDate": "Fall 2024",
+      "endDate": "Fall 2024",
       "summary": "Head TA in master level privacy class. Led assignments, in-class privacy policy exercise and a lecture on usable privacy. With Helen Nissenbaum and Vitaly Shmatikov.",
       "highlights": []
     },
     {
-      "organization": "Teaching Assistant in Interactive Device Design",
-      "location": "Cornell Tech",
-      "position": "Head TA",
-      "url": "",
-      "startDate": "2023",
-      "endDate": "2023",
+      "organization": "Cornell Tech",
+      "location": "New York City",
+      "position": "Teaching Assistant in Interactive Device Design",
+      "startDate": "Fall 2023",
+      "endDate": "Fall 2023",
       "summary": "Head TA in master level prototyping class. Maintained project code repository, labs and oversaw grading. With Wendy Ju.",
       "highlights": []
     },
     {
-      "organization": "ISGSA Liaison",
-      "location": "Cornell Tech",
-      "position": "Liaison",
-      "url": "",
-      "startDate": "2022",
-      "endDate": "2023",
+      "organization": "Cornell University",
+      "location": "New York City",
+      "position": "ISGSA Liaison",
+      "startDate": "Fall 2022",
+      "endDate": "Fall 2023",
       "summary": "Information Science Graduate Student Association Liaison for NYC to Ithaca campus collaboration.",
       "highlights": []
     },
     {
-      "organization": "Teaching Assistant in HCI Design",
-      "location": "Cornell Tech",
-      "position": "TA",
-      "url": "",
-      "startDate": "2021",
-      "endDate": "2021",
+      "organization": "Cornell University",
+      "location": "Ithaca",
+      "position": "Teaching Assistant in HCI Design",
+      "startDate": "Fall 2021",
+      "endDate": "Fall 2021",
       "summary": "Assisted in teaching undergraduate and master level course in human computer interaction. Oversaw grading and individual sections. With Gilly Leshed.",
       "highlights": []
     },
     {
-      "organization": "WeDrive Proud",
-      "location": "Potsdam, Brandenburg, Germany",
+      "organization": "We Drive Proud",
+      "location": "Potsdam, Germany",
       "position": "Member",
-      "url": "",
       "startDate": "2019",
       "endDate": "2021",
-      "summary": "Member of the VW network advocating for being out at work.",
+      "summary": "Member of the VW network to advocate being out at work.",
       "highlights": []
     }
   ],
@@ -175,7 +170,7 @@
       "studyType": "B.Sc.",
       "startDate": "2011",
       "endDate": "2015",
-      "score": "Cum Laude (Thesis GP 4.0)",
+      "score": "Cum Laude (Thesis GPA 4.0)",
       "courses": [],
       "highlights": [
         "Bachelor Thesis: 'Development of a 3D Navigable Interface for a Touchless Showcase'",
@@ -225,116 +220,100 @@
   ],
   "publications": [
     {
-      "name": "Sandhaus, H., Rhomberg, D., Yang, Q.",
+      "name": "Deceptive Performance Indicators: Using User Experience Questionnaires to Assess 'Good' Design Can Be Misleading",
       "publisher": "DIS '25 Under Review",
       "releaseDate": "2025-07",
-      "url": "",
-      "summary": "Deceptive Performance Indicators: Using User Experience Questionnaires to Assess 'Good' Design Can Be Misleading."
+      "summary": "Sandhaus, H., Rhomberg, D., Yang, Q."
     },
     {
-      "name": "Sandhaus, H., Gu, Q., Parreira, T., Ju, W.",
+      "name": "Co-Designing with Algorithms: Unpacking the Complex Role of GenAI in Interactive System Design Education",
       "publisher": "DIS '25 Under Review",
       "releaseDate": "2025-07",
-      "url": "",
-      "summary": "Co-Designing with Algorithms: Unpacking the Complex Role of GenAI in Interactive System Design Education."
+      "summary": "Sandhaus, H., Gu, Q., Parreira, T., Ju, W."
     },
     {
-      "name": "Franchi, M.*, Sandhaus, H.*, Choksi, M., Engelmann, S., Ju, W., Nissenbaum, H.",
+      "name": "Privacy of Groups in Dense Street Imagery",
       "publisher": "FAccT 2025 Under Review",
       "releaseDate": "2025-07",
-      "url": "",
-      "summary": "Privacy of Groups in Dense Street Imagery. * = equal contribution"
+      "summary": "Franchi, M.*, Sandhaus, H.*, Choksi, M., Engelmann, S., Ju, W., Nissenbaum, H. (* = equal contribution)"
     },
     {
-      "name": "Sandhaus, H., Hwang, A., Yang, Q., & Ju, W.",
+      "name": "My Precious Crash Data: Barriers and Opportunities in Encouraging Autonomous Driving Companies to Share Safety-Critical Data",
       "publisher": "CSCW '25 Proceedings",
       "releaseDate": "2025-07",
-      "url": "",
-      "summary": "My Precious Crash Data: Barriers and Opportunities in Encouraging Autonomous Driving Companies to Share Safety-Critical Data."
+      "summary": "Sandhaus, H., Hwang, A., Yang, Q., & Ju, W."
     },
     {
-      "name": "Ebel, P., Bazilinskyy, P., Colley, M., Goodridge, C. M., Hock, P., Janssen, C. P., Sandhaus, H., Srinivasan, A. R., Wintersberger, P.",
+      "name": "Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research",
       "publisher": "Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
       "releaseDate": "2024",
-      "url": "",
-      "summary": "Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research."
+      "summary": "Ebel, P., Bazilinskyy, P., Colley, M., Goodridge, C. M., Hock, P., Janssen, C. P., Sandhaus, H., Srinivasan, A. R., Wintersberger, P."
     },
     {
-      "name": "Sandhaus, H., Choksi, M. Z., Ju, W.",
+      "name": "Regaining Trust: Impact of Transparent User Interface Design on Acceptance of Camera-Based In-Car Health Monitoring Systems",
       "publisher": "Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
       "releaseDate": "2024",
-      "url": "",
-      "summary": "Regaining Trust: Impact of Transparent User Interface Design on Acceptance of Camera-Based In-Car Health Monitoring Systems."
+      "summary": "Sandhaus, H., Choksi, M. Z., Ju, W."
     },
     {
-      "name": "Di Pirro, R., Sandhaus, H., Goedicke, D., Calderone, D., Oishi, M., Ju, W.",
+      "name": "Characterizing Cultural Differences in Naturalistic Driving Interactions",
       "publisher": "IEEE International Conference on Intelligent Transportation Systems 2024",
       "releaseDate": "2024-09",
-      "url": "",
-      "summary": "Characterizing Cultural Differences in Naturalistic Driving Interactions."
+      "summary": "Di Pirro, R., Sandhaus, H., Goedicke, D., Calderone, D., Oishi, M., Ju, W."
     },
     {
-      "name": "Klein, N., Sandhaus, H., Goedicke, D., Parush, A., & Ju, W.",
+      "name": "Modeling Social Situation Awareness in Driving Interactions",
       "publisher": "AutoUI '24 Proceedings",
       "releaseDate": "2024-09",
-      "url": "",
-      "summary": "Modeling Social Situation Awareness in Driving Interactions."
+      "summary": "Klein, N., Sandhaus, H., Goedicke, D., Parush, A., & Ju, W."
     },
     {
-      "name": "Rhomberg, D.*, Sandhaus, H*.",
+      "name": "Towards Quantifying Ethical User Experience: Evaluating User Perceptions of Dark Patterns in Social Media",
       "publisher": "Mobilizing Research and Regulatory Action on Dark Patterns and Deceptive Design Practices Workshop at CHI",
       "releaseDate": "2024-05",
-      "url": "",
-      "summary": "Towards Quantifying Ethical User Experience: Evaluating User Perceptions of Dark Patterns in Social Media. * = equal contribution"
+      "summary": "Rhomberg, D.*, Sandhaus, H*. (* = equal contribution)"
     },
     {
-      "name": "Harvey, E., Sandhaus, H., Jacobs, A.Z., Moss, E., & Sloane, M.",
+      "name": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology",
       "publisher": "CHI '24 Proceedings",
       "releaseDate": "2024-01",
-      "url": "",
-      "summary": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology."
+      "summary": "Harvey, E., Sandhaus, H., Jacobs, A.Z., Moss, E., & Sloane, M."
     },
     {
-      "name": "Kim, J., Sandhaus, H., and Fussell, S.",
+      "name": "Job Interview Using a Gender-Swapped Avatar",
       "publisher": "CSCW Companion",
       "releaseDate": "2023",
-      "url": "",
-      "summary": "Job Interview Using a Gender-Swapped Avatar."
+      "summary": "Kim, J., Sandhaus, H., and Fussell, S."
     },
     {
-      "name": "Sandhaus, H.",
+      "name": "Promoting Bright Patterns",
       "publisher": "CHI '23 Workshop: Designing Technology and Policy Simultaneously, arXiv [cs.HC]",
       "releaseDate": "2023",
-      "url": "",
-      "summary": "Promoting Bright Patterns."
+      "summary": "Sandhaus, H."
     },
     {
-      "name": "Sandhaus, H., Ju, W. and Yang, Q.",
+      "name": "Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously",
       "publisher": "CHI '23 Workshop: Designing Technology and Policy Simultaneously, arXiv [cs.HC]",
       "releaseDate": "2023",
-      "url": "",
-      "summary": "Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously."
+      "summary": "Sandhaus, H., Ju, W. and Yang, Q."
     },
     {
-      "name": "Sandhaus, H. and Hornecker, E.",
+      "name": "A WOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars",
       "publisher": "The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings",
       "releaseDate": "2018-10",
-      "url": "",
-      "summary": "A WOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars."
+      "summary": "Sandhaus, H. and Hornecker, E."
     },
     {
-      "name": "Martinez, A., Honauer, M., Sandhaus, H. and Hornecker, E.",
+      "name": "Smart textiles in the performing arts",
       "publisher": "Textiles, Identity and Innovation: Design the Future, CRC Press",
       "releaseDate": "2018",
-      "url": "",
-      "summary": "Smart textiles in the performing arts."
+      "summary": "Martinez, A., Honauer, M., Sandhaus, H. and Hornecker, E."
     },
     {
-      "name": "Sandhaus, H.",
+      "name": "Development of a 3D navigable interface for a touchless showcase",
       "publisher": "University of Twente",
       "releaseDate": "2015",
-      "url": "",
-      "summary": "Development of a 3D navigable interface for a touchless showcase. Still visible in the design gallery of the University of Twente."
+      "summary": "Sandhaus, H. Still visible in the design gallery of the University of Twente."
     }
   ],
   "skills": [
