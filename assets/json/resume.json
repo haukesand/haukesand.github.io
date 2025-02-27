@@ -149,6 +149,20 @@
   ],
   "education": [
     {
+      "institution": "Cornell University, Ann S. Bowers College of Computing and Information Science",
+      "url": "",
+      "area": "Information Science",
+      "studyType": "M.Sc.",
+      "startDate": "2021",
+      "endDate": "2024",
+      "score": "Passed Qualification Exam on October 2nd, 2024",
+      "courses": [],
+      "highlights": [
+        "A Exam Title: 'Navigating Ethical Design Under External Pressures'",
+        "Dissertation Topic: 'Empowering technology designers to create ethical technologies and resist external pressures.'"
+      ]
+    },
+    {
       "institution": "Bauhaus Universität Weimar",
       "url": "",
       "area": "Human-Computer Interaction",
