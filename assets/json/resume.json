@@ -100,7 +100,7 @@
       "highlights": []
     }
   ],
-  "Service and Teaching": [
+  "volunteer": [
     {
       "organization": "Cornell Tech",
       "location": "New York City",
@@ -218,7 +218,16 @@
       "summary": "Selected by jury to speak at graduation ceremony. Bachelor thesis presented on behalf of the creative technology program."
     }
   ],
-  "publications": [
+  "certifications": [
+    {
+      "title": "Scaled Agile Framework (SAFe) 5.0",
+      "date": "2021-04",
+      "authority": "Scaled Agile",
+      "url": "https://www.scaledagile.com/certification/certified-safe-agilist/",
+      "summary": "Certified SAFe Agilist (SA) demonstrates knowledge in applying the Scaled Agile Framework, lean thinking, and product development flow principles in an enterprise context."
+    }
+  ],
+  "under-review": [
     {
       "name": "Deceptive Performance Indicators: Using User Experience Questionnaires to Assess 'Good' Design Can Be Misleading",
       "publisher": "DIS '25 Under Review",
@@ -242,7 +251,9 @@
       "publisher": "CSCW '25 Proceedings",
       "releaseDate": "2025-07",
       "summary": "Sandhaus, H., Hwang, A., Yang, Q., & Ju, W."
-    },
+    }
+  ],
+  "publications": [
     {
       "name": "Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research",
       "publisher": "Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
