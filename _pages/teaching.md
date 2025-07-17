@@ -11,9 +11,9 @@ nav_order: 6
 
 ### Cornell Tech
 
-- **[Conscientious Tech Design Workshop](http://pitechethics.github.io)** (Summer 2025)  
+- **PiTech Program: [Conscientious Tech Design Workshop](http://pitechethics.github.io)** (Summer 2025)  
    _Co-Instructor, supervised by [Prof. Helen Nissenbaum](https://tech.cornell.edu/people/helen-nissenbaum/)_  
-  Co-designed and co-facilitated an 8-week ethics workshop for Siegel PiTech PhD Impact Fellows using the Values at Play framework. The workshop provides a participatory space to explore ethical dimensions of public interest technology through discovery, implementation, and verification techniques applied to fellows' own projects. I operationalized the Values at Play framework into collaborative whiteboard activities and interactive assignments. 
+  Co-designed and co-facilitated an 8-week ethics workshop for [Siegel PiTech](https://www.pi.tech.cornell.edu/pitech-phd-impact-fellowship) PhD Impact Fellows using the Values at Play framework. The workshop provides a participatory space to explore ethical dimensions of public interest technology through discovery, implementation, and verification techniques applied to fellows' own projects. I operationalized the Values at Play framework into collaborative whiteboard activities and interactive assignments. 
 
   _This workshop addresses the question: What does it mean to build and evaluate technology in the public interest? Sessions focus on identifying values embedded in systems, translating values into design features, and evaluating whether implementations successfully embody intended values._
 
