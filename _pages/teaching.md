@@ -23,9 +23,9 @@ nav_order: 6
 
   _This course introduces students to privacy technologies and surveys the current state of digital privacy from multiple perspectives, including technology, law, policy, ethics, economics, and surveillance._
 
-- **INFO 5345 / CS 5424 / ECE 5413: Developing and Designing Interactive Devices** (Fall 2023)  
+- **INFO 5345 / CS 5424 / ECE 5413: Developing and Designing Interactive Devices** (Fall 2023, Fall 2025)  
   _Teaching Assistant for [Prof. Wendy Ju](https://tech.cornell.edu/people/wendy-ju/)_  
-  Revised all lab scripts and class content in the [interactive lab repository](https://github.com/FAR-Lab/Interactive-Lab-Hub) for updated hardware and more advanced libraries, enhancing usability. Established class infrastructure and managed grading.
+  Revised all lab scripts and class content in the [interactive lab repository](https://github.com/FAR-Lab/Interactive-Lab-Hub) for updated hardware and more advanced libraries, enhancing usability. Established class infrastructure and managed grading. In Fall 2025, building on insights from my research on GenAI in HCI education (Sandhaus et al., 2025), I developed [WendyTA](https://github.com/IRL-CT/Interactive-Lab-Hub/tree/Fall2025/WendyTA), an LLM-powered teaching assistant that supports students in their interactive device design projects while encouraging reflection and deep learning.
   
   _This course provides an introduction to the human-centered and technical workings behind interactive devices ranging from cell phones and video controllers to household appliances and smart cars. This is a hands-on, lab-based course. Topics include electronics prototyping, interface prototyping, sensors and actuators, microcontroller development, physical prototyping and user testing. For the final project, students will build a functional interactive device of their own design, using single-board Linux computers, embedded microcontrollers, and other electronics components._
 
