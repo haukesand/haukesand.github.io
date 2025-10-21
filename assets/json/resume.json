@@ -104,6 +104,24 @@
     {
       "organization": "Cornell Tech",
       "location": "New York City",
+      "position": "Co-host NYC Privacy Day",
+      "startDate": "Fall 2025",
+      "endDate": "Fall 2025",
+      "summary": "Managed the website, sign-ups, and the poster and demo track for NYC Privacy Day, an initiative between privacy research institutes in the NYC area.",
+      "highlights": []
+    },
+    {
+      "organization": "Cornell Tech",
+      "location": "New York City",
+      "position": "Instructor Ethics for Public Interest Technology",
+      "startDate": "Summer 2025",
+      "endDate": "Summer 2025",
+      "summary": "Co-instructed ethics workshop on conscientious technology design, developing materials, and leading activities on value-driven design thinking (pitechethics.github.io). With Helen Nissenbaum.",
+      "highlights": []
+    },
+    {
+      "organization": "Cornell Tech",
+      "location": "New York City",
       "position": "Teaching Assistant in Privacy in the Digital Age",
       "startDate": "Fall 2024",
       "endDate": "Fall 2024",
@@ -115,8 +133,8 @@
       "location": "New York City",
       "position": "Teaching Assistant in Interactive Device Design",
       "startDate": "Fall 2023",
-      "endDate": "Fall 2023",
-      "summary": "Head TA in master level prototyping class. Maintained project code repository, labs and oversaw grading. With Wendy Ju.",
+      "endDate": "Fall 2025",
+      "summary": "Head TA in master level prototyping class. Maintained project code repository, labs, and oversaw grading. Updated the class for AI-codesign of technology. With Wendy Ju.",
       "highlights": []
     },
     {
@@ -244,30 +262,30 @@
   "under-review": [
     {
       "name": "Deceptive Performance Indicators: Using User Experience Questionnaires to Assess 'Good' Design Can Be Misleading",
-      "publisher": "DIS '25 Under Review",
-      "releaseDate": "2025-07",
-      "summary": "Sandhaus, H., Rhomberg, D., Yang, Q."
-    },
+      "publisher": "CHI '26 Under Review",
+      "releaseDate": "2026-05",
+      "summary": "Sandhaus, H., Rhomberg, D., Nissenbaum, H."
+    }
+  ],
+  "publications": [
     {
-      "name": "Co-Designing with Algorithms: Unpacking the Complex Role of GenAI in Interactive System Design Education",
-      "publisher": "DIS '25 Under Review",
+      "name": "Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education",
+      "publisher": "DIS '25",
       "releaseDate": "2025-07",
       "summary": "Sandhaus, H., Gu, Q., Parreira, T., Ju, W."
     },
     {
       "name": "Privacy of Groups in Dense Street Imagery",
-      "publisher": "FAccT 2025 Under Review",
-      "releaseDate": "2025-07",
+      "publisher": "FAccT 2025",
+      "releaseDate": "2025-06",
       "summary": "Franchi, M.*, Sandhaus, H.*, Choksi, M., Engelmann, S., Ju, W., Nissenbaum, H. (* = equal contribution)"
     },
     {
       "name": "My Precious Crash Data: Barriers and Opportunities in Encouraging Autonomous Driving Companies to Share Safety-Critical Data",
       "publisher": "CSCW '25 Proceedings",
-      "releaseDate": "2025-07",
+      "releaseDate": "2025-10",
       "summary": "Sandhaus, H., Hwang, A., Yang, Q., & Ju, W."
-    }
-  ],
-  "publications": [
+    },
     {
       "name": "Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research",
       "publisher": "Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
