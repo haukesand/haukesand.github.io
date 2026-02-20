@@ -13,7 +13,7 @@ nav_order: 6
 
 - **PiTech Program: [Conscientious Tech Design Workshop](http://pitechethics.github.io)** (Summer 2025)  
    _Co-Instructor, supervised by [Prof. Helen Nissenbaum](https://tech.cornell.edu/people/helen-nissenbaum/)_  
-  Co-designed and co-facilitated an 8-week ethics workshop for [Siegel PiTech](https://www.pi.tech.cornell.edu/pitech-phd-impact-fellowship) PhD Impact Fellows using the Values at Play framework. The workshop provides a participatory space to explore ethical dimensions of public interest technology through discovery, implementation, and verification techniques applied to fellows' own projects. I operationalized the Values at Play framework into collaborative whiteboard activities and interactive assignments. 
+  Co-designed and co-facilitated an 8-week ethics workshop for [Siegel PiTech](https://www.pi.tech.cornell.edu/pitech-phd-impact-fellowship) PhD Impact Fellows using the Values at Play framework. The workshop provides a participatory space to explore ethical dimensions of public interest technology through discovery, implementation, and verification techniques applied to fellows' own projects. I operationalized the Values at Play framework into collaborative whiteboard activities and interactive assignments.
 
   _This workshop addresses the question: What does it mean to build and evaluate technology in the public interest? Sessions focus on identifying values embedded in systems, translating values into design features, and evaluating whether implementations successfully embody intended values._
 
@@ -26,7 +26,7 @@ nav_order: 6
 - **INFO 5345 / CS 5424 / ECE 5413: Developing and Designing Interactive Devices** (Fall 2023, Fall 2025)  
   _Teaching Assistant for [Prof. Wendy Ju](https://tech.cornell.edu/people/wendy-ju/)_  
   Revised all lab scripts and class content in the [interactive lab repository](https://github.com/FAR-Lab/Interactive-Lab-Hub) for updated hardware and more advanced libraries, enhancing usability. Established class infrastructure and managed grading. In Fall 2025, building on insights from my research on GenAI in HCI education (Sandhaus et al., 2025), I developed [WendyTA](https://github.com/IRL-CT/Interactive-Lab-Hub/tree/Fall2025/WendyTA), an LLM-powered teaching assistant that supports students in their interactive device design projects while encouraging reflection and deep learning.
-  
+
   _This course provides an introduction to the human-centered and technical workings behind interactive devices ranging from cell phones and video controllers to household appliances and smart cars. This is a hands-on, lab-based course. Topics include electronics prototyping, interface prototyping, sensors and actuators, microcontroller development, physical prototyping and user testing. For the final project, students will build a functional interactive device of their own design, using single-board Linux computers, embedded microcontrollers, and other electronics components._
 
 ### Cornell University
@@ -41,8 +41,8 @@ nav_order: 6
   *Role*
   Brief description of responsibilities and impact. -->
 
-
 ## Invited Talks
+
 <!-- ## Selected Talks --  & Presentations -->
 
 <!-- ### Conference Presentations
@@ -70,4 +70,3 @@ nav_order: 6
 - **[Workshop Title]** (Month Year)
   _Event Name, Location_
   Brief description of the workshop and your role. -->
-

@@ -23,7 +23,7 @@
       "url": "",
       "startDate": "2021-08",
       "endDate": "",
-      "summary": "Working under the advisement of assistant professor Qian Yang and co-advised by associate professor Wendy Ju, focusing on transparent AI & autonomous vehicle interaction. Research focuses on enabling technology designers to develop for positive societal impact while navigating external influences.",
+      "summary": "Working under the advisement of Helen Nissenbaum (Chair) and co-advised by associate professor Wendy Ju, with assistant professor Qian Yang as committee member, focusing on transparent AI & autonomous vehicle interaction. Research focuses on enabling technology designers to develop for positive societal impact while navigating external influences.",
       "highlights": [
         "Developing frameworks for responsible and efficient design innovation methodologies",
         "Researching approaches to empower designers to navigate external influences in user-centered design processes",
@@ -368,7 +368,18 @@
     {
       "name": "AI",
       "level": "Expert",
-      "keywords": ["fastai", "Pinecone", "Teachable Machines", "TensorFlow", "ml5.js", "OpenCV", "Scikit-learn", "DepthAI", "LLM integration", "Custom computer vision pipelines"]
+      "keywords": [
+        "fastai",
+        "Pinecone",
+        "Teachable Machines",
+        "TensorFlow",
+        "ml5.js",
+        "OpenCV",
+        "Scikit-learn",
+        "DepthAI",
+        "LLM integration",
+        "Custom computer vision pipelines"
+      ]
     },
     {
       "name": "Data Analytics",
