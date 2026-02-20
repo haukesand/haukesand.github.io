@@ -11,6 +11,12 @@ nav_order: 6
 
 ### Cornell Tech
 
+- **INFO 5305: UX & User Research** (Spring 2026)  
+   _Teaching Assistant for [Prof. Shiri Azenkot](https://tech.cornell.edu/people/shiri-azenkot/)_  
+  Assisted in teaching a master's level course focused on the UX lifecycle and user research methods.
+
+  _In this course, students focus on the UX lifecycle and user research methods. Following an iterative process with four major phases—analyze, design, prototype, and evaluate—students learn practical skills to take a product idea from a simple concept to a detailed prototype validated by real user experiences. The course also includes a deep dive into different user research methods, including interviews, focus groups, surveys, participatory design, and diary studies._
+
 - **PiTech Program: [Conscientious Tech Design Workshop](http://pitechethics.github.io)** (Summer 2025)  
    _Co-Instructor, supervised by [Prof. Helen Nissenbaum](https://tech.cornell.edu/people/helen-nissenbaum/)_  
   Co-designed and co-facilitated an 8-week ethics workshop for [Siegel PiTech](https://www.pi.tech.cornell.edu/pitech-phd-impact-fellowship) PhD Impact Fellows using the Values at Play framework. The workshop provides a participatory space to explore ethical dimensions of public interest technology through discovery, implementation, and verification techniques applied to fellows' own projects. I operationalized the Values at Play framework into collaborative whiteboard activities and interactive assignments.
