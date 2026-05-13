@@ -832,6 +832,25 @@ footer.sticky-bottom {
   }
 }
 
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li > .row {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    > .col.abbr {
+      flex: 0 0 80px;
+      max-width: 80px;
+      padding-right: 0.5rem;
+    }
+
+    > .col-sm-8,
+    > .col-sm-10 {
+      flex: 1 1 auto;
+      max-width: none;
+    }
+  }
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
