@@ -193,7 +193,8 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
+  width: 45%;
+  max-width: 220px;
 
   .more-info {
     margin-bottom: 5px;
@@ -836,17 +837,23 @@ footer.sticky-bottom {
   .publications ol.bibliography li > .row {
     flex-wrap: nowrap;
     align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
 
     > .col.abbr {
-      flex: 0 0 80px;
-      max-width: 80px;
-      padding-right: 0.5rem;
+      flex: 0 0 100px;
+      max-width: 100px;
+      padding-left: 0;
+      padding-right: 0.75rem;
     }
 
     > .col-sm-8,
     > .col-sm-10 {
-      flex: 1 1 auto;
+      flex: 1 1 0;
+      min-width: 0;
       max-width: none;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
