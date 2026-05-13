@@ -236,10 +236,7 @@
       "startDate": "2003",
       "endDate": "2011",
       "courses": [],
-      "highlights": [
-        "Graduated with majors in Art & Religion",
-        "Participated in and won science competitions"
-      ]
+      "highlights": ["Graduated with majors in Art & Religion", "Participated in and won science competitions"]
     }
   ],
   "awards": [
@@ -375,18 +372,7 @@
     {
       "name": "Coding",
       "level": "Expert",
-      "keywords": [
-        "Python",
-        "Java",
-        "JavaScript",
-        "React.js",
-        "Node.js",
-        "Android",
-        "Unity3D",
-        "C#",
-        "Arduino",
-        "Open Frameworks"
-      ]
+      "keywords": ["Python", "Java", "JavaScript", "React.js", "Node.js", "Android", "Unity3D", "C#", "Arduino", "Open Frameworks"]
     },
     {
       "name": "AI",
@@ -407,68 +393,32 @@
     {
       "name": "Data Analytics",
       "level": "Advanced",
-      "keywords": [
-        "Python data visualization",
-        "Tableau",
-        "R",
-        "Matlab",
-        "d3.js"
-      ]
+      "keywords": ["Python data visualization", "Tableau", "R", "Matlab", "d3.js"]
     },
     {
       "name": "Design",
       "level": "Expert",
-      "keywords": [
-        "Interface design",
-        "Lottie",
-        "AE",
-        "3D modeling",
-        "PSD",
-        "Framer"
-      ]
+      "keywords": ["Interface design", "Lottie", "AE", "3D modeling", "PSD", "Framer"]
     },
     {
       "name": "User Research",
       "level": "Expert",
-      "keywords": [
-        "Contextual & expert interviews",
-        "Ethnography",
-        "Surveys",
-        "Usability testing",
-        "On-road studies"
-      ]
+      "keywords": ["Contextual & expert interviews", "Ethnography", "Surveys", "Usability testing", "On-road studies"]
     },
     {
       "name": "UX",
       "level": "Expert",
-      "keywords": [
-        "Personas",
-        "Wireframes",
-        "Focus groups",
-        "Human factors",
-        "Inclusive design",
-        "Accessibility"
-      ]
+      "keywords": ["Personas", "Wireframes", "Focus groups", "Human factors", "Inclusive design", "Accessibility"]
     },
     {
       "name": "Hardware",
       "level": "Advanced",
-      "keywords": [
-        "CAD",
-        "Rapid Prototyping",
-        "3D manufacturing"
-      ]
+      "keywords": ["CAD", "Rapid Prototyping", "3D manufacturing"]
     },
     {
       "name": "Management",
       "level": "Advanced",
-      "keywords": [
-        "Team leadership",
-        "Conflict resolution",
-        "Strategy",
-        "Scaled agile methods (certified)",
-        "UX strategy"
-      ]
+      "keywords": ["Team leadership", "Conflict resolution", "Strategy", "Scaled agile methods (certified)", "UX strategy"]
     }
   ],
   "languages": [
