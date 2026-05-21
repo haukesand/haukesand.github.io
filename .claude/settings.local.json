@@ -17,7 +17,8 @@
       "Bash(cd /Users/haukesandhaus/Documents/GitHub/Vibe-Coding-Class 2>/dev/null && find . -maxdepth 3 -iname \"*.md\" -o -maxdepth 3 -iname \"index.html\" 2>/dev/null | grep -iv node_modules | head -20; echo \"=== README ===\"; cat README.md 2>/dev/null | head -40)",
       "Read(//Users/haukesandhaus/Documents/GitHub/Vibe-Coding-Class/**)",
       "Bash(head -40 website/course-website.md)",
-      "Bash(head -45 class/planning/syllabus.md)"
+      "Bash(head -45 class/planning/syllabus.md)",
+      "Bash([ -f \"assets/img/publication_preview/$f.png\" ])"
     ]
   }
 }
