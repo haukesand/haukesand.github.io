@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"===== CHIWORK WORKSHOP PROPOSAL =====\"; grep -iE \"\\\\\\\\\\\\\\\\title|\\\\\\\\\\\\\\\\author|\\\\\\\\\\\\\\\\subtitle|\\\\\\\\\\\\\\\\abstract|begin\\\\{abstract\\\\}|maketitle\" \"/Users/haukesandhaus/Documents/GitHub/CHIwork-26-Workshop-Proposal/workshop-proposal.tex\" | head -20)",
+      "Read(//Users/haukesandhaus/Documents/GitHub/CHIwork-26-Workshop-Proposal/**)",
+      "Bash(echo \"===== ZfP PAPER =====\"; grep -iE \"\\\\\\\\\\\\\\\\title|\\\\\\\\\\\\\\\\author|\\\\\\\\\\\\\\\\date|journal|begin\\\\{abstract\\\\}\" \"/Users/haukesandhaus/Documents/GitHub/Dark Pattern Perceptions/Psychology-Journal-Pattern-Perceptions/main.tex\" | head -25 *)",
+      "Read(//Users/haukesandhaus/Documents/GitHub/Dark Pattern Perceptions/Psychology-Journal-Pattern-Perceptions/**)",
+      "Bash(awk '/begin\\\\{abstract\\\\}/,/end\\\\{abstract\\\\}/' \"/Users/haukesandhaus/Documents/GitHub/Dark Pattern Perceptions/Psychology-Journal-Pattern-Perceptions/main.tex\")",
+      "Bash(awk '/begin\\\\{abstract\\\\}/,/end\\\\{abstract\\\\}/' \"/Users/haukesandhaus/Documents/GitHub/AI-UI-Ethics-Evaluations/overleaf-paper/main_lbw.tex\")",
+      "Bash(grep -iA6 \"scholar\\\\|sort\\\\|group\")",
+      "Bash(ls Gemfile*)",
+      "Bash(which bundle *)",
+      "Bash(ruby -v)",
+      "Bash(timeout 300 bundle exec jekyll build)",
+      "Bash(bundle exec *)",
+      "Bash(python3 -)",
+      "Bash(cd /Users/haukesandhaus/Documents/GitHub/Vibe-Coding-Class 2>/dev/null && find . -maxdepth 3 -iname \"*.md\" -o -maxdepth 3 -iname \"index.html\" 2>/dev/null | grep -iv node_modules | head -20; echo \"=== README ===\"; cat README.md 2>/dev/null | head -40)",
+      "Read(//Users/haukesandhaus/Documents/GitHub/Vibe-Coding-Class/**)",
+      "Bash(head -40 website/course-website.md)",
+      "Bash(head -45 class/planning/syllabus.md)"
+    ]
+  }
+}
