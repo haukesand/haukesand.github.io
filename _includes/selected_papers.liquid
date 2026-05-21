@@ -1,3 +1,29 @@
 <div class="publications">
-  {% bibliography --group_by none --query @*[selected=true]* %}
+  <div class="research-thread">
+    <h3 class="thread-title">Ethical Interaction Design</h3>
+    <p class="thread-desc">
+      Surfacing and resisting manipulative interfaces—and pinning down what “ethical” UX actually measures—so design protects user autonomy.
+    </p>
+    {% bibliography --group_by none --query @*[thread=ethical-design]* %}
+  </div>
+
+  <div class="research-thread">
+    <h3 class="thread-title">Human–AI Interaction &amp; Work</h3>
+    <p class="thread-desc">
+      Preserving professional autonomy, accountability, and deep work as generative AI enters research, design, and creative practice.
+    </p>
+    {% bibliography --group_by none --query @*[thread=human-ai]* %}
+  </div>
+
+  <div class="research-thread">
+    <h3 class="thread-title">Privacy &amp; Responsible Data</h3>
+    <p class="thread-desc">Privacy and responsible data-sharing across street imagery, vehicles, and sensing systems.</p>
+    {% bibliography --group_by none --query @*[thread=data-privacy]* %}
+  </div>
+
+  <div class="research-thread">
+    <h3 class="thread-title">Automotive &amp; Driving Interaction</h3>
+    <p class="thread-desc">How people negotiate interactions around automated vehicles—and how the field shares its safety data.</p>
+    {% bibliography --group_by none --query @*[thread=automotive]* %}
+  </div>
 </div>
