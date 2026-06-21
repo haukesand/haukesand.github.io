@@ -1,3 +1,71 @@
+@comment{
+  =====================================================================
+   FIELD REFERENCE for this bibliography (al-folio + jekyll-scholar)
+   Anything inside @comment{...} is ignored by the BibTeX parser.
+  =====================================================================
+
+  --- STANDARD BIBTEX FIELDS (drive the APA-style citation line) ---
+  title, author, year, month, publisher, address, pages, volume,
+  number, doi, url, isbn, issn, articleno, numpages
+        Used by jekyll-scholar to build the citation. `url` does NOT
+        create a button — it's only used in the citation/.bib export.
+  booktitle           Venue for @inproceedings (renders as "In <booktitle>").
+  journal             Venue for @article (renders italicised).
+  school              Institution for @mastersthesis / @phdthesis.
+  howpublished        For @misc — NOT displayed by the template; included
+                      only for clean .bib export.
+  keywords            Used by the bibsearch feature; not visible.
+  language, day,
+  eprint,
+  archiveprefix,
+  primaryclass        Standard BibTeX fields the template does NOT render.
+                      For arXiv, use the `arxiv` field below (button).
+  note                Free-text line shown under the venue. Use for things
+                      like "* = equal contribution" or short award context.
+
+  --- LINK BUTTONS (each one creates a button in the links row) ---
+  pdf        "PDF"     Full URL or filename (filename → /assets/pdf/<file>).
+                       This is the slot for the camera-ready / published PDF.
+  html       "HTML"    Canonical web page (usually the publisher page).
+  arxiv      "arXiv"   Just the arXiv ID (e.g. 2505.07085); the template
+                       prepends http://arxiv.org/abs/. Use for preprints.
+  psyarxiv   "PsyArXiv" Full URL to a PsyArXiv preprint (custom field added
+                       to this site so preprints don't squat on pdf/html).
+  website    "Website" Companion / project website.
+  code       "Code"    Repository URL.
+  video      "Video"   Video URL (or embedded if enable_video_embedding=true).
+  blog       "Blog"    Blog post URL.
+  poster     "Poster"  URL or filename under /assets/pdf/.
+  slides     "Slides"  URL or filename under /assets/pdf/.
+  supp       "Supp"    Supplementary materials URL or filename.
+  abstract   "Abs"     Triggers a collapsible block showing the abstract text.
+  bibtex_show "Bib"    Set to {true} to show the "Bib" button (BibTeX popup).
+  award      ——        Long award text. The "<award_name>" pill button below
+                       displays whenever `award` is set. The long text itself
+                       only appears on print (hidden on screen by CSS).
+                       Tip: also add a `note` to keep the full text visible.
+  award_name "<name>"  Label inside the award pill button (e.g. "Honorable
+                       Mention"). Defaults to "Awarded" if `award` is set
+                       without `award_name`.
+
+  --- AL-FOLIO CUSTOM FIELDS (display control; NOT in the citation) ---
+  selected   Legacy true|false flag. The home page used to filter on this;
+             since switching to the threaded layout it is no longer read by
+             selected_papers.liquid. Safe to ignore for new entries — kept
+             in old entries for backwards-compatibility.
+  thread     ethical-design | human-ai | data-privacy | automotive
+             Controls which research-thread section the entry appears in on
+             the home page. Without a `thread`, the entry shows only on the
+             full /publications list.
+  preview    Filename of the thumbnail in /assets/img/publication_preview/.
+             ImageMagick generates responsive .webp variants at build time.
+  abbr       Short venue badge shown to the left (e.g. "FAccT", "CSCW",
+             "CHIWORK LBW", "AutoUI WiP"). Keep it short.
+  tldr       One-sentence summary appended after the entry links row.
+
+  =====================================================================
+}
+
 @article{Sandhaus2026-deception,
   title       = {Deception Is Ugly: Linking Aesthetic Judgment to Perceived Manipulation in Dark Patterns},
   author      = {Sandhaus, Hauke and Rhomberg, Doris Maria},
@@ -107,7 +175,7 @@
   isbn          = {9798400714825},
   url           = {https://doi.org/10.1145/3715275.3732185},
   booktitle     = {Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency},
-  pages         = {2874–2891},
+  pages         = {2874--2891},
   numpages      = {18},
   keywords      = {privacy, dense street imagery, group privacy, contextual integrity, computer vision, surveillance, penetration testing, auditing},
   publisher     = {Association for Computing Machinery},
@@ -122,7 +190,7 @@
   bibtex_show   = {true},
   selected      = {true},
   tldr          = {Dense street imagery enables harmful group membership inference despite individual anonymity. Contextual Integrity is used to analyze group based privacy implications based on appropriate information flows.},
-  pdf           = {https://arxiv.org/pdf/2505.07085},
+  pdf           = {https://dl.acm.org/doi/pdf/10.1145/3715275.3732185},
   slides        = {https://www.figma.com/deck/gEF1fEZJB3VLp4oieLYBO1/Privacy-and-contextual-integrity-in-urban-data-presentation?node-id=3-14&t=dFtafxx8lNuVnOqG-1},
   html          = {https://dl.acm.org/doi/10.1145/3715275.3732185},
   eprint        = {2505.07085},
@@ -185,6 +253,7 @@
   bibtex_show   = {true},
   abbr          = {DIS},
   html          = {https://doi.org/10.1145/3715336.3735805},
+  pdf           = {https://dl.acm.org/doi/pdf/10.1145/3715336.3735805},
   slides        = {https://www.figma.com/deck/uztNi4SBxA8XT188VlMATO/Co-Designing-with-Transformers?node-id=1-32&t=MZgrXQ9fjTU6yHd0-1}
 }
 
@@ -224,13 +293,13 @@
   publisher   = {Association for Computing Machinery},
   address     = {New York, NY, USA},
   series      = {AutomotiveUI '24},
-  pages       = 1,
+  pages       = {259--271},
   doi         = {10.1145/3640792.3675717},
   isbn        = 9798400705106,
   url         = {https://doi.org/10.1145/3640792.3675717},
   html        = {https://doi.org/10.1145/3640792.3675717},
   abstract    = {The design of self-driving vehicles requires an understanding of the social interactions between drivers in resolving vague encounters, such as at un-signalized intersections. In this paper, we make the case for social situation awareness as a model for understanding everyday driving interaction. Using a dual-participant VR driving simulator, we collected data from driving encounter scenarios to understand how (N=170) participant drivers behave with respect to one another. Using a social situation awareness questionnaire we developed, we assessed the participants’ social awareness of other driver’s direction of approach to the intersection, and also logged signaling, speed and speed change, and heading of the vehicle. Drawing upon the statistically significant relationships in the variables in the study data, we propose a Social Situation Awareness model based on the approach, speed, change of speed, heading and explicit signaling from drivers.},
-  numpages    = 1,
+  numpages    = {13},
   keywords    = {Driving encounters, autonomous vehicles, social situational awareness (SA), unsignaled intersections, virtual reality (VR)},
   preview     = {VR_cars.png},
   thread      = {automotive},
@@ -253,7 +322,7 @@
   publisher   = {Association for Computing Machinery},
   address     = {New York, NY, USA},
   series      = {AutomotiveUI '24},
-  pages       = {94–105},
+  pages       = {94--105},
   doi         = {10.1145/3640792.3675730},
   isbn        = 9798400705106,
   url         = {https://doi.org/10.1145/3640792.3675730},
@@ -280,7 +349,7 @@
   publisher     = {Association for Computing Machinery},
   address       = {New York, NY, USA},
   series        = {AutomotiveUI '24 Adjunct},
-  pages         = {203–208},
+  pages         = {203--208},
   doi           = {10.1145/3641308.3685048},
   isbn          = 9798400705205,
   url           = {https://doi.org/10.1145/3641308.3685048},
@@ -300,12 +369,12 @@
   poster        = {https://docs.google.com/presentation/d/1C5BVRC0K7Oww5wQSIyFLyCvt2dEABUd1ma42ExXNtfs/edit?usp=sharing}
 }
 
-@article{sandhaus_student_2024,
+@inproceedings{sandhaus_student_2024,
   title         = {Student Reflections on Self-Initiated GenAI Use in HCI Education},
   author        = {Sandhaus, Hauke and Parreira, Maria Teresa and Ju, Wendy},
   year          = 2024,
   month         = may,
-  journal       = {LLMs as Research Tools Workshop at CHI Conference},
+  booktitle     = {LLMs as Research Tools Workshop at the CHI Conference on Human Factors in Computing Systems},
   location      = {Honolulu, Hawaii, USA},
   abstract      = {
                    This study explores students' self-initiated use of Generative Artificial Intelligence (GenAI) tools in an interactive systems design class. Through 12 group interviews, students revealed the dual nature of GenAI in (1) stimulating creativity and (2) speeding up design iterations, alongside concerns over its potential to cause shallow learning and reliance. GenAI's benefits were pronounced in the execution phase of design, aiding rapid prototyping and ideation, while its use in initial insight generation posed risks to depth and reflective practice. This reflection highlights the complex role of GenAI in Human-Computer Interaction education, emphasizing the need for balanced integration to leverage its advantages without compromising fundamental learning outcomes.
@@ -322,18 +391,15 @@
   abbr          = {CHI Workshop},
   url           = {https://arxiv.org/abs/2405.01467},
   eprint        = {2405.01467},
-  url           = {https://arxiv.org/abs/2405.01467},
   tldr          = {Generative AI tools in HCI design can accelerate iterations, but also raise concerns among students about shallow learning.}
 }
 
-@article{rhomberg_towards_2024,
+@inproceedings{rhomberg_towards_2024,
   title       = {Towards Quantifying Ethical User Experience: Evaluating User Perceptions of Dark Patterns in Social Media},
   author      = {Rhomberg*, Doris Maria and Sandhaus*, Hauke},
   year        = 2024,
   month       = may,
-  journal     = {
-                 Mobilizing Research and Regulatory Action on Dark Patterns and Deceptive Design Practices Workshop at CHI Conference on Human Factors in Computing Systems
-                 },
+  booktitle   = {Mobilizing Research and Regulatory Action on Dark Patterns and Deceptive Design Practices Workshop at the CHI Conference on Human Factors in Computing Systems},
   location    = {Honolulu, Hawaii, USA},
   abstract    = {
                  No standardized questionnaire currently incorporates an ethical dimension for assessing User Experience (UX). We explored how the ethicality of interface design is reflected in current UX metrics and how they could be extended. To this end, we adapted the User Experience Questionnaire (UEQ) and enriched it with supplementary items specifically designed to capture user responses on social media to unethical interface designs, commonly referred to as 'dark patterns'. Through an exploratory analysis of a survey involving 120 participants who evaluated a selection of 15 social media dark patterns, we found preliminary evidence that (1) an aggregated UX score using items from the User Experience Questionnaire does not effectively indicate unethical user interface design. Instead, (2) subscale measures from the questionnaire show a relationship with unethical design. Furthermore, extending the User Experience Questionnaire seems promising, as (3) users can identify interfaces with addictive and pressuring properties, and (4) evaluations demonstrate consistency within groups of unethical design strategies.
@@ -373,11 +439,13 @@
   preview       = {Cadaver.png},
   thread        = {data-privacy},
   selected      = {true},
+  award         = {Best Paper Honorable Mention at CHI '24},
+  award_name    = {Honorable Mention},
   note          = {Best Paper Honorable Mention at CHI '24},
   abstract      = {
                    Motion capture systems, used across various domains, make body representations concrete through technical processes. We argue that the measurement of bodies and the validation of measurements for motion capture systems can be understood as social practices. By analyzing the findings of a systematic literature review (N=278) through the lens of social practice theory, we show how these practices, and their varying attention to errors, become ingrained in motion capture design and innovation over time. Moreover, we show how contemporary motion capture systems perpetuate assumptions about human bodies and their movements. We suggest that social practices of measurement and validation are ubiquitous in the development of data- and sensor-driven systems more broadly, and provide this work as a basis for investigating hidden design assumptions and their potential negative consequences in human-computer interaction.
                    },
-  abbr          = {🏆 CHI},
+  abbr          = {CHI},
   tldr          = {Motion capture systems are built and validated on old assumptions as a literature review using social practice theory shows.}
 }
 
@@ -410,11 +478,11 @@
   tldr          = {Gender-swapped avatars in virtual job interviews influences applicant's perception of performance.}
 }
 
-@article{sandhaus2023promoting,
+@inproceedings{sandhaus2023promoting,
   title         = {Promoting Bright Patterns},
-  author        = {Hauke Sandhaus},
+  author        = {Sandhaus, Hauke},
   year          = 2023,
-  journal       = {CHI '23 Workshop: Designing Technology and Policy Simultaneously},
+  booktitle     = {CHI '23 Workshop: Designing Technology and Policy Simultaneously},
   website       = {https://brightpatterns.org/},
   html          = {https://designai.cis.cornell.edu/2023CHI/proceedings.html},
   arxiv         = {2304.01157},
@@ -436,11 +504,11 @@
   day           = {23}
 }
 
-@article{sandhaus2023prototyping,
+@inproceedings{sandhaus2023prototyping,
   title         = {Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously},
-  author        = {Hauke Sandhaus and Wendy Ju and Qian Yang},
+  author        = {Sandhaus, Hauke and Ju, Wendy and Yang, Qian},
   year          = 2023,
-  journal       = {CHI '23 Workshop: Designing Technology and Policy Simultaneously},
+  booktitle     = {CHI '23 Workshop: Designing Technology and Policy Simultaneously},
   html          = {https://designai.cis.cornell.edu/2023CHI/proceedings.html},
   arxiv         = {2304.06639},
   eprint        = {2304.06639},
@@ -448,6 +516,7 @@
   primaryclass  = {cs.HC},
   bibtex_show   = {true},
   preview       = {AV_Policy_Design.png},
+  thread        = {automotive},
   selected      = {true},
   abstract      = {
                    Autonomous Vehicles (AVs) can potentially improve urban living by reducing accidents, increasing transportation accessibility and equity, and decreasing emissions. Realizing these promises requires the innovations of AV driving behaviors, city plans and infrastructure, and traffic and transportation policies to join forces. However, the complex interdependencies among AV, city, and policy design issues can hinder their innovation. We argue the path towards better AV cities is not a process of matching city designs and policies with AVs' technological innovations, but a process of iterative prototyping of all three simultaneously: Innovations can happen step-wise as the knot of AV, city, and policy design loosens and tightens, unwinds and reties. In this paper, we ask: How can innovators innovate AVs, city environments, and policies simultaneously and productively toward better AV cities? The paper has two parts. First, we map out the interconnections among the many AV, city, and policy design decisions, based on a literature review spanning HCI/HRI, transportation science, urban studies, law and policy, operations research, economy, and philosophy. This map can help innovators identify design constraints and opportunities across the traditional AV/city/policy design disciplinary bounds. Second, we review the respective methods for AV, city, and policy design, and identify key barriers in combining them: (1) Organizational barriers to AV-city-policy design collaboration, (2) computational barriers to multi-granularity AV-city-policy simulation, and (3) different assumptions and goals in joint AV-city-policy optimization. We discuss two broad approaches that can potentially address these challenges, namely, "low-fidelity integrative City-AV-Policy Simulation (iCAPS)" and "participatory design optimization".
@@ -504,11 +573,12 @@
   tldr        = {Our dance costume using smart textiles makes movements perceivable through sound.}
 }
 
-@mastersthesis{Sandhaus2015-in,
+@misc{Sandhaus2015-in,
   title       = {Development of a {3D} Navigable Interface for a Touchless Showcase},
   author      = {Sandhaus, Hauke},
   year        = 2015,
-  school      = {University of Twente},
+  note        = {Bachelor's thesis, University of Twente},
+  howpublished = {Bachelor's thesis, University of Twente},
   abstract    = {
                  Due to widespread usage of touchscreens, users have accepted interaction without haptic feedback. Commercial game consoles have introduced users to touchless input and natural user interfaces. Only recently it has become technically possible to track human hand skeleton in high detail, precision, and low latency contactless. This report describes the design process for the user experience, user interface, and interaction interface of a touchless showcase using skeletal hand tracking. The project extends on existing hardware, compares current approaches, researches on the user group, and rebuilds the software, based on these findings, from scratch. To allow input, multiple interactions and 3D buttons were developed. In a user experiment, these were tested. A final prototype was implemented on two showcases for a month and compared to the existing software. The findings suggest that users want more natural and direct interactions. Missing physical feedback, non-existent depth perception on traditional screens, and unfamiliar gesture language are hindrances but can be overcome with the use of good visual cues. Future work on the software is solely on refinement. Some of the interactions investigated in this thesis will prevail, while some might appear in other contexts.
                  },
