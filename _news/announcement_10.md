@@ -4,7 +4,7 @@ date: 2026-06-03 09:00:00-0400
 inline: true
 ---
 
-<a class="zoom-photo" href="/assets/img/news/VAP-Pitech-Workshop2026.jpeg" target="_blank" rel="noopener" title="Open full-resolution photo">
+<a class="zoom-photo" href="/assets/img/news/VAP-Pitech-Workshop2026.jpeg" target="_blank" rel="noopener">
   <img src="/assets/img/news/VAP-Pitech-Workshop2026-sdr.jpg" alt="Kickoff of the Conscientious Tech Design Workshop with Siegel PiTech PhD Impact Fellows, Cornell Tech" style="float: right; width: 90px; margin: 0.15rem 0 0.5rem 0.75rem; border-radius: 4px; cursor: zoom-in;" />
 </a>
 

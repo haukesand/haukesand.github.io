@@ -4,7 +4,7 @@ date: 2026-06-14 09:00:00-0400
 inline: true
 ---
 
-<a class="zoom-photo" href="/assets/img/news/venice-philosophy-ai-2026.jpg" target="_blank" rel="noopener" title="Open full-resolution photo">
+<a class="zoom-photo" href="/assets/img/news/venice-philosophy-ai-2026.jpg" target="_blank" rel="noopener">
   <img src="/assets/img/news/venice-philosophy-ai-2026-sdr.jpg" alt="Presenting the AI Interaction Design for Human Autonomy poster at the Philosophy of AI Summer School, Venice" style="float: right; width: 90px; margin: 0.15rem 0 0.5rem 0.75rem; border-radius: 4px; cursor: zoom-in;" />
 </a>
 
