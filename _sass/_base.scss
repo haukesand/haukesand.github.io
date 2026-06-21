@@ -1138,9 +1138,20 @@ nav[data-toggle="toc"] {
   display: none !important;
 }
 
-.medium-zoom-overlay,
-.medium-zoom-image--opened {
-  z-index: 999;
+// GLightbox: theme-aware backdrop and on-page-bound z-index above the navbar.
+.glightbox-clean,
+.glightbox-container {
+  z-index: 1031; // above the fixed-top navbar (Bootstrap nav uses 1030)
+}
+.gscrollbar-fixer .glightbox-overlay,
+.glightbox-overlay {
+  background-color: var(--global-bg-color) !important;
+  opacity: 0.95 !important;
+}
+.gslide-description,
+.gslide-title,
+.gdesc-inner {
+  color: var(--global-text-color);
 }
 
 #toc-sidebar {

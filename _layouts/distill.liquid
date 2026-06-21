@@ -2,12 +2,18 @@
 <html>
   <head>
     {% include head.liquid %}
-    {% if site.enable_medium_zoom %}
-      <!-- Medium Zoom JS -->
+    {% if site.enable_lightbox %}
+      <!-- GLightbox (lightbox for <a class="zoom-photo"> images) -->
+      <link
+        rel="stylesheet"
+        href="{{ site.third_party_libraries.glightbox.url.css }}"
+        integrity="{{ site.third_party_libraries.glightbox.integrity.css }}"
+        crossorigin="anonymous"
+      >
       <script
         defer
-        src="{{ site.third_party_libraries.medium_zoom.url.js }}"
-        integrity="{{ site.third_party_libraries.medium_zoom.integrity.js }}"
+        src="{{ site.third_party_libraries.glightbox.url.js }}"
+        integrity="{{ site.third_party_libraries.glightbox.integrity.js }}"
         crossorigin="anonymous"
       ></script>
       <script defer src="{{ '/assets/js/zoom.js' | relative_url | bust_file_cache }}"></script>

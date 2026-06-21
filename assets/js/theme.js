@@ -75,12 +75,8 @@ let applyTheme = () => {
     }
   }
 
-  // Updates the background of medium-zoom overlay.
-  if (typeof medium_zoom !== "undefined") {
-    medium_zoom.update({
-      background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
-    });
-  }
+  // GLightbox honours --glightbox-bg via CSS variables (set in _base.scss),
+  // so no JS update is needed on theme toggle.
 };
 
 let setHighlight = (theme) => {

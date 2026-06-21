@@ -435,7 +435,7 @@ enable_tooltips: false # enables automatic tooltip links generated for each sect
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
-enable_medium_zoom: true # enables image zoom feature (as on medium.com)
+enable_lightbox: true # enables GLightbox click-to-enlarge on <a class="zoom-photo"> images (e.g. in news)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
@@ -561,12 +561,17 @@ third_party_libraries:
       js: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/js/mdb.min.js"
       js_map: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/js/mdb.min.js.map"
     version: "4.20.0"
-  medium_zoom:
+  # Lightbox library for clickable photos (anchor + class="zoom-photo").
+  # Switched from medium-zoom (transform: scale() blurred zoomed images on
+  # Safari/WebKit) to GLightbox which uses width/height transitions instead.
+  glightbox:
     integrity:
-      js: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+      css: "sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd"
+      js: "sha384-/+Fc1LD6ksHYZ+2MChiSfjEXBcl4q2axUWhs6/CdnfqY5aLmrPwtysVzyeP0s60b"
     url:
-      js: "https://cdn.jsdelivr.net/npm/medium-zoom@{{version}}/dist/medium-zoom.min.js"
-    version: "1.1.0"
+      css: "https://cdn.jsdelivr.net/npm/glightbox@{{version}}/dist/css/glightbox.min.css"
+      js: "https://cdn.jsdelivr.net/npm/glightbox@{{version}}/dist/js/glightbox.min.js"
+    version: "3.3.1"
   mermaid:
     integrity:
       js: "sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A="

@@ -1,29 +1,25 @@
-// Initialize medium zoom.
+// Initialize GLightbox for click-to-enlarge photos.
 //
-// Safari rasterises images at their displayed size before applying CSS
-// transforms — medium-zoom uses transform: scale() to enlarge, so a small
-// thumbnail zooms to a soft, blurry raster on Safari (and any iOS browser,
-// since iOS Chrome/Firefox are WebKit under the hood). Chrome/Edge/Firefox
-// on desktop re-rasterise on transform and look crisp.
+// Markup pattern in news posts (and future blog posts):
+//   <a class="zoom-photo" href="/path/to/full.jpg">
+//     <img src="/path/to/full.jpg" alt="…" style="width: 90px; …" />
+//   </a>
 //
-// Strategy: for images marked with class "zoom-photo" we ship a plain
-// <a href="...">…</a> wrapper that opens the original file in a new tab.
-// On non-WebKit browsers we promote them to medium-zoom for the nicer
-// in-page lightbox; WebKit keeps the link fallback.
-$(document).ready(function () {
-  var isWebKit = navigator.vendor && navigator.vendor.indexOf("Apple") !== -1;
-
-  if (!isWebKit) {
-    document.querySelectorAll("a.zoom-photo > img").forEach(function (img) {
-      img.setAttribute("data-zoomable", "");
-      // Intercept the anchor's default navigation so the lightbox wins.
-      img.parentElement.addEventListener("click", function (e) {
-        e.preventDefault();
-      });
-    });
-  }
-
-  medium_zoom = mediumZoom("[data-zoomable]", {
-    background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
+// GLightbox intercepts the anchor click and shows the full image in a
+// proper lightbox. If GLightbox fails to load for any reason, the anchor
+// still works as a plain link, so the photo remains accessible.
+//
+// We switched here from medium-zoom because Safari/WebKit rasterises images
+// at their displayed size before applying CSS transforms; medium-zoom uses
+// transform: scale() to enlarge, producing a blurry zoom on Safari and any
+// iOS browser. GLightbox uses width/height transitions instead.
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof GLightbox === "undefined") return;
+  window.lightbox = GLightbox({
+    selector: ".zoom-photo",
+    touchNavigation: true,
+    loop: false,
+    zoomable: true,
+    moreLength: 0,
   });
 });
