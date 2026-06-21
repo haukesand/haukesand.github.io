@@ -83,7 +83,12 @@ jobs:
         # See _scripts/generate-sdr-variants.sh and the comment in .gitignore.
         # Keeps inline thumbnails SDR (so the page doesn't dim on Safari/iOS in
         # EDR mode) while the lightbox loads the full HDR original.
-        run: bash _scripts/generate-sdr-variants.sh
+        # ImageMagick isn't preinstalled on every ubuntu-latest runner image,
+        # so install it explicitly (the script otherwise silently skips).
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends imagemagick
+          bash _scripts/generate-sdr-variants.sh
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter

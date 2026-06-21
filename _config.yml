@@ -567,7 +567,7 @@ third_party_libraries:
   glightbox:
     integrity:
       css: "sha384-GPAzSuZc0kFvdIev6wm9zg8gnafE8tLso7rsAYQfc9hAdWCpOcpcNI5W9lWkYcsd"
-      js: "sha384-/+Fc1LD6ksHYZ+2MChiSfjEXBcl4q2axUWhs6/CdnfqY5aLmrPwtysVzyeP0s60b"
+      js: "sha384-MZZbZ6RXJudK43v1qY1zOWKOU2yfeBPatuFoKyHAaAgHTUZhwblRTc9CphTt4IGQ"
     url:
       css: "https://cdn.jsdelivr.net/npm/glightbox@{{version}}/dist/css/glightbox.min.css"
       js: "https://cdn.jsdelivr.net/npm/glightbox@{{version}}/dist/js/glightbox.min.js"
