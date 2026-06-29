@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Advised by Helen Nissenbaum (Chair), the legendary [Wendy Ju](https://tech.cornell.edu/people/wendy-ju/) (Co-Chair), and the ascending [Qian Yang](https://qianyang.co/) (Committee Member).
+Advised by [Helen Nissenbaum](https://tech.cornell.edu/people/helen-nissenbaum/) (Chair), [Wendy Ju](https://tech.cornell.edu/people/wendy-ju/) (Co-Chair), and [Qian Yang](https://qianyang.co/) (Committee Member).
 Background in Human Computer Interaction (M.Sc.) & Creative Technology (B.Sc.). Worked as a UX technologist in the VW Group Future Center to improve mobility for all.
 
 **Research Statement**: How do interaction design methodologies need to evolve to meet the ethical challenges of data-intensive systems?
