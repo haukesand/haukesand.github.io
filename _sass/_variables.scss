@@ -37,7 +37,9 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+// Faint warm tint (theme-colour based) — kills the mauve/pink cast the
+// old rgba($purple-color, ...) gave to code blocks and value pills.
+$code-bg-color-light: rgba($swiss-red, 0.07);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

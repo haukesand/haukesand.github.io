@@ -11,22 +11,6 @@ nav_order: 4
 Working alongside these researchers and designers has shaped how I think about ethical interaction design. Their questions, values, and refusals push my own.
 </p>
 
-<div class="mentee-grid mentee-grid-solo">
-  <div class="mentee-tile self">
-    <img src="/assets/img/HaukePortrait.jpeg" alt="Hauke Sandhaus" />
-    <div class="mentee-role">that’s me</div>
-    <div class="name">Hauke Sandhaus</div>
-    <div class="affiliation">Ph.D. candidate · Cornell Tech</div>
-    <div class="value-pills">
-      <span class="pill">user autonomy</span>
-      <span class="pill">ethical interaction design</span>
-      <span class="pill">responsible data</span>
-      <span class="pill">accountability in AI</span>
-    </div>
-    <div class="quote">Promoting autonomy in human-AI interaction &amp; system design.</div>
-  </div>
-</div>
-
 ## Alumni
 
 <div class="mentee-grid mentee-grid-2">
@@ -99,6 +83,9 @@ Working alongside these researchers and designers has shaped how I think about e
       <span class="pill">societal impact</span>
     </div>
     <div class="quote">“I believe responsible AI innovation can unlock human potential and drive meaningful progress for society.”</div>
+    <div class="mentee-papers">
+      {% bibliography --group_by none --template paper_chip --query @*[mentees~=pranav-sinha]* %}
+    </div>
   </div>
 
   <div class="mentee-tile">
@@ -107,7 +94,7 @@ Working alongside these researchers and designers has shaped how I think about e
     </a>
     <div class="mentee-role">current mentee</div>
     <div class="name">Hayatt Khan</div>
-    <div class="affiliation">External collaborator</div>
+    <div class="affiliation">B.Tech. Computer Science · Fr. Conceicao Rodrigues College of Engineering, Mumbai</div>
     <div class="value-pills">
       <span class="pill">information clarity</span>
       <span class="pill">anti-manipulation</span>
