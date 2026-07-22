@@ -5,8 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterItems = (searchTerm) => {
     document.querySelectorAll(".bibliography, .unloaded").forEach((element) => element.classList.remove("unloaded"));
 
-    // highlight-search-term
-    if (CSS.highlights) {
+    // Special case: search term matches a specific bib entry id (e.g. arrived
+    // here from a mentee-page paper chip). Filter down to just that entry —
+    // the raw key isn't part of any entry's visible text, so the plain
+    // substring search below would otherwise hide everything.
+    const idTarget = searchTerm ? document.getElementById(searchTerm) : null;
+    const targetLi = idTarget ? idTarget.closest(".bibliography > li") : null;
+    if (targetLi) {
+      document.querySelectorAll(".bibliography > li").forEach((li) => {
+        if (li !== targetLi) li.classList.add("unloaded");
+      });
+    } else if (CSS.highlights) {
+      // highlight-search-term
       const nonMatchingElements = highlightSearchTerm({ search: searchTerm, selector: ".bibliography > li" });
       if (nonMatchingElements == null) {
         return;
@@ -52,14 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
-    if (!hashValue) return;
-    // If the hash points at an existing bib entry (e.g. arrived here from
-    // a mentee-page paper chip), treat it as a pure anchor scroll — don't
-    // stuff the key into the search field, which would then filter every
-    // entry out because the raw key isn't part of any entry's visible text.
-    if (document.getElementById(hashValue)) {
-      return;
-    }
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
   };
