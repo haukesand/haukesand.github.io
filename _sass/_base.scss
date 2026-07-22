@@ -1543,9 +1543,8 @@ ninja-keys::part(ninja-input-wrapper) {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
   }
   ol.bibliography li {
     margin: 0;
@@ -1553,22 +1552,22 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 .paper-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.2rem 0.55rem 0.2rem 0.35rem;
-  font-size: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.78rem;
   color: var(--global-text-color);
   background: transparent;
   border: 1px solid var(--global-divider-color);
   border-radius: 8px;
   text-decoration: none;
   line-height: 1.35;
+  text-align: left;
   transition:
     border-color 0.15s ease,
     color 0.15s ease;
-  max-width: 100%;
-  overflow: hidden;
+  width: 100%;
 
   &:hover {
     border-color: var(--global-theme-color);
@@ -1583,37 +1582,33 @@ ninja-keys::part(ninja-input-wrapper) {
   .paper-chip-venue {
     background: var(--global-theme-color);
     color: #fff;
-    padding: 0.05rem 0.45rem;
+    padding: 0.1rem 0.45rem;
     border-radius: 5px;
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 700;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     white-space: nowrap;
     flex-shrink: 0;
+    // Nudge the badge down so it aligns with the first line of the title.
+    margin-top: 0.15rem;
   }
 
   .paper-chip-title {
     color: var(--global-text-color);
     font-weight: 500;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 220px;
+    // Allow the title to wrap to as many lines as needed.
+    white-space: normal;
+    overflow-wrap: anywhere;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .paper-chip-year {
     color: var(--global-text-color-light);
     font-size: 0.7rem;
     flex-shrink: 0;
-  }
-}
-
-// On narrow screens the chips can wrap freely and expand titles.
-@media (max-width: 575.98px) {
-  .paper-chip .paper-chip-title {
-    white-space: normal;
-    max-width: none;
+    margin-top: 0.15rem;
   }
 }
 

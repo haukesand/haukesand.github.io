@@ -52,6 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+    if (!hashValue) return;
+    // If the hash points at an existing bib entry (e.g. arrived here from
+    // a mentee-page paper chip), treat it as a pure anchor scroll — don't
+    // stuff the key into the search field, which would then filter every
+    // entry out because the raw key isn't part of any entry's visible text.
+    if (document.getElementById(hashValue)) {
+      return;
+    }
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
   };
