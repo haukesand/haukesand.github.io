@@ -276,6 +276,178 @@ blockquote {
   }
 }
 
+// ── Profile photo + address block ─────────────────────────────────────────
+// Kill al-folio's Material shadow on the portrait; give it a hairline
+// border so it sits on the page instead of floating over it.
+.profile img.z-depth-1,
+.profile img {
+  box-shadow: none !important;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0 !important;
+}
+
+// The "Cornell Tech / 2w Loop Rd / New York, NY 10044" block — al-folio
+// ships it monospace and inline. Swiss it: sans, small, one line each,
+// letter-spaced small caps.
+.profile .more-info {
+  font-family: $swiss-sans;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  line-height: 1.55;
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+  text-align: right;
+
+  p {
+    display: block;
+    margin: 0;
+  }
+}
+
+.profile.float-left .more-info {
+  text-align: left;
+}
+
+// ── Publication preview thumbnails ─────────────────────────────────────────
+// Match the flat Swiss look: hairline border, no Material shadow.
+.publications ol.bibliography li .preview,
+.publications ol.bibliography li img.preview {
+  box-shadow: none !important;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0 !important;
+}
+
+// ── Publication venue badges ───────────────────────────────────────────────
+// Match the mentee-page .paper-chip-venue: swiss orange, uppercase micro-caps,
+// square corners, weighty. Drop bootstrap's badge padding/pill shape.
+.publications ol.bibliography li .abbr abbr,
+.publications ol.bibliography li .abbr abbr.badge {
+  background-color: var(--global-theme-color) !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  padding: 0.28rem 0.5rem !important;
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 0 !important;
+
+  a,
+  div {
+    color: #fff !important;
+    letter-spacing: inherit;
+  }
+}
+
+// The "Awarded" badge sits alongside the venue: keep it hollow so venue
+// stays the loudest thing in the row.
+.publications ol.bibliography li .abbr .award {
+  border-radius: 0 !important;
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  padding: 0.22rem 0.5rem !important;
+  border: 1px solid var(--global-theme-color) !important;
+}
+
+// Publications link-buttons: square + tight to match the language.
+.publications ol.bibliography li .links a.btn {
+  border-radius: 0 !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.55rem !important;
+  text-transform: uppercase;
+}
+
+// ── Research-thread title on the home page — Swiss eyebrow, not orange h3
+.publications .research-thread .thread-title {
+  color: var(--global-text-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  border-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 1.4rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.35em;
+    width: 0.55rem;
+    height: 0.55rem;
+    background: var(--global-theme-color);
+  }
+}
+
+.publications .research-thread .thread-desc {
+  font-size: 0.92rem;
+  max-width: 44rem;
+}
+
+// Publications page year headings — currently coloured with divider grey.
+// Restore honest contrast; keep right-aligned al-folio positioning.
+.publications ol.bibliography h2.bibliography {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: right;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 0.75rem;
+}
+
+// ── Contact icons at the bottom of the about page ─────────────────────────
+// Al-folio ships these at 4rem — enormous on any viewport. Right-size,
+// space them properly, and let the swiss red do the hover work.
+.social {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+
+  .contact-icons {
+    font-size: 1.5rem;
+    line-height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.1rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.2rem;
+      height: 2.2rem;
+
+      i::before {
+        color: var(--global-text-color);
+        transition: color 0.15s ease;
+      }
+
+      &:hover i::before {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .contact-note {
+    margin-top: 1.1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--global-text-color-light);
+  }
+}
+
 // ── Small screens: dial the display headline down a touch so it doesn't
 // swallow the profile photo on portrait.
 @media (max-width: 576px) {
