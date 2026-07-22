@@ -1343,6 +1343,130 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
+// -----------------------------------------------------------------------------
+// Mentees page — circular photo grid with value pills.
+// -----------------------------------------------------------------------------
+
+.mentee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem 1.25rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.mentee-grid-solo {
+  // Hauke's solo tile at the top: centered, capped width so it doesn't
+  // stretch across a wide viewport.
+  grid-template-columns: 1fr;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mentee-tile {
+  text-align: center;
+  padding: 1rem 0.5rem 1.25rem;
+
+  img,
+  .avatar-initials {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center 25%;
+    border: 3px solid var(--global-bg-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
+  }
+
+  .avatar-initials {
+    background: var(--global-code-bg-color);
+    color: var(--global-text-color-light);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 130px;
+    text-align: center;
+  }
+
+  .name {
+    margin-top: 0.85rem;
+    font-weight: 600;
+    font-size: 1.02rem;
+    color: var(--global-text-color);
+  }
+
+  .affiliation {
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    margin-top: 0.1rem;
+    line-height: 1.35;
+
+    a {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .now-at {
+    color: var(--global-theme-color);
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+  }
+
+  .value-pills {
+    margin-top: 0.55rem;
+  }
+
+  .quote {
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    font-style: italic;
+    margin-top: 0.55rem;
+    line-height: 1.4;
+    padding: 0 0.15rem;
+  }
+
+  // Alumni tiles get a subtle theme-coloured ring around the portrait.
+  &.alumni {
+    img,
+    .avatar-initials {
+      border-color: var(--global-theme-color);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  // Hauke's own tile: same visual weight as alumni.
+  &.self {
+    img {
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
+// Value pills — used on the mentees page and inline under the home-page
+// research statement.
+.value-pills {
+  line-height: 1.9;
+
+  .pill {
+    display: inline-block;
+    padding: 0.15rem 0.65rem;
+    margin: 0.12rem 0.18rem;
+    background: var(--global-code-bg-color);
+    color: var(--global-text-color);
+    border-radius: 999px;
+    font-size: 0.76rem;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+  }
+}
+
+// On the mentees grid, tighten pill spacing so multiple lines don't feel loose.
+.mentee-tile .value-pills {
+  line-height: 1.7;
+  padding: 0 0.25rem;
+}
+
 .bs-popover-bottom {
   // arrow fill color
   .arrow::after {

@@ -24,6 +24,13 @@ Background in Human Computer Interaction (M.Sc.) & Creative Technology (B.Sc.). 
 **Research Statement**: How do interaction design methodologies need to evolve to meet the ethical challenges of data-intensive systems?
 Through two complementary threads, I investigate: (1) ethical data-driven interaction design, where I develop frameworks to evaluate user experiences and study how designers can responsibly leverage AI in their process; and (2) ethical data-sharing, where I create policies and tools that balance innovation needs with data protection across domains from autonomous vehicles, urban street imagery to healthcare.
 
+<p class="value-pills">
+  <span class="pill">user autonomy</span>
+  <span class="pill">ethical interaction design</span>
+  <span class="pill">responsible data</span>
+  <span class="pill">accountability in AI</span>
+</p>
+
 Pre Ph.D. work can be seen at my [portfolio archive](https://hauke.haus/sandhaus.de/).
 
 <div aria-hidden="true" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">
