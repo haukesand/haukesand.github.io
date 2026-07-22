@@ -1,0 +1,300 @@
+/*******************************************************************************
+ * Swiss layer — applied last so it overrides the al-folio base without
+ * touching upstream files. Keep additions here so future al-folio merges
+ * stay clean. Nothing in this file changes markup or JS behaviour;
+ * it is purely presentational.
+ ******************************************************************************/
+
+// System-first sans stack. Renders as Helvetica Neue on Apple, Segoe UI on
+// Windows, Inter/Roboto on Linux — no CDN, no font-download cost.
+$swiss-sans:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  "Inter",
+  "Segoe UI",
+  Roboto,
+  Arial,
+  sans-serif;
+
+$swiss-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+
+// ── Global type ────────────────────────────────────────────────────────────
+body,
+.container {
+  font-family: $swiss-sans;
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1,
+    "ss01" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+p,
+li {
+  // Optical alignment — a hair of tracking off default keeps the
+  // Helvetica-family lines from feeling loose on light backgrounds.
+  letter-spacing: -0.005em;
+}
+
+// Headings: tight tracking, honest weight contrast, no italic display serif.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $swiss-sans;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+// ── Page title (about, publications, mentees, etc.) ────────────────────────
+.post-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  position: relative;
+
+  .post-title {
+    font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    margin: 0 0 0.4rem 0;
+
+    .font-weight-bold {
+      font-weight: 800;
+    }
+    // The about-page injects site.first_name/last_name as separate spans;
+    // preserve the weight contrast al-folio uses (bold first name, light last).
+    .font-weight-lighter {
+      font-weight: 300;
+    }
+  }
+
+  .desc {
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    letter-spacing: 0;
+    max-width: 44rem;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+}
+
+// ── Section eyebrows (news, research, latest posts on home) ────────────────
+// .post > article > h2 is the target — these are inserted directly by the
+// about layout without a wrapping class. We scope narrowly so page-body h2s
+// (inside `.container article`) inherit the same treatment but section h2s
+// on generic pages don't get double-styled.
+article > h2,
+.post-list-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--global-text-color-light);
+  padding-top: 1.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1.3rem;
+  border-top: 1px solid var(--global-divider-color);
+  position: relative;
+  padding-left: 1.4rem;
+
+  // Small orange marker — the one Swiss accent per section head.
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(1.4rem + 0.35em);
+    width: 0.55rem;
+    height: 0.55rem;
+    background: var(--global-theme-color);
+  }
+
+  a {
+    color: inherit;
+    letter-spacing: inherit;
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// Publications page uses year-anchored h2s inside the bibliography list —
+// leave those alone (they're handled by scholar's own template).
+.bibliography h2,
+h2.bibliography {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  border-top: 0;
+  padding-left: 0;
+  padding-top: 0.5rem;
+  color: var(--global-text-color);
+  margin-top: 1.5rem;
+
+  &::before {
+    display: none;
+  }
+}
+
+// ── Value pills: flat, Swiss, uppercase micro-caps with a hairline border.
+// Overrides the tinted-background version from _base.scss.
+.value-pills .pill {
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  border-radius: 0;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+// ── Paper chips (mentees page) — square corners, tighter tokens, orange
+// venue tag kept (that's the accent that ties them to the theme).
+.paper-chip {
+  border-radius: 0;
+  background: transparent;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  .paper-chip-venue {
+    border-radius: 0;
+  }
+
+  .paper-chip-title {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+}
+
+// ── Links — keep the swiss red, but underline with tasteful offset.
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration-thickness: 1px;
+  }
+}
+
+// Body-copy prose links get a persistent underline. Nav, cards, chips
+// opt out because they have their own hover state.
+.post article p a,
+.post article li a {
+  text-decoration: underline;
+  text-decoration-color: var(--global-divider-color);
+
+  &:hover {
+    text-decoration-color: var(--global-theme-color);
+  }
+}
+
+// ── Nav — square active marker instead of the default bolded link.
+.navbar.navbar-light {
+  border-bottom: 1px solid var(--global-divider-color);
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.92rem;
+    letter-spacing: 0;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 500;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.9rem;
+      right: 0.9rem;
+      bottom: 0.35rem;
+      height: 2px;
+      background: var(--global-theme-color);
+    }
+  }
+}
+
+// ── Horizontal rules — thin, generous.
+hr {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 2.5rem 0;
+}
+
+// ── Footer (sticky-bottom) — align with the rest of the page grid.
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+  color: var(--global-text-color-light);
+}
+
+// ── Blockquote — leave the orange bar (already Swiss enough), just relax
+// the oversized text al-folio ships.
+blockquote {
+  font-size: 1rem;
+  border-left-width: 3px;
+  padding: 0.4rem 1rem;
+}
+
+// ── Bibsearch input on /publications/ — a rule below instead of a rounded
+// pill, matching the section-eyebrow language.
+#bibsearch {
+  border: 0 !important;
+  border-bottom: 1px solid var(--global-divider-color) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  padding-left: 0 !important;
+  font-family: $swiss-sans;
+  letter-spacing: -0.01em;
+
+  &:focus {
+    border-bottom-color: var(--global-theme-color) !important;
+    box-shadow: none !important;
+  }
+}
+
+// ── Small screens: dial the display headline down a touch so it doesn't
+// swallow the profile photo on portrait.
+@media (max-width: 576px) {
+  .post-header {
+    padding-top: 0.5rem;
+    margin-bottom: 1.25rem;
+
+    .post-title {
+      font-size: clamp(1.9rem, 8vw, 2.4rem);
+    }
+  }
+
+  article > h2 {
+    margin-top: 1.8rem;
+    padding-left: 1.1rem;
+
+    &::before {
+      width: 0.45rem;
+      height: 0.45rem;
+    }
+  }
+}
