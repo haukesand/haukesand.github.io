@@ -1,0 +1,28 @@
+# Overlay config for local development. Merged on top of _config.yml when
+# passed with `--config _config.yml,_config_dev.yml`.
+#
+# Skips the jupyter-notebook blog conversion so local dev doesn't require
+# the `jupyter` CLI. CI still builds the full site with the base config.
+exclude:
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - lighthouse_results/
+  - package.json
+  - package-lock.json
+  - _pages/about_einstein.md
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - vendor
+  - _posts
+  - _data/cv.yml
+  - assets/jupyter/
