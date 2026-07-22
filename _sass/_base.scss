@@ -1405,6 +1405,7 @@ ninja-keys::part(ninja-input-wrapper) {
   &:hover {
     border-color: var(--global-theme-color);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
   }
 
   img,
@@ -1552,26 +1553,27 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 .paper-chip {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.45rem;
-  padding: 0.35rem 0.55rem;
-  font-size: 0.78rem;
-  color: var(--global-text-color);
-  background: transparent;
+  // Two-row grid: row 1 = [venue] … [year], row 2 = title spanning full width.
+  // This lets long venue labels (e.g. "CHIWORK WORKSHOP") coexist with long
+  // titles without squeezing the title into a slither and letter-breaking it.
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 0.55rem;
+  row-gap: 0.3rem;
+  padding: 0.5rem 0.65rem;
+  background: rgba(0, 0, 0, 0.02);
   border: 1px solid var(--global-divider-color);
   border-radius: 8px;
   text-decoration: none;
-  line-height: 1.35;
   text-align: left;
   transition:
     border-color 0.15s ease,
-    color 0.15s ease;
+    background 0.15s ease;
   width: 100%;
 
   &:hover {
     border-color: var(--global-theme-color);
-    color: var(--global-theme-color);
+    background: rgba(0, 0, 0, 0.03);
     text-decoration: none;
 
     .paper-chip-title {
@@ -1580,35 +1582,41 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 
   .paper-chip-venue {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
     background: var(--global-theme-color);
     color: #fff;
-    padding: 0.1rem 0.45rem;
-    border-radius: 5px;
-    font-size: 0.62rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.6rem;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     white-space: nowrap;
-    flex-shrink: 0;
-    // Nudge the badge down so it aligns with the first line of the title.
-    margin-top: 0.15rem;
-  }
-
-  .paper-chip-title {
-    color: var(--global-text-color);
-    font-weight: 500;
-    // Allow the title to wrap to as many lines as needed.
-    white-space: normal;
-    overflow-wrap: anywhere;
-    flex: 1 1 auto;
-    min-width: 0;
   }
 
   .paper-chip-year {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
     color: var(--global-text-color-light);
-    font-size: 0.7rem;
-    flex-shrink: 0;
-    margin-top: 0.15rem;
+    font-size: 0.72rem;
+  }
+
+  .paper-chip-title {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    color: var(--global-text-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    // Wrap at natural word boundaries only — do NOT break between letters.
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+    transition: color 0.15s ease;
   }
 }
 

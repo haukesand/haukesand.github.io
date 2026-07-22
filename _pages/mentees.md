@@ -43,7 +43,6 @@ Working alongside these researchers and designers has shaped how I think about e
       <span class="pill">dark patterns</span>
       <span class="pill">measurement</span>
     </div>
-    <div class="quote">Photo &amp; quote coming soon.</div>
     <div class="mentee-papers">
       {% bibliography --group_by none --template paper_chip --query @*[mentees~=doris-rhomberg]* %}
     </div>
