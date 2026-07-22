@@ -1,0 +1,18 @@
+---
+---
+{%- comment -%}
+  Compact "chip" rendering of a single bib entry — used on the /mentees/
+  page to show which papers each collaborator was involved in. Anchor
+  points at the full entry on the /publications/ page (entry.key is set
+  as the element id in _layouts/bib.liquid). Title, venue badge and year
+  are pulled straight from papers.bib so nothing here drifts out of sync.
+{%- endcomment -%}
+<a class="paper-chip" href="{{ '/publications/' | relative_url }}#{{ entry.key }}">
+  {%- if entry.abbr -%}
+    <span class="paper-chip-venue">{{ entry.abbr }}</span>
+  {%- endif -%}
+  <span class="paper-chip-title">{{ entry.title }}</span>
+  {%- if entry.year -%}
+    <span class="paper-chip-year">’{{ entry.year | slice: 2, 2 }}</span>
+  {%- endif -%}
+</a>

@@ -62,6 +62,12 @@
   abbr       Short venue badge shown to the left (e.g. "FAccT", "CSCW",
              "CHIWORK LBW", "AutoUI WiP"). Keep it short.
   tldr       One-sentence summary appended after the entry links row.
+  mentees    Comma-separated slugs for mentees who worked on the paper
+             (e.g. "qiuquan-gu, doris-rhomberg"). Read on the /mentees/
+             page by `{% bibliography --template paper_chip --query
+             @*[mentees~=<slug>]* %}` to render a compact chip per paper
+             under each mentee's tile — no visible effect on the main
+             publications page.
 
   =====================================================================
 }
@@ -78,6 +84,7 @@
   selected    = {true},
   preview     = {deception_phone_melt.png},
   thread      = {ethical-design},
+  mentees        = {doris-rhomberg},
   abbr        = {ZfP},
   note        = {Accepted, forthcoming},
   tldr        = {Across 126 social media users, perceived deception co-occurs strongly with negative aesthetic judgments of dark patterns (r = 0.93), pointing toward ethics-focused UX measurement scales.},
@@ -103,6 +110,7 @@
   selected    = {true},
   preview     = {spectroscope_persuasion.png},
   thread      = {ethical-design},
+  mentees        = {doris-rhomberg},
   abbr        = {CHIWORK LBW},
   award       = {Best Late-Breaking Work Award at CHIWORK '26 (1 of 25)},
   award_name  = {Best LBW Award},
@@ -261,6 +269,7 @@
   preview       = {LLMsInHCI.png},
   thread        = {human-ai},
   bibtex_show   = {true},
+  mentees          = {qiuquan-gu},
   abbr          = {DIS},
   html          = {https://doi.org/10.1145/3715336.3735805},
   pdf           = {https://dl.acm.org/doi/pdf/10.1145/3715336.3735805},
@@ -420,6 +429,7 @@
   html        = {https://ceur-ws.org/Vol-3720/},
   preview     = {Ethical_UEQ.png},
   selected    = {true},
+  mentees        = {doris-rhomberg},
   abbr        = {CHI Workshop},
   note        = {* = equal contribution},
   tldr        = {Only a modified User Experience Questionnaire can explicate unethical aspects of social media interfaces.}

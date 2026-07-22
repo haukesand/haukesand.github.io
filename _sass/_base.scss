@@ -1344,33 +1344,73 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 // -----------------------------------------------------------------------------
-// Mentees page — circular photo grid with value pills.
+// Mentees page — card grid with circular photos, value pills and paper chips.
 // -----------------------------------------------------------------------------
+
+.mentees-intro {
+  color: var(--global-text-color-light);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.mentees-cta {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 3rem auto 0;
+  max-width: 520px;
+}
 
 .mentee-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.5rem 1.25rem;
-  margin: 1.25rem 0 2rem;
+  margin: 1rem 0 2.5rem;
 }
 
+// Hauke's solo tile at the top: centered, capped width.
 .mentee-grid-solo {
-  // Hauke's solo tile at the top: centered, capped width so it doesn't
-  // stretch across a wide viewport.
   grid-template-columns: 1fr;
-  max-width: 320px;
+  max-width: 360px;
+  margin: 0 auto 2.5rem;
+}
+
+// Alumni row — 2 across on desktop for slightly bigger cards.
+.mentee-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 780px;
   margin-left: auto;
   margin-right: auto;
 }
 
+// Current-mentees row — 3 across on desktop.
+.mentee-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 .mentee-tile {
   text-align: center;
-  padding: 1rem 0.5rem 1.25rem;
+  padding: 1.25rem 1rem 1.35rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  background: transparent;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  }
 
   img,
   .avatar-initials {
-    width: 130px;
-    height: 130px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
     display: inline-block;
     object-fit: cover;
@@ -1383,26 +1423,43 @@ ninja-keys::part(ninja-input-wrapper) {
     background: var(--global-code-bg-color);
     color: var(--global-text-color-light);
     font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 130px;
-    text-align: center;
+    font-size: 2.2rem;
+    line-height: 128px;
+    letter-spacing: 0.04em;
+  }
+
+  .mentee-role {
+    margin-top: 0.7rem;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--global-text-color-light);
   }
 
   .name {
-    margin-top: 0.85rem;
+    margin-top: 0.15rem;
     font-weight: 600;
-    font-size: 1.02rem;
+    font-size: 1.05rem;
     color: var(--global-text-color);
+    line-height: 1.25;
   }
 
   .affiliation {
     color: var(--global-text-color-light);
     font-size: 0.82rem;
-    margin-top: 0.1rem;
-    line-height: 1.35;
+    margin-top: 0.2rem;
+    line-height: 1.4;
 
     a {
       color: var(--global-theme-color);
+    }
+
+    small {
+      display: inline-block;
+      margin-top: 0.15rem;
+      font-size: 0.75rem;
+      color: var(--global-text-color-light);
+      opacity: 0.9;
     }
   }
 
@@ -1410,24 +1467,29 @@ ninja-keys::part(ninja-input-wrapper) {
     color: var(--global-theme-color);
     font-size: 0.82rem;
     font-weight: 500;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
+    line-height: 1.4;
+    padding: 0 0.35rem;
   }
 
   .value-pills {
-    margin-top: 0.55rem;
+    margin-top: 0.7rem;
+    padding: 0 0.15rem;
   }
 
   .quote {
     color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     font-style: italic;
-    margin-top: 0.55rem;
-    line-height: 1.4;
+    margin-top: 0.65rem;
+    line-height: 1.5;
     padding: 0 0.15rem;
   }
 
-  // Alumni tiles get a subtle theme-coloured ring around the portrait.
+  // Alumni tiles: theme-coloured ring on the portrait, warmer border.
   &.alumni {
+    border-color: var(--global-divider-color);
+
     img,
     .avatar-initials {
       border-color: var(--global-theme-color);
@@ -1435,36 +1497,124 @@ ninja-keys::part(ninja-input-wrapper) {
     }
   }
 
-  // Hauke's own tile: same visual weight as alumni.
+  // Hauke's own tile: same theme border and slightly deeper shadow.
   &.self {
     img {
       border-color: var(--global-theme-color);
     }
+    border-color: var(--global-theme-color);
   }
 }
 
 // Value pills — used on the mentees page and inline under the home-page
 // research statement.
 .value-pills {
-  line-height: 1.9;
+  line-height: 1.95;
 
   .pill {
     display: inline-block;
-    padding: 0.15rem 0.65rem;
-    margin: 0.12rem 0.18rem;
+    padding: 0.18rem 0.7rem;
+    margin: 0.15rem 0.15rem;
     background: var(--global-code-bg-color);
     color: var(--global-text-color);
     border-radius: 999px;
-    font-size: 0.76rem;
+    font-size: 0.75rem;
     letter-spacing: 0.01em;
     border: 1px solid transparent;
+    white-space: nowrap;
   }
 }
 
-// On the mentees grid, tighten pill spacing so multiple lines don't feel loose.
+// Tighten pill spacing inside tiles so multi-line pills read as a group.
 .mentee-tile .value-pills {
   line-height: 1.7;
-  padding: 0 0.25rem;
+}
+
+// Paper chips — pulled from papers.bib via jekyll-scholar with
+// `--template paper_chip`. The scholar wrapper renders <ol class="bibliography">
+// with each entry as <li>; we neutralise the list styling and re-flow inline.
+.mentee-papers {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--global-divider-color);
+
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+  }
+  ol.bibliography li {
+    margin: 0;
+  }
+}
+
+.paper-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.55rem 0.2rem 0.35rem;
+  font-size: 0.75rem;
+  color: var(--global-text-color);
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  text-decoration: none;
+  line-height: 1.35;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+  max-width: 100%;
+  overflow: hidden;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    .paper-chip-title {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .paper-chip-venue {
+    background: var(--global-theme-color);
+    color: #fff;
+    padding: 0.05rem 0.45rem;
+    border-radius: 5px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .paper-chip-title {
+    color: var(--global-text-color);
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 220px;
+  }
+
+  .paper-chip-year {
+    color: var(--global-text-color-light);
+    font-size: 0.7rem;
+    flex-shrink: 0;
+  }
+}
+
+// On narrow screens the chips can wrap freely and expand titles.
+@media (max-width: 575.98px) {
+  .paper-chip .paper-chip-title {
+    white-space: normal;
+    max-width: none;
+  }
 }
 
 .bs-popover-bottom {
