@@ -440,6 +440,23 @@ blockquote {
   }
 }
 
+// ── News thumbnails ────────────────────────────────────────────────────────
+// The zoom-photo <img>s in each _news/*.md carry an inline
+// `border-radius: 4px` — flatten to match the rest of the page.
+.news .zoom-photo img,
+article .zoom-photo img {
+  border-radius: 0 !important;
+}
+
+// ── Back-to-top button ─────────────────────────────────────────────────────
+// vanilla-back-to-top.min.js injects an inline <style> with border-radius:50%
+// and a Material box-shadow. Flatten with a hairline border and no shadow.
+#back-to-top {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid var(--global-divider-color) !important;
+}
+
 // ── Mentee tiles ───────────────────────────────────────────────────────────
 // Flatten the shadow-y portrait rings and the tile hover shadow; keep the
 // hairline border language the rest of the page uses.
