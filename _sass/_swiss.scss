@@ -445,13 +445,17 @@ blockquote {
 // hairline border language the rest of the page uses.
 .mentee-tile {
   border-radius: 0;
-  transition:
-    border-color 0.15s ease,
-    transform 0.15s ease;
+  transition: none;
 
+  // Rest of the page has no hover lifts; align.
   &:hover {
     box-shadow: none;
-    transform: translateY(-1px);
+    transform: none;
+    border-color: var(--global-divider-color);
+  }
+
+  &.alumni:hover {
+    border-color: var(--global-divider-color);
   }
 
   img,
@@ -529,13 +533,36 @@ blockquote {
 
       .badge {
         border-radius: 0 !important;
-        font-size: 0.62rem !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.08em !important;
-        text-transform: uppercase !important;
-        padding: 0.25rem 0.5rem !important;
+        font-size: 0.65rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.02em !important;
+        // Dates like "2019.02 - 2020.05" don't gain from uppercase and
+        // routinely break the 75px inline width — keep normal case,
+        // tabular figures, and let the chip size to its content.
+        text-transform: none !important;
+        font-variant-numeric: tabular-nums;
+        padding: 0.22rem 0.45rem !important;
+        min-width: 0 !important;
+        width: auto !important;
+        white-space: nowrap;
       }
     }
+  }
+
+  // Hide the "location" line under each CV entry — it's NYC-only right
+  // now and the icon reads as visual noise. If future entries need it,
+  // drop this rule.
+  p.location,
+  .table-cv .location,
+  i.iconlocation {
+    display: none !important;
+  }
+
+  // Free up the fixed 75px date column now that we no longer render a
+  // second row underneath — the col-md-2 grid still holds the layout.
+  .date-column {
+    width: auto;
+    transform: none;
   }
 
   // Section titles — same eyebrow language as page-body h2s.
