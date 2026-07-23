@@ -33,8 +33,10 @@ Working alongside these researchers and designers has shaped how I think about e
     </div>
   </div>
 
-  <div class="mentee-tile alumni pending-photo">
-    <div class="avatar-initials" aria-hidden="true">DR</div>
+  <div class="mentee-tile alumni">
+    <a class="zoom-photo" href="/assets/img/mentees/doris.jpeg" target="_blank" rel="noopener">
+      <img src="/assets/img/mentees/doris.jpeg" alt="Doris Maria Rhomberg" />
+    </a>
     <div class="mentee-role">alumna</div>
     <div class="name">Doris Maria Rhomberg</div>
     <div class="now-at">TU Wien</div>
@@ -43,6 +45,7 @@ Working alongside these researchers and designers has shaped how I think about e
       <span class="pill">dark patterns</span>
       <span class="pill">measurement</span>
     </div>
+    <div class="quote">“I want to create technology that helps people achieve their own goals instead of manipulating them toward someone else’s through dark patterns.”</div>
     <div class="mentee-papers">
       {% bibliography --group_by none --template paper_chip --query @*[mentees~=doris-rhomberg]* %}
     </div>
