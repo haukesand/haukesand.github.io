@@ -164,9 +164,18 @@ h2.bibliography {
 .paper-chip {
   border-radius: 0;
   background: transparent;
+  transition: none;
 
+  // Base hover animates border-color, background, AND title colour —
+  // three things at once. Kill all of it; the title colour shift alone
+  // is enough affordance.
   &:hover {
-    background: rgba(0, 0, 0, 0.02);
+    background: transparent;
+    border-color: var(--global-divider-color);
+
+    .paper-chip-title {
+      color: var(--global-theme-color);
+    }
   }
 
   .paper-chip-venue {
@@ -176,6 +185,7 @@ h2.bibliography {
   .paper-chip-title {
     font-weight: 600;
     letter-spacing: -0.01em;
+    transition: none;
   }
 }
 
