@@ -457,6 +457,98 @@ blockquote {
   }
 }
 
+// ── Publication expandables (Abs / Bib / Video / Award) ───────────────────
+// Base sets font-size 0.875rem, text-align: justify, and its <pre>
+// inherits the theme orange colour + gets no wrapping — so BibTeX blocks
+// scroll horizontally on any narrow viewport, and abstracts read as a
+// tight justified block. Fix all three.
+.publications ol.bibliography li .hidden {
+  font-family: $swiss-sans;
+  font-size: 0.85rem;
+  text-align: left;
+  line-height: 1.5;
+
+  p {
+    margin: 0.75rem 0;
+  }
+
+  // BibTeX / abstract preformatted blocks — flatten and let long lines wrap.
+  pre,
+  figure.highlight,
+  figure.highlight pre {
+    color: var(--global-text-color) !important;
+    background: rgba(0, 0, 0, 0.03) !important;
+    border-radius: 0 !important;
+    border: 1px solid var(--global-divider-color);
+    padding: 0.7rem 0.9rem !important;
+    font-family: $swiss-mono;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  // Rouge wraps <pre> in figure.highlight — kill the inner pre's redundant
+  // frame so we only get one border.
+  figure.highlight pre {
+    border: 0;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  // Syntax-highlight tokens from the pygments theme fight the Swiss look
+  // (bright green / purple / blue). Neutralise: keep only structural
+  // colour — comments dimmer, everything else default.
+  code .k,
+  code .kd,
+  code .kn,
+  code .kp,
+  code .kr,
+  code .kt,
+  code .nc,
+  code .nb,
+  code .no,
+  code .nn,
+  code .py,
+  code .nl,
+  code .nv,
+  code .n,
+  code .na,
+  code .s,
+  code .s1,
+  code .s2,
+  code .se,
+  code .mi,
+  code .mf,
+  code .mo,
+  code .nt,
+  code .p {
+    color: var(--global-text-color) !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+  }
+
+  code .c,
+  code .c1,
+  code .cm,
+  code .cs,
+  code .cp {
+    color: var(--global-text-color-light) !important;
+    font-style: italic !important;
+  }
+}
+
+// The open-state border on the abstract wrapper — flatten from dashed to
+// hairline so it matches the rest of the page.
+.publications ol.bibliography li div.abstract.hidden.open,
+.publications ol.bibliography li div.award.hidden.open {
+  border: 1px solid var(--global-divider-color) !important;
+  padding: 0.25rem 0.9rem;
+}
+
 // ── News thumbnails ────────────────────────────────────────────────────────
 // The zoom-photo <img>s in each _news/*.md carry an inline
 // `border-radius: 4px` — flatten to match the rest of the page.
