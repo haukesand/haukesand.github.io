@@ -7,15 +7,7 @@
 
 // System-first sans stack. Renders as Helvetica Neue on Apple, Segoe UI on
 // Windows, Inter/Roboto on Linux — no CDN, no font-download cost.
-$swiss-sans:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Helvetica Neue",
-  "Inter",
-  "Segoe UI",
-  Roboto,
-  Arial,
-  sans-serif;
+$swiss-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Inter", "Segoe UI", Roboto, Arial, sans-serif;
 
 $swiss-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
 
@@ -445,6 +437,161 @@ blockquote {
     font-size: 0.78rem;
     letter-spacing: 0.02em;
     color: var(--global-text-color-light);
+  }
+}
+
+// ── Mentee tiles ───────────────────────────────────────────────────────────
+// Flatten the shadow-y portrait rings and the tile hover shadow; keep the
+// hairline border language the rest of the page uses.
+.mentee-tile {
+  border-radius: 0;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(-1px);
+  }
+
+  img,
+  .avatar-initials {
+    border-radius: 0;
+    border: 1px solid var(--global-divider-color);
+    box-shadow: none;
+    width: 116px;
+    height: 116px;
+  }
+
+  // Alumni tile got a thicker theme-coloured ring in base — flatten the
+  // ring but keep the border-color hint so alumni still read as "alumni".
+  &.alumni img,
+  &.alumni .avatar-initials {
+    border-color: var(--global-theme-color);
+    box-shadow: none;
+  }
+
+  .mentee-role {
+    // Already uppercase micro-caps in base — bump the family to swiss and
+    // let it hang alongside the section eyebrows.
+    font-family: $swiss-sans;
+    font-weight: 700;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+  }
+
+  .name {
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+
+  .now-at {
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+}
+
+// Paper chips inside mentee tiles: match the flat treatment.
+.mentee-papers {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+// ── CV page ────────────────────────────────────────────────────────────────
+// Al-folio wraps each CV section in a Bootstrap .card with borders +
+// backgrounds. Flatten into a page-flow list separated by hairline rules.
+.cv {
+  .card {
+    background: transparent !important;
+    border: 0 !important;
+    border-top: 1px solid var(--global-divider-color) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 2rem !important;
+
+    &:first-of-type {
+      border-top: 0 !important;
+      margin-top: 0.5rem !important;
+    }
+
+    .list-group-item {
+      background: transparent !important;
+      border: 0 !important;
+      border-bottom: 1px solid var(--global-divider-color) !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      &:last-child {
+        border-bottom: 0 !important;
+      }
+
+      .badge {
+        border-radius: 0 !important;
+        font-size: 0.62rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+        padding: 0.25rem 0.5rem !important;
+      }
+    }
+  }
+
+  // Section titles — same eyebrow language as page-body h2s.
+  .card-title,
+  h3.card-title {
+    font-family: $swiss-sans;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--global-text-color);
+    padding-left: 1.4rem;
+    position: relative;
+    margin-bottom: 1.1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.35em;
+      width: 0.55rem;
+      height: 0.55rem;
+      background: var(--global-theme-color);
+    }
+  }
+
+  // CV mini-buttons.
+  a.btncv {
+    border-radius: 0 !important;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+// CV timeline / TOC pills — square corners, same voice as venue chips.
+span.badge-toc {
+  border-radius: 0 !important;
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  padding: 0.22rem 0.5rem !important;
+}
+
+// PDF-download link in the CV header — align with the display headline.
+.post-header .post-title .float-right {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin-left: 0.6rem;
+
+  a,
+  &a {
+    color: var(--global-text-color-light);
+    &:hover {
+      color: var(--global-theme-color);
+    }
   }
 }
 
