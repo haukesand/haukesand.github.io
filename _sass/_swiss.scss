@@ -180,6 +180,13 @@ h2.bibliography {
 
   .paper-chip-venue {
     border-radius: 0;
+    // Base sets white-space: nowrap, which pushes long venues like
+    // "CHIWORK LBW" or "CHI WORKSHOP" past the chip on narrow viewports.
+    // Allow soft-wrap at word boundaries; keep letters together.
+    white-space: normal;
+    line-height: 1.15;
+    max-width: 7rem;
+    text-align: center;
   }
 
   .paper-chip-title {
