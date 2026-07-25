@@ -16,7 +16,7 @@ Working alongside these researchers and designers has shaped how I think about e
 <div class="mentee-grid mentee-grid-2">
 
   <div class="mentee-tile alumni">
-    <a class="zoom-photo" href="/assets/img/mentees/qq.jpg" target="_blank" rel="noopener">
+    <a class="zoom-photo" href="/assets/img/mentees/qq-bar.JPG" target="_blank" rel="noopener">
       <img src="/assets/img/mentees/qq.jpg" alt="Qiuquan Gu" />
     </a>
     <div class="mentee-role">alumna</div>
