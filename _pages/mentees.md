@@ -39,7 +39,7 @@ Working alongside these researchers and designers has shaped how I think about e
     </a>
     <div class="mentee-role">alumna</div>
     <div class="name">Doris Maria Rhomberg</div>
-    <div class="now-at">TU Wien</div>
+    <div class="now-at">UI/UX Designer @ Drei Österreich · Vienna</div>
     <div class="value-pills">
       <span class="pill">ethical UX</span>
       <span class="pill">dark patterns</span>
