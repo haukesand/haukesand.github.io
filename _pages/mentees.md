@@ -16,9 +16,7 @@ Working alongside these researchers and designers has shaped how I think about e
 <div class="mentee-grid mentee-grid-2">
 
   <div class="mentee-tile alumni">
-    <a class="zoom-photo" href="/assets/img/mentees/qq-bar.JPG" target="_blank" rel="noopener">
-      <img src="/assets/img/mentees/qq-bar.JPG" alt="Qiuquan Gu" />
-    </a>
+    <img src="/assets/img/mentees/qq-bar.JPG" alt="Qiuquan Gu" />
     <div class="mentee-role">alumna</div>
     <div class="name">Qiuquan Gu</div>
     <div class="now-at">Product Designer @ TikTok (AI Social) · San Jose</div>
@@ -34,9 +32,7 @@ Working alongside these researchers and designers has shaped how I think about e
   </div>
 
   <div class="mentee-tile alumni">
-    <a class="zoom-photo" href="/assets/img/mentees/doris.jpeg" target="_blank" rel="noopener">
-      <img src="/assets/img/mentees/doris.jpeg" alt="Doris Maria Rhomberg" />
-    </a>
+    <img src="/assets/img/mentees/doris.jpeg" alt="Doris Maria Rhomberg" />
     <div class="mentee-role">alumna</div>
     <div class="name">Doris Maria Rhomberg</div>
     <div class="now-at">UI/UX Designer @ Drei Österreich · Vienna</div>
@@ -58,9 +54,7 @@ Working alongside these researchers and designers has shaped how I think about e
 <div class="mentee-grid mentee-grid-3">
 
   <div class="mentee-tile">
-    <a class="zoom-photo" href="/assets/img/mentees/irene.jpg" target="_blank" rel="noopener">
-      <img src="/assets/img/mentees/irene.jpg" alt="Irene Wu" style="object-position: center 20%;" />
-    </a>
+    <img src="/assets/img/mentees/irene.jpg" alt="Irene Wu" style="object-position: center 20%;" />
     <div class="mentee-role">current mentee</div>
     <div class="name">Irene Wu</div>
     <div class="affiliation">Cornell University</div>
@@ -73,9 +67,7 @@ Working alongside these researchers and designers has shaped how I think about e
   </div>
 
   <div class="mentee-tile">
-    <a class="zoom-photo" href="/assets/img/mentees/pranav.jpg" target="_blank" rel="noopener">
-      <img src="/assets/img/mentees/pranav.jpg" alt="Pranav Prabhat Sinha" />
-    </a>
+    <img src="/assets/img/mentees/pranav.jpg" alt="Pranav Prabhat Sinha" />
     <div class="mentee-role">current mentee</div>
     <div class="name">Pranav Prabhat Sinha</div>
     <div class="affiliation">MS Artificial Intelligence · Columbia University<br><small>prev. B.Tech. AI · SRM Institute of Science and Technology</small></div>
@@ -91,9 +83,7 @@ Working alongside these researchers and designers has shaped how I think about e
   </div>
 
   <div class="mentee-tile">
-    <a class="zoom-photo" href="/assets/img/mentees/hayatt.jpg" target="_blank" rel="noopener">
-      <img src="/assets/img/mentees/hayatt.jpg" alt="Hayatt Khan" style="object-position: center 55%;" />
-    </a>
+    <img src="/assets/img/mentees/hayatt.jpg" alt="Hayatt Khan" style="object-position: center 55%;" />
     <div class="mentee-role">current mentee</div>
     <div class="name">Hayatt Khan</div>
     <div class="affiliation">B.Tech. Computer Science · Fr. Conceicao Rodrigues College of Engineering, Mumbai</div>
