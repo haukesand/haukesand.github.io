@@ -12,7 +12,7 @@ nav_order: 6
 ### Cornell Tech
 
 - **CS 5787: Deep Learning** (August 2026)  
-   _Course Materials, for [Prof. Hadar Elor](https://tech.cornell.edu/people/)_  
+   _Course Materials, for [Prof. Hadar Averbuch-Elor](https://tech.cornell.edu/people/hadar-averbuch-elor/)_  
   Revised assignments and homework to account for student use of generative AI tools. Built a pipeline for generating final exam questions that resist AI-assisted answers.
 
 - **TECHIE 1121: [Ethical Vibe Coding](https://vibe-coding-ethics.tech.cornell.edu/website/)** (Summer 2026)  
