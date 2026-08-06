@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Build the CV PDF from resume.json + papers.bib via Typst.
+#
+# Usage:
+#   ./bin/build-cv           # build once
+#   ./bin/build-cv --watch   # rebuild on save (typst watch)
+#
+# Requires:
+#   brew install typst
+#   python3 -m pip install --user --break-system-packages bibtexparser
+
+set -e
+cd "$(dirname "$0")/.."
+
+echo "→ Regenerating cv/papers.json from _bibliography/papers.bib"
+python3 cv/build_papers.py
+
+OUT="assets/pdf/CV_Sandhaus.pdf"
+
+if [[ "${1:-}" == "--watch" ]]; then
+  echo "→ typst watch cv/cv.typ → $OUT"
+  exec typst watch --root . cv/cv.typ "$OUT"
+else
+  echo "→ typst compile cv/cv.typ → $OUT"
+  typst compile --root . cv/cv.typ "$OUT"
+  echo "✓ Built $OUT ($(du -h "$OUT" | cut -f1))"
+fi

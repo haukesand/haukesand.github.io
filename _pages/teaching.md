@@ -11,6 +11,10 @@ nav_order: 6
 
 ### Cornell Tech
 
+- **CS 5787: Deep Learning** (August 2026)  
+   _Course Materials, for [Prof. Hadar Elor](https://tech.cornell.edu/people/)_  
+  Revised assignments and homework to account for student use of generative AI tools. Built a pipeline for generating final exam questions that resist AI-assisted answers.
+
 - **TECHIE 1121: [Ethical Vibe Coding](https://vibe-coding-ethics.tech.cornell.edu/website/)** (Summer 2026)  
    _Instructor, with Jonathan Segal and [Prof. Wendy Ju](https://tech.cornell.edu/people/wendy-ju/)_  
   Designed and taught a three-week course for high school students as part of Cornell Tech's [Summer Innovation Intensives](https://tech.cornell.edu/programs/summer-innovation-intensives/). Students learn to build real applications with AI coding tools while centering human values—exploring bias in AI systems, probing the limits and vulnerabilities of these tools, and applying the Values at Play framework to their own projects. No prior programming experience required.
