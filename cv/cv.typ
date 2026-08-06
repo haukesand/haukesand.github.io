@@ -112,7 +112,7 @@
     ]
     #v(0.4em)
     #text(size: 8.5pt, style: "italic", fill: muted)[
-      Designing for user and worker autonomy, using the Values at Play framework. Current work develops theory that distinguishes legitimate machine influence from manipulation.
+      Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Current work develops theory that distinguishes legitimate machine influence from manipulation.
     ]
   ]
 )

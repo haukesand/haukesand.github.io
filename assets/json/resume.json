@@ -6,7 +6,7 @@
     "email": "sandhaus@duck.com",
     "phone": "",
     "url": "https://hauke.haus/",
-    "summary": "PhD Candidate in Information Science at Cornell Tech (expected July 2027), advised by Helen Nissenbaum. I design for user and worker autonomy, using the Values at Play framework. Current work develops theory that distinguishes legitimate machine influence from manipulation. Prior industry work at Volkswagen Group Future Center; ongoing NYC field studies with autonomous street robots.",
+    "summary": "PhD Candidate in Information Science at Cornell Tech (expected July 2027), advised by Helen Nissenbaum. Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Current work develops theory that distinguishes legitimate machine influence from manipulation. Prior industry work at Volkswagen Group Future Center; ongoing NYC field studies with autonomous street robots.",
     "location": {
       "address": "2 West Loop Road",
       "postalCode": "10044",
@@ -67,7 +67,7 @@
       "url": "",
       "startDate": "2022-01",
       "endDate": "2023-08",
-      "summary": "With Wendy Ju and Qian Yang. On-road studies of human–autonomous vehicle interaction and analysis of safety-critical data-sharing practices among AV companies. Fed into CSCW '25 and AutoUI/IEEE ITSC '24 publications.",
+      "summary": "With Qian Yang. On-road studies of human–autonomous vehicle interaction and analysis of safety-critical data-sharing practices among AV companies. Fed into CSCW '25 and AutoUI/IEEE ITSC '24 publications.",
       "highlights": []
     },
     {
