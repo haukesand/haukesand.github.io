@@ -108,11 +108,11 @@
     #v(0.5em)
     #text(size: 8.5pt)[
       #text(fill: muted)[Cornell Tech · 2 West Loop Road · New York, NY 10044] \
-      #resume.basics.email · #link(resume.basics.url)[hauke.haus]
+      #resume.basics.email · #link(resume.basics.url)[https://hauke.haus]
     ]
     #v(0.4em)
     #text(size: 8.5pt, style: "italic", fill: muted)[
-      Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Current work develops theory that distinguishes legitimate machine influence from manipulation.
+      Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Dissertation work develops theory that distinguishes legitimate machine influence from manipulation.
     ]
   ]
 )
