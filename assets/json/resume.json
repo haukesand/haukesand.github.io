@@ -6,7 +6,7 @@
     "email": "sandhaus@duck.com",
     "phone": "",
     "url": "https://hauke.haus/",
-    "summary": "PhD Candidate in Information Science at Cornell Tech, working on enabling technology designers to develop for positive societal impact while navigating external influences, unaccounted for in today's user-centered design processes. Experienced in responsible and efficient design innovation methodologies to empower designers.",
+    "summary": "PhD Candidate in Information Science at Cornell Tech (expected July 2027), advised by Helen Nissenbaum. My dissertation designs AI interfaces that actively facilitate — not merely respect — user autonomy, bridging Nissenbaum's contextual integrity framework with commercial-scale AI deployment. Prior industry work at Volkswagen Group Future Center and ongoing NYC field studies with autonomous street robots keep the theoretical work grounded in applied HCI practice.",
     "location": {
       "address": "2 West Loop Road",
       "postalCode": "10044",
@@ -23,7 +23,7 @@
       "url": "",
       "startDate": "2021-08",
       "endDate": "",
-      "summary": "Working under the advisement of Helen Nissenbaum (Chair) and co-advised by associate professor Wendy Ju, with assistant professor Qian Yang as committee member, focusing on transparent AI & autonomous vehicle interaction. Research focuses on enabling technology designers to develop for positive societal impact while navigating external influences.",
+      "summary": "Working under the advisement of Helen Nissenbaum (Chair) and co-advised by associate professor Wendy Ju, with assistant professor Qian Yang as committee member, focusing on transparent AI & autonomous vehicle interaction. Research focuses on enabling technology designers to develop for positive societal impact while navigating external influences. Expected graduation: July 2027.",
       "highlights": [
         "Developing frameworks for responsible and efficient design innovation methodologies",
         "Researching approaches to empower designers to navigate external influences in user-centered design processes",
@@ -101,6 +101,16 @@
     }
   ],
   "volunteer": [
+    {
+      "organization": "CHIWORK 2026",
+      "location": "Zurich, Switzerland",
+      "position": "Hybrid Chair",
+      "url": "https://chiwork.org/",
+      "startDate": "Fall 2025",
+      "endDate": "Summer 2026",
+      "summary": "Chairing hybrid participation and infrastructure for the 5th Annual Symposium on Human-Computer Interaction for Work.",
+      "highlights": []
+    },
     {
       "organization": "Cornell Tech",
       "location": "New York City",

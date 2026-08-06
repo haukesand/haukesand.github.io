@@ -18,8 +18,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Advised by [Helen Nissenbaum](https://tech.cornell.edu/people/helen-nissenbaum/) (Chair), [Wendy Ju](https://tech.cornell.edu/people/wendy-ju/) (Co-Chair), and [Qian Yang](https://qianyang.co/) (Committee Member).
+Advised by [Helen Nissenbaum](https://tech.cornell.edu/people/helen-nissenbaum/) (Chair), [Wendy Ju](https://tech.cornell.edu/people/wendy-ju/) (Co-Chair), and [Qian Yang](https://qianyang.co/) (Committee Member). Expected graduation: July 2027.
 Background in Human Computer Interaction (M.Sc.) & Creative Technology (B.Sc.). Worked as a UX technologist in the VW Group Future Center to improve mobility for all.
+
+My dissertation designs AI interfaces that actively facilitate — not merely respect — user autonomy, bridging Nissenbaum's contextual integrity framework with commercial-scale AI deployment.
 
 **Research Statement**: How do interaction design methodologies need to evolve to meet the ethical challenges of data-intensive systems?
 Through two complementary threads, I investigate: (1) ethical data-driven interaction design, where I develop frameworks to evaluate user experiences and study how designers can responsibly leverage AI in their process; and (2) ethical data-sharing, where I create policies and tools that balance innovation needs with data protection across domains from autonomous vehicles, urban street imagery to healthcare.
