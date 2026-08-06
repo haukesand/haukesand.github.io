@@ -112,7 +112,7 @@
     ]
     #v(0.4em)
     #text(size: 8.5pt, style: "italic", fill: muted)[
-      Designing AI interfaces that actively facilitate — not merely respect — user autonomy, bridging Nissenbaum's contextual integrity framework with commercial-scale AI deployment.
+      Designing for user and worker autonomy, using the Values at Play framework. Current work develops theory that distinguishes legitimate machine influence from manipulation.
     ]
   ]
 )
@@ -134,8 +134,6 @@
   [Started August 2021 · Expected graduation July 2027 · NYC, NY, USA],
   [
     Advised by Helen Nissenbaum (Chair), Wendy Ju (Co-Chair), and Qian Yang (Committee Member).
-
-    #text(fill: accent)[*Research:*] Designing AI interfaces that actively facilitate — not merely respect — user autonomy, bridging Nissenbaum's contextual integrity framework with commercial-scale AI deployment.
   ]
 ))
 
