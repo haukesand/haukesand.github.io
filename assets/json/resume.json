@@ -114,6 +114,16 @@
     {
       "organization": "Cornell Tech",
       "location": "New York City",
+      "position": "Instructor, Ethical Vibe Coding",
+      "url": "https://vibe-coding-ethics.tech.cornell.edu/website/",
+      "startDate": "Summer 2026",
+      "endDate": "Summer 2026",
+      "summary": "Three-week course on ethical AI-assisted coding for high school students at Cornell Tech's Summer Innovation Intensives. With Jonathan Segal.",
+      "highlights": []
+    },
+    {
+      "organization": "Cornell Tech",
+      "location": "New York City",
       "position": "Co-host NYC Privacy Day",
       "startDate": "Fall 2025",
       "endDate": "Fall 2025",
@@ -181,6 +191,16 @@
       "startDate": "2019",
       "endDate": "2021",
       "summary": "Member of the VW network to advocate being out at work.",
+      "highlights": []
+    },
+    {
+      "organization": "Peer Review",
+      "location": "",
+      "position": "Reviewer",
+      "url": "",
+      "startDate": "2018",
+      "endDate": "Ongoing",
+      "summary": "Peer reviewer at FAccT, CHI, DIS, AutoUI, CSCW, MuC, and CHIwork.",
       "highlights": []
     }
   ],
@@ -250,6 +270,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "Public Interest Responsible Technology Fund",
+      "date": "2026-06",
+      "awarder": "Cornell Tech",
+      "summary": "Teaching grant to instruct a PhD-fellow cohort on value-centered design methods."
+    },
     {
       "title": "DLI Doctoral Fellow",
       "date": "2023-2024",
