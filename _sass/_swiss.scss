@@ -620,6 +620,15 @@ article .zoom-photo img {
     letter-spacing: 0;
     font-weight: 500;
   }
+
+  // Quote text — base pairs italic AND muted, which reads as "hooded" and
+  // visually overloaded. Drop the italic; the surrounding curly quotes
+  // already signal it's a quotation.
+  .quote {
+    font-style: normal;
+    color: var(--global-text-color);
+    opacity: 0.8;
+  }
 }
 
 // Paper chips inside mentee tiles: match the flat treatment.
