@@ -17,6 +17,7 @@
     "abbr": "ZfP",
     "note": "Accepted, forthcoming",
     "award": "",
+    "pubtype": "journal",
     "type": "article",
     "selected": true
   },
@@ -52,6 +53,7 @@
     "abbr": "CSCW Workshop",
     "note": "Workshop co-organizer",
     "award": "",
+    "pubtype": "organized",
     "type": "inproceedings",
     "selected": false
   },
@@ -79,6 +81,7 @@
     "abbr": "AIES",
     "note": "",
     "award": "",
+    "pubtype": "conference",
     "type": "inproceedings",
     "selected": true
   },
@@ -102,6 +105,7 @@
     "abbr": "CHIWORK LBW",
     "note": "",
     "award": "Best Late-Breaking Work Award at CHIWORK '26 (1 of 25)",
+    "pubtype": "short",
     "type": "inproceedings",
     "selected": true
   },
@@ -135,6 +139,7 @@
     "abbr": "CHIWORK",
     "note": "Workshop co-organizer",
     "award": "",
+    "pubtype": "organized",
     "type": "inproceedings",
     "selected": true
   },
@@ -160,6 +165,7 @@
     "abbr": "CHIWORK Workshop",
     "note": "Workshop paper at CHIWORK '26 (workshop I co-organized)",
     "award": "",
+    "pubtype": "workshop",
     "type": "inproceedings",
     "selected": false
   },
@@ -199,6 +205,7 @@
     "abbr": "CHI Workshop",
     "note": "Workshop co-organizer",
     "award": "",
+    "pubtype": "organized",
     "type": "inproceedings",
     "selected": false
   },
@@ -224,8 +231,31 @@
     "abbr": "CSCW",
     "note": "",
     "award": "",
+    "pubtype": "journal",
     "type": "article",
     "selected": true
+  },
+  {
+    "key": "Sandhaus2025-canvas",
+    "authors": [
+      "Hauke Sandhaus",
+      "Helen Nissenbaum"
+    ],
+    "hauke_flags": [
+      true,
+      false
+    ],
+    "year": "2025",
+    "month": "October",
+    "month_num": 10,
+    "title": "The Privacy Policy Analysis Canvas: An Ethics Thinking Activity for Teaching Privacy Policy Insufficiency",
+    "venue": "Poster at NYC Privacy Day 2025, Cornell Tech, New York, NY",
+    "abbr": "Poster",
+    "note": "Non-archival poster; write-up unpublished",
+    "award": "",
+    "pubtype": "other",
+    "type": "misc",
+    "selected": false
   },
   {
     "key": "Sandhaus2025-jc",
@@ -249,6 +279,7 @@
     "abbr": "DIS",
     "note": "",
     "award": "",
+    "pubtype": "conference",
     "type": "inproceedings",
     "selected": true
   },
@@ -278,6 +309,7 @@
     "abbr": "FAccT",
     "note": "* = equal contribution",
     "award": "",
+    "pubtype": "conference",
     "type": "inproceedings",
     "selected": true
   },
@@ -307,6 +339,7 @@
     "abbr": "ITSC",
     "note": "",
     "award": "",
+    "pubtype": "conference",
     "type": "inproceedings",
     "selected": true
   },
@@ -334,6 +367,7 @@
     "abbr": "AutoUI",
     "note": "",
     "award": "",
+    "pubtype": "conference",
     "type": "inproceedings",
     "selected": true
   },
@@ -369,6 +403,7 @@
     "abbr": "AutoUI",
     "note": "",
     "award": "",
+    "pubtype": "conference",
     "type": "inproceedings",
     "selected": true
   },
@@ -392,6 +427,7 @@
     "abbr": "AutoUI WiP",
     "note": "",
     "award": "",
+    "pubtype": "short",
     "type": "inproceedings",
     "selected": true
   },
@@ -415,6 +451,7 @@
     "abbr": "CHI Workshop",
     "note": "",
     "award": "",
+    "pubtype": "workshop",
     "type": "inproceedings",
     "selected": false
   },
@@ -436,6 +473,7 @@
     "abbr": "CHI Workshop",
     "note": "* = equal contribution",
     "award": "",
+    "pubtype": "workshop",
     "type": "inproceedings",
     "selected": true
   },
@@ -463,6 +501,7 @@
     "abbr": "CHI",
     "note": "",
     "award": "Best Paper Honorable Mention at CHI '24",
+    "pubtype": "conference",
     "type": "article",
     "selected": true
   },
@@ -496,6 +535,7 @@
     "abbr": "CHI Workshop",
     "note": "Workshop co-organizer; co-editor of the workshop proceedings, CEUR-WS Vol. 3720",
     "award": "",
+    "pubtype": "organized",
     "type": "inproceedings",
     "selected": false
   },
@@ -519,6 +559,7 @@
     "abbr": "CSCW",
     "note": "* = equal contribution",
     "award": "",
+    "pubtype": "short",
     "type": "inproceedings",
     "selected": true
   },
@@ -552,6 +593,7 @@
     "abbr": "AutoUI Workshop",
     "note": "Workshop co-organizer",
     "award": "",
+    "pubtype": "organized",
     "type": "inproceedings",
     "selected": false
   },
@@ -579,6 +621,7 @@
     "abbr": "AutoUI WiP",
     "note": "",
     "award": "",
+    "pubtype": "short",
     "type": "inproceedings",
     "selected": false
   },
@@ -598,6 +641,7 @@
     "abbr": "CHI Workshop",
     "note": "This paper started the brightpatterns.org website",
     "award": "",
+    "pubtype": "workshop",
     "type": "inproceedings",
     "selected": true
   },
@@ -621,6 +665,7 @@
     "abbr": "CHI Workshop",
     "note": "",
     "award": "",
+    "pubtype": "workshop",
     "type": "inproceedings",
     "selected": true
   },
@@ -646,6 +691,7 @@
     "abbr": "D TEX",
     "note": "",
     "award": "",
+    "pubtype": "other",
     "type": "article",
     "selected": false
   },
@@ -667,6 +713,7 @@
     "abbr": "UIST",
     "note": "",
     "award": "",
+    "pubtype": "short",
     "type": "inproceedings",
     "selected": false
   },
@@ -682,10 +729,11 @@
     "month": "",
     "month_num": 13,
     "title": "Development of a 3D Navigable Interface for a Touchless Showcase",
-    "venue": "",
+    "venue": "Bachelor's thesis, University of Twente",
     "abbr": "UT",
-    "note": "Bachelor's thesis, University of Twente",
+    "note": "",
     "award": "",
+    "pubtype": "other",
     "type": "misc",
     "selected": false
   }

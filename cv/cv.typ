@@ -225,11 +225,47 @@
   [#render-authors(p) (#date-part). #p.title.#venue-part#note-part#award-part]
 }
 
+// Grouped by `pubtype` from papers.bib. Order and headings live here.
+#let pub-groups = (
+  ("journal",    "Journal articles", "peer-reviewed"),
+  ("conference", "Conference papers", "full papers, peer-reviewed"),
+  ("short",      "Short papers, posters & late-breaking work", "peer-reviewed"),
+  ("workshop",   "Workshop papers", ""),
+  ("organized",  "Workshops organized", "as co-organizer"),
+  ("other",      "Other", "book chapter, thesis, non-archival"),
+)
+#let sub-heading(name, hint, n) = {
+  v(0.35em)
+  text(size: 7.5pt, weight: "bold", tracking: 0.08em)[#upper(name)]
+  text(size: 7.5pt, fill: muted)[ · #n#if hint != "" [ · #hint]]
+  v(-0.15em)
+}
+// Names given as plain strings (under-review list in resume.json); bold Hauke.
+#let render-names(names) = {
+  let out = []
+  for (i, name) in names.enumerate() {
+    out += if name.contains("Hauke") { strong(name) } else { text(name) }
+    if i < names.len() - 1 { out += text(", ") }
+  }
+  out
+}
 #let pubs-body = {
   set list(indent: 0.4em, body-indent: 0.35em)
-  for p in papers [
-    - #pub-item(p)
-  ]
+  let ur = resume.at("under-review", default: ())
+  if ur.len() > 0 {
+    sub-heading("Under review", "", ur.len())
+    for u in ur [
+      - #render-names(u.at("authors", default: (u.summary,))) (#format-date(u.releaseDate)). #u.name. #emph(u.publisher).
+    ]
+  }
+  for (key, name, hint) in pub-groups {
+    let items = papers.filter(p => p.pubtype == key)
+    if items.len() == 0 { continue }
+    sub-heading(name, hint, items.len())
+    for p in items [
+      - #pub-item(p)
+    ]
+  }
 }
 #section("Publications", pubs-body)
 

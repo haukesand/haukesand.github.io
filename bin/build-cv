@@ -16,6 +16,12 @@ cd "$(dirname "$0")/.."
 echo "→ Regenerating cv/papers.json from _bibliography/papers.bib"
 python3 cv/build_papers.py
 
+# build_papers.py also rewrites the publications list in resume.json; keep it
+# in the repo's Prettier style so the CI format check stays green.
+if command -v npx >/dev/null 2>&1 && [[ -x node_modules/.bin/prettier ]]; then
+  npx prettier --write assets/json/resume.json --log-level warn
+fi
+
 OUT="assets/pdf/CV_Sandhaus.pdf"
 
 if [[ "${1:-}" == "--watch" ]]; then

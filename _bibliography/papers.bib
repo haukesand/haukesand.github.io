@@ -59,6 +59,11 @@
              full /publications list.
   preview    Filename of the thumbnail in /assets/img/publication_preview/.
              ImageMagick generates responsive .webp variants at build time.
+  pubtype    journal | conference | short | workshop | organized | other
+             Publication class. Drives the grouped sections on /publications/
+             and in the Typst CV (cv/cv.typ). "short" = posters, LBW, WiP,
+             adjunct; "workshop" = paper at a workshop; "organized" =
+             workshop proposal I co-organized.
   abbr       Short venue badge shown to the left (e.g. "FAccT", "CSCW",
              "CHIWORK LBW", "AutoUI WiP"). Keep it short.
   tldr       One-sentence summary appended after the entry links row.
@@ -85,6 +90,7 @@
   preview     = {deception_phone_melt.png},
   thread      = {ethical-design},
   mentees        = {doris-rhomberg},
+  pubtype     = {journal},
   abbr        = {ZfP},
   note        = {Accepted, forthcoming},
   tldr        = {Across 126 social media users, perceived deception co-occurs strongly with negative aesthetic judgments of dark patterns (r = 0.93), pointing toward ethics-focused UX measurement scales.},
@@ -111,6 +117,7 @@
   preview     = {spectroscope_persuasion.png},
   thread      = {ethical-design},
   mentees        = {doris-rhomberg},
+  pubtype     = {short},
   abbr        = {CHIWORK LBW},
   award       = {Best Late-Breaking Work Award at CHIWORK '26 (1 of 25)},
   award_name  = {Best LBW Award},
@@ -139,6 +146,7 @@
   selected    = {true},
   preview     = {brain_phone.png},
   thread      = {human-ai},
+  pubtype     = {organized},
   abbr        = {CHIWORK},
   note        = {Workshop co-organizer},
   tldr        = {A CHIWORK 2026 workshop moving beyond AI disclosure statements to ask how HCI professionals can preserve deep work, intellectual autonomy, and accountability in GenAI-augmented workflows.},
@@ -163,6 +171,7 @@
   selected      = {false},
   preview       = {disclosure-github.png},
   mentees       = {pranav-sinha},
+  pubtype     = {workshop},
   abbr          = {CHIWORK Workshop},
   note          = {Workshop paper at CHIWORK '26 (workshop I co-organized)},
   tldr          = {Analysis of 203 GitHub repos across three HCI-course cohorts shows disclosure of AI-tool use grew to 66%, but explicit contribution attribution stayed rare — revealing an accountability gap in the vibe-coding era.},
@@ -186,6 +195,7 @@
   bibtex_show = {true},
   selected    = {false},
   preview     = {commercial_bridge.png},
+  pubtype     = {organized},
   abbr        = {CHI Workshop},
   note        = {Workshop co-organizer},
   tldr        = {A CHI 2026 workshop bringing researchers and practitioners together to align commercial incentives with ethical design practice and combat deceptive patterns.}
@@ -211,7 +221,9 @@
   keywords      = {AI auditing, measurement, motion capture, ground truth, symmetry, science and technology studies},
   bibtex_show   = {true},
   selected      = {true},
+  preview = {Split_Skeleton_Motion_Study.png},
   thread        = {data-privacy},
+  pubtype     = {conference},
   abbr          = {AIES},
   tldr          = {Proposes the "contextual audit": checking an AI system's measurements inside the practices that produce them, and borrowing symmetry from STS for cases where ground truth is unknown or contested. Case study on skeleton inference in motion capture.},
   abstract      = {AI systems that observe and make inferences about people should be checked through a contextual audit, which examines measurements within the practices that produce them. We show how this approach exposes assumptions in the audit process and makes explicit what serves as ground truth. We draw on the science and technology studies concept of symmetry to support audits when ground truth is unknown, unknowable, or contested, and close with a case study of skeleton inference in motion capture and directions for future audits of these systems.}
@@ -238,6 +250,7 @@
   bibtex_show = {true},
   selected    = {false},
   preview     = {wrangled_signature.png},
+  pubtype     = {organized},
   abbr        = {CSCW Workshop},
   note        = {Workshop co-organizer},
   tldr        = {A CSCW 2026 workshop confronting "contribution dissolution": the blurring of attribution, originality, and accountability when LLM agents mediate collaborative knowledge work.}
@@ -262,6 +275,7 @@
   note          = {* = equal contribution},
   preview       = {Group-Privacy.png},
   thread        = {data-privacy},
+  pubtype     = {conference},
   abbr          = {FAccT},
   bibtex_show   = {true},
   selected      = {true},
@@ -299,10 +313,32 @@
   selected    = {true},
   preview     = {precious_crash.png},
   thread      = {data-privacy},
+  pubtype     = {journal},
   abbr        = {CSCW},
   tldr        = {This study identifies barriers to sharing safety-critical data in autonomous vehicle companies, revealing that datasets are seen as competitive knowledge due to embedded salient knowledge, making sharing politically fraught.},
   slides      = {https://www.figma.com/deck/5rXbpHvpOzmKIIVVSQDHHu/CSCW-AV-Data?node-id=1-114&t=e6hJPLFQwGtkQwOz-1}
 }
+@misc{Sandhaus2025-canvas,
+  title       = {The Privacy Policy Analysis Canvas: An Ethics Thinking Activity for Teaching Privacy Policy Insufficiency},
+  author      = {Sandhaus, Hauke and Nissenbaum, Helen},
+  year        = 2025,
+  month       = oct,
+  howpublished = {Poster at NYC Privacy Day 2025, Cornell Tech, New York, NY},
+  note        = {Non-archival poster; write-up unpublished},
+  pdf         = {WiP/Sandhaus_WiP_Privacy_Policy_Analysis_Canvas.pdf},
+  poster      = {Poster/Privacy-Policy-Analysis-Canvas.pdf},
+  website     = {https://www.figma.com/community/file/1475988331450512233/the-privacy-policy-analysis-canvas},
+  html        = {https://dli.tech.cornell.edu/nyc-privacy-day-2025},
+  keywords    = {privacy policy, contextual integrity, privacy education, analysis canvas},
+  bibtex_show = {true},
+  selected    = {false},
+  preview     = {Privacy_Canvas.png},
+  pubtype     = {other},
+  abbr        = {Poster},
+  tldr        = {A FigJam canvas that walks students through a privacy policy with contextual integrity: 59 students analyzed 31 policies in one class period, and the exercise shows why notice alone cannot protect privacy. Template translated into nine languages.},
+  abstract    = {Privacy policies are the primary method used by digital service providers to inform users about their privacy practices. The privacy policy is also the mechanism employed by those providers to comply with the regulatory demand of public notice. Research has shown that users typically do not read privacy policies and often struggle to understand them due to their length, vagueness, complicated language, and incompleteness. To encourage deeper engagement with complex privacy practices, we developed a structured privacy policy analysis canvas for educational purposes. This allows students to critically examine and reflect on corporate privacy practices while revealing the fundamental insufficiency of notice-based approaches for privacy protection. We tested this canvas in a privacy class with 59 students who reviewed 31 privacy policies from diverse digital application domains. We report insights from students' use of the canvas and make it available for wide adoption as a customizable design template.}
+}
+
 @inproceedings{Sandhaus2025-jc,
   title         = {Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education},
   author        = {Sandhaus, Hauke and Gu, Qiuquan and Parreira, Maria Teresa and Ju, Wendy},
@@ -328,6 +364,7 @@
   thread        = {human-ai},
   bibtex_show   = {true},
   mentees          = {qiuquan-gu},
+  pubtype     = {conference},
   abbr          = {DIS},
   html          = {https://doi.org/10.1145/3715336.3735805},
   pdf           = {https://dl.acm.org/doi/pdf/10.1145/3715336.3735805},
@@ -355,6 +392,7 @@
   selected    = {true},
   preview     = {driving_characteristics.png},
   thread      = {automotive},
+  pubtype     = {conference},
   abbr        = {ITSC},
   tldr        = {This study compares driver interactions at unsigned intersections in New York City and Haifa, using MMD in Hilbert space, revealing that cultural differences significantly influence driving strategies, especially during turns.}
 }
@@ -382,6 +420,7 @@
   preview     = {VR_cars.png},
   thread      = {automotive},
   bibtex_show = {true},
+  pubtype     = {conference},
   abbr        = {AutoUI},
   selected    = {true},
   video       = {https://files.osf.io/v1/resources/bz8vq/providers/osfstorage/66f34b9559795b5d21a852cc?direct=&mode=render},
@@ -414,6 +453,7 @@
   thread      = {automotive},
   selected    = {true},
   bibtex_show = {true},
+  pubtype     = {conference},
   abbr        = {AutoUI},
   tldr        = {Analyzes how openness and transparency have evolved in automotive user research and suggests steps for improving data sharing.}
 }
@@ -444,6 +484,7 @@
   selected      = {true},
   preview       = {InCabin_Privacy.png},
   thread        = {data-privacy},
+  pubtype     = {short},
   abbr          = {AutoUI WiP},
   tldr          = {Transparently designed privacy onboarding can enhance user trust in camera-based in-car health monitoring systems.},
   poster        = {https://docs.google.com/presentation/d/1C5BVRC0K7Oww5wQSIyFLyCvt2dEABUd1ma42ExXNtfs/edit?usp=sharing}
@@ -468,6 +509,7 @@
   html          = {https://sites.google.com/view/llmsindatawork/accepted-papers},
   pdf           = {Sandhaus_2024_CHI_WS_LLMs_in_HCI_Research.pdf},
   selected      = {false},
+  pubtype     = {workshop},
   abbr          = {CHI Workshop},
   url           = {https://arxiv.org/abs/2405.01467},
   eprint        = {2405.01467},
@@ -491,6 +533,7 @@
   preview     = {Ethical_UEQ.png},
   selected    = {true},
   mentees        = {doris-rhomberg},
+  pubtype     = {workshop},
   abbr        = {CHI Workshop},
   note        = {* = equal contribution},
   tldr        = {Only a modified User Experience Questionnaire can explicate unethical aspects of social media interfaces.}
@@ -525,6 +568,7 @@
   abstract      = {
                    Motion capture systems, used across various domains, make body representations concrete through technical processes. We argue that the measurement of bodies and the validation of measurements for motion capture systems can be understood as social practices. By analyzing the findings of a systematic literature review (N=278) through the lens of social practice theory, we show how these practices, and their varying attention to errors, become ingrained in motion capture design and innovation over time. Moreover, we show how contemporary motion capture systems perpetuate assumptions about human bodies and their movements. We suggest that social practices of measurement and validation are ubiquitous in the development of data- and sensor-driven systems more broadly, and provide this work as a basis for investigating hidden design assumptions and their potential negative consequences in human-computer interaction.
                    },
+  pubtype     = {conference},
   abbr          = {CHI},
   tldr          = {Motion capture systems are built and validated on old assumptions as a literature review using social practice theory shows.}
 }
@@ -547,6 +591,7 @@
   keywords    = {dark patterns, deceptive design, regulation, policy, HCI},
   bibtex_show = {true},
   selected    = {false},
+  pubtype     = {organized},
   abbr        = {CHI Workshop},
   note        = {Workshop co-organizer; co-editor of the workshop proceedings, CEUR-WS Vol. 3720},
   tldr        = {A CHI 2024 workshop connecting dark-patterns scholarship to the legal, design, and regulatory communities; proceedings published as CEUR-WS Vol. 3720.}
@@ -569,6 +614,7 @@
   keywords    = {open data, open science, automotive user research},
   bibtex_show = {true},
   selected    = {false},
+  pubtype     = {organized},
   abbr        = {AutoUI Workshop},
   note        = {Workshop co-organizer},
   tldr        = {Workshop on why experimental data sharing is still rare in AutoUI research and what best practices and open data formats could change that. Preceded the AutoUI '24 "Changing Lanes" paper.}
@@ -591,6 +637,7 @@
   keywords    = {automated vehicles, collaborative driving, prototyping workshop},
   bibtex_show = {true},
   selected    = {false},
+  pubtype     = {short},
   abbr        = {AutoUI WiP},
   tldr        = {Prototyping-workshop outcome: how passengers could still shape the driving of a fully automated vehicle once steering wheel and pedals are gone.}
 }
@@ -618,6 +665,7 @@
   abstract      = {
                    Virtual Reality (VR) has emerged as a potential solution for mitigating bias in a job interview by hiding the applicants' demographic features. The current study examines the use of a gender-swapped avatar in a virtual job interview that affects the applicants' perceptions and their performance evaluated by recruiters. With a mixed-method approach, we first conducted a lab experiment (N=8) exploring how using a gender-swapped avatar in a virtual job interview impacts perceived anxiety, confidence, competence, and ability to perform. Then, a semi-structured interview investigated the participants' VR interview experiences using an avatar. Our findings suggest that using gender-swapped avatars may reduce the anxiety that job applicants will experience during the interview. Also, the affinity diagram produced seven key themes highlighting the advantages and limitations of VR as an interview platform. These findings contribute to the emerging field of VR-based recruitment and have practical implications for promoting diversity and inclusion in the hiring process.
                    },
+  pubtype     = {short},
   abbr          = {CSCW},
   note          = {* = equal contribution},
   tldr          = {Gender-swapped avatars in virtual job interviews influences applicant's perception of performance.}
@@ -642,6 +690,7 @@
   abstract      = {
                    User experience designers are facing increasing scrutiny and criticism for creating harmful technologies, leading to a pushback against unethical design practices. While clear-cut harmful practices such as dark patterns have received attention, trends towards automation, personalization, and recommendation present more ambiguous ethical challenges. To address potential harm in these "gray" instances, we propose the concept of "bright patterns" - persuasive design solutions that prioritize user goals and well-being over their desires and business objectives. The ambition of this paper is threefold: to define the term "bright patterns", to provide examples of such patterns, and to advocate for the adoption of bright patterns through policymaking.
                    },
+  pubtype     = {workshop},
   abbr          = {CHI Workshop},
   tldr          = {The first definition of "bright patterns" is accompanied by examples that illustrate corporate use of persuasive design in support of user goals over their desires and business objectives.},
   location      = {Hamburg, Germany},
@@ -666,6 +715,7 @@
   abstract      = {
                    Autonomous Vehicles (AVs) can potentially improve urban living by reducing accidents, increasing transportation accessibility and equity, and decreasing emissions. Realizing these promises requires the innovations of AV driving behaviors, city plans and infrastructure, and traffic and transportation policies to join forces. However, the complex interdependencies among AV, city, and policy design issues can hinder their innovation. We argue the path towards better AV cities is not a process of matching city designs and policies with AVs' technological innovations, but a process of iterative prototyping of all three simultaneously: Innovations can happen step-wise as the knot of AV, city, and policy design loosens and tightens, unwinds and reties. In this paper, we ask: How can innovators innovate AVs, city environments, and policies simultaneously and productively toward better AV cities? The paper has two parts. First, we map out the interconnections among the many AV, city, and policy design decisions, based on a literature review spanning HCI/HRI, transportation science, urban studies, law and policy, operations research, economy, and philosophy. This map can help innovators identify design constraints and opportunities across the traditional AV/city/policy design disciplinary bounds. Second, we review the respective methods for AV, city, and policy design, and identify key barriers in combining them: (1) Organizational barriers to AV-city-policy design collaboration, (2) computational barriers to multi-granularity AV-city-policy simulation, and (3) different assumptions and goals in joint AV-city-policy optimization. We discuss two broad approaches that can potentially address these challenges, namely, "low-fidelity integrative City-AV-Policy Simulation (iCAPS)" and "participatory design optimization".
                    },
+  pubtype     = {workshop},
   abbr          = {CHI Workshop},
   tldr          = {Maps out the interdependencies between AV, city, and policy design and discusses methods for iteratively prototyping all three simultaneously.},
   poster        = {https://docs.google.com/presentation/d/1IVQL4cjAVXjVFhcyxWZbbNSUqWRR3PbxmPdHBbBwqOA/edit},
@@ -696,6 +746,7 @@
   preview     = {AV_ceiling.png},
   html        = {https://dl.acm.org/doi/10.1145/3266037.3266111},
   selected    = {false},
+  pubtype     = {short},
   abbr        = {UIST},
   tldr        = {Ambient displays in autonomous vehicles can subtly communicate driving decisions to passengers (Master Thesis).}
 }
@@ -714,6 +765,7 @@
   preview     = {dancer.png},
   html        = {https://www.taylorfrancis.com/chapters/edit/10.1201/9781315100210-57/smart-textiles-performing-arts-aline-martinez-michaela-honauer-hauke-sandhaus-eva-hornecker},
   selected    = {false},
+  pubtype     = {other},
   abbr        = {D TEX},
   tldr        = {Our dance costume using smart textiles makes movements perceivable through sound.}
 }
@@ -731,6 +783,7 @@
   preview     = {hand_gesture.png},
   html        = {https://essay.utwente.nl/70885/},
   selected    = {false},
+  pubtype     = {other},
   abbr        = {UT},
   tldr        = {An intuitive 3D navigable interface for a touchless showcase using skeletal hand tracking (Bachelor Thesis).}
 }

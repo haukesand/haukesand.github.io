@@ -2,64 +2,28 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
+description: Websites, tools, and experiments that came out of the research. Each tile opens a short write-up with links. Status tells you whether I still maintain it.
+nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+<!-- _pages/projects.md: tiles come from _projects/*.md via _includes/project_tile.liquid -->
 
-{% else %}
+{% assign tools = site.projects | where: "category", "tools" | sort: "importance" %}
+{% assign experiments = site.projects | where: "category", "experiments" | sort: "importance" %}
+{% assign archive = site.projects | where: "category", "archive" | sort: "importance" %}
 
-<!-- Display projects without categories -->
+<h2 class="project-section">Research tools &amp; sites</h2>
+<div class="project-grid">
+{% for project in tools %}{% include project_tile.liquid %}{% endfor %}
+</div>
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+<h2 class="project-section">Experiments &amp; installations</h2>
+<div class="project-grid">
+{% for project in experiments %}{% include project_tile.liquid %}{% endfor %}
+</div>
 
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+<h2 class="project-section">Archive</h2>
+<div class="project-grid">
+{% for project in archive %}{% include project_tile.liquid %}{% endfor %}
 </div>

@@ -1,0 +1,27 @@
+{%- comment -%}
+  One project tile for /projects/. Reads front matter from a _projects/*.md file:
+  title, description, img, years, status (maintaining|started|finished|review|archived),
+  status_label (optional display text), with (optional collaborators), redirect (optional external URL).
+{%- endcomment -%}
+<a
+  class="project-tile status-{{ project.status | default: 'finished' }}"
+  href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}"
+  {% if project.redirect %}
+    target="_blank" rel="noopener"
+  {% endif %}
+>
+  {% if project.img %}
+    <img src="{{ project.img | relative_url }}" alt="{{ project.title | escape }}" loading="lazy">
+  {% endif %}
+  <div class="project-body">
+    <div class="project-meta">
+      <span class="project-years">{{ project.years }}</span>
+      <span class="project-status">{{ project.status_label | default: project.status | default: 'finished' }}</span>
+    </div>
+    <div class="project-title">{{ project.title }}</div>
+    <div class="project-desc">{{ project.description }}</div>
+    {% if project.with %}
+      <div class="project-with">with {{ project.with }}</div>
+    {% endif %}
+  </div>
+</a>

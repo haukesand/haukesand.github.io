@@ -54,7 +54,11 @@ def parse_entry(e: dict) -> dict:
     is_hauke = [
         "hauke" in a.lower() and "sandhaus" in a.lower() for a in authors
     ]
-    venue = e.get("booktitle") or e.get("journal") or e.get("school") or ""
+    venue = (e.get("booktitle") or e.get("journal") or e.get("school")
+             or e.get("howpublished") or "")
+    note = tidy(e.get("note", ""))
+    if tidy(venue) == note:  # e.g. thesis entries repeat the note in howpublished
+        note = ""
     raw_month = (e.get("month") or "").lower()[:3]
     month = MONTHS.get(raw_month, e.get("month", ""))
     return {
@@ -68,8 +72,9 @@ def parse_entry(e: dict) -> dict:
         "title": tidy(e.get("title", "")),
         "venue": tidy(venue),
         "abbr": strip_braces(e.get("abbr", "")),
-        "note": tidy(e.get("note", "")),
+        "note": note,
         "award": tidy(e.get("award", "")),
+        "pubtype": strip_braces(e.get("pubtype", "other")),
         "type": e.get("ENTRYTYPE", ""),
         "selected": (e.get("selected", "").lower() == "true"),
     }

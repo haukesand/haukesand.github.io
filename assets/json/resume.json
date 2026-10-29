@@ -314,6 +314,12 @@
       "summary": "Teaching grant to instruct a PhD-fellow cohort on value-centered design methods."
     },
     {
+      "title": "Backslash Microgrant",
+      "date": "2025",
+      "awarder": "Backslash at Cornell Tech",
+      "summary": "Art and technology microgrant for the interactive installation 'App Design as a Commodity', a receipt printer that sells AI-built apps for Venmo change."
+    },
+    {
       "title": "DLI Doctoral Fellow",
       "date": "2023-2024",
       "awarder": "Cornell Tech",
@@ -343,10 +349,18 @@
   ],
   "under-review": [
     {
-      "name": "Deceptive Performance Indicators: Using User Experience Questionnaires to Assess 'Good' Design Can Be Misleading",
-      "publisher": "CHI '26 Under Review",
-      "releaseDate": "2026-05",
-      "summary": "Sandhaus, H., Rhomberg, D., Nissenbaum, H."
+      "name": "Persuading Metrics: How User Evaluation Data Shapes Professional Designers' Willingness to Reject Dark Patterns",
+      "publisher": "Under review, CHI '27",
+      "releaseDate": "2026-09",
+      "authors": ["Hauke Sandhaus", "Doris Maria Rhomberg", "Helen Nissenbaum"],
+      "summary": "Sandhaus, H., Rhomberg, D. M., Nissenbaum, H."
+    },
+    {
+      "name": "AI Interaction Design for Human Autonomy (working title)",
+      "publisher": "Under review, CHI '27. Companion artifact: human-ai-autonomy-rubric.surge.sh",
+      "releaseDate": "2026-09",
+      "authors": ["Hauke Sandhaus", "et al."],
+      "summary": "Sandhaus, H., et al."
     }
   ],
   "publications": [
@@ -397,6 +411,12 @@
       "publisher": "Proceedings of the ACM on Human-Computer Interaction",
       "releaseDate": "2025-10",
       "summary": "Sandhaus, H., Hwang, A. H., Ju, W., Yang, Q."
+    },
+    {
+      "name": "The Privacy Policy Analysis Canvas: An Ethics Thinking Activity for Teaching Privacy Policy Insufficiency",
+      "publisher": "Poster at NYC Privacy Day 2025, Cornell Tech, New York, NY (Non-archival poster; write-up unpublished)",
+      "releaseDate": "2025-10",
+      "summary": "Sandhaus, H., Nissenbaum, H."
     },
     {
       "name": "Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education",
@@ -502,7 +522,7 @@
     },
     {
       "name": "Development of a 3D Navigable Interface for a Touchless Showcase",
-      "publisher": " (Bachelor's thesis, University of Twente)",
+      "publisher": "Bachelor's thesis, University of Twente",
       "releaseDate": "2015",
       "summary": "Sandhaus, H."
     }
