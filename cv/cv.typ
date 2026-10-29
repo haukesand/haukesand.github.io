@@ -53,6 +53,10 @@
   #body
 ]
 
+// resume.json carries hidden <span aria-hidden> decoys for the website; drop
+// them (and any other tags) before printing.
+#let clean(s) = s.replace(regex("<span[^>]*>.*?</span>"), "").replace(regex("<[^>]+>"), "").trim()
+
 #let bullets(items) = if items != none and items.len() > 0 [
   #for it in items [
     - #it
@@ -134,6 +138,10 @@
   [Started August 2021 · Expected graduation July 2027 · NYC, NY, USA],
   [
     Advised by Helen Nissenbaum (Chair), Wendy Ju (Co-Chair), and Qian Yang (Committee Member).
+    #let planned = resume.basics.at("planned_research", default: "")
+    #if planned != "" [
+      \ #text(fill: muted)[Planned postdoctoral research:] #planned
+    ]
   ]
 ))
 
@@ -147,7 +155,7 @@
       [*#w.name* / #w.position],
       [#format-range(w.startDate, w.endDate)],
       [
-        #w.summary
+        #clean(w.summary)
         #bullets(w.highlights)
       ]
     )
@@ -181,7 +189,7 @@
     entry(
       [*#v.position* — #v.organization],
       [#v.startDate #if v.endDate != v.startDate [– #v.endDate] #if v.location != "" [ · #v.location]],
-      [#v.summary]
+      [#clean(v.summary)]
     )
   }
 }
@@ -195,7 +203,7 @@
     entry(
       [*#a.title*],
       [#format-date(a.date) · #a.awarder],
-      [#a.summary]
+      [#clean(a.summary)]
     )
   }
 }
@@ -210,9 +218,11 @@
   } else if p.year != "" {
     p.year
   } else { "" }
-  let venue-part = if p.venue != "" { emph(p.venue) } else { text("") }
-  let note-part = if p.note != "" [ · #emph(p.note)]
-  [#render-authors(p) (#date-part). #p.title. #venue-part.#note-part]
+  let venue-part = if p.venue != "" { text(" ") + emph(p.venue) + text(".") } else { text("") }
+  let note-part = if p.note != "" { text(" · ") + emph(p.note) } else { text("") }
+  let award = p.at("award", default: "")
+  let award-part = if award != "" { text(" · ") + text(fill: accent, weight: "bold")[#award] } else { text("") }
+  [#render-authors(p) (#date-part). #p.title.#venue-part#note-part#award-part]
 }
 
 #let pubs-body = {

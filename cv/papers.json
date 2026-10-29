@@ -1,6 +1,27 @@
 [
   {
-    "key": "Imteyaz2026-nobody",
+    "key": "Sandhaus2026-deception",
+    "authors": [
+      "Hauke Sandhaus",
+      "Doris Maria Rhomberg"
+    ],
+    "hauke_flags": [
+      true,
+      false
+    ],
+    "year": "2026",
+    "month": "",
+    "month_num": 13,
+    "title": "Deception Is Ugly: Linking Aesthetic Judgment to Perceived Manipulation in Dark Patterns",
+    "venue": "Zeitschrift für Psychologie",
+    "abbr": "ZfP",
+    "note": "Accepted, forthcoming",
+    "award": "",
+    "type": "article",
+    "selected": true
+  },
+  {
+    "key": "10.1145/3785651.3818822",
     "authors": [
       "Kashif Imteyaz",
       "Mohammad Rashidujjaman Rifat",
@@ -25,12 +46,41 @@
     ],
     "year": "2026",
     "month": "November",
-    "title": "``Nobody Did This'': Contribution, Originality, and Accountability in Agent-Mediated Collaboration",
-    "venue": "Companion Publication of the 2026 ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+    "month_num": 11,
+    "title": "“Nobody Did This”: Contribution, Originality, and Accountability in Agent-Mediated Collaboration",
+    "venue": "Proceedings of the 2026 Companion of the Computer-Supported Cooperative Work and Social Computing",
     "abbr": "CSCW Workshop",
     "note": "Workshop co-organizer",
+    "award": "",
     "type": "inproceedings",
     "selected": false
+  },
+  {
+    "key": "Harvey2026-aies",
+    "authors": [
+      "Emma Harvey",
+      "Emanuel Moss",
+      "Hauke Sandhaus",
+      "Abigail Z Jacobs",
+      "Mona Sloane"
+    ],
+    "hauke_flags": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "year": "2026",
+    "month": "October",
+    "month_num": 10,
+    "title": "Context and Symmetry in Auditing: A Case Study of Skeleton Inference in Motion Capture",
+    "venue": "Proceedings of the Ninth AAAI/ACM Conference on AI, Ethics, and Society (AIES '26)",
+    "abbr": "AIES",
+    "note": "",
+    "award": "",
+    "type": "inproceedings",
+    "selected": true
   },
   {
     "key": "Sandhaus2026-indecent",
@@ -46,10 +96,12 @@
     ],
     "year": "2026",
     "month": "June",
+    "month_num": 6,
     "title": "Making Indecent Persuasion Visible: How Evaluation Metrics Shape UX Designers' Ethical Reasoning",
     "venue": "CHIWORK '26: Proceedings of the 5th Annual Symposium on Human-Computer Interaction for Work (Late-Breaking Work)",
     "abbr": "CHIWORK LBW",
     "note": "",
+    "award": "Best Late-Breaking Work Award at CHIWORK '26 (1 of 25)",
     "type": "inproceedings",
     "selected": true
   },
@@ -77,10 +129,12 @@
     ],
     "year": "2026",
     "month": "June",
+    "month_num": 6,
     "title": "Interrogating GenAI Augmentation for CHIworkers: Strategies for Professional Autonomy and Accountability",
     "venue": "CHIWORK '26: Proceedings of the 5th Annual Symposium on Human-Computer Interaction for Work (Workshop)",
     "abbr": "CHIWORK",
     "note": "Workshop co-organizer",
+    "award": "",
     "type": "inproceedings",
     "selected": true
   },
@@ -100,10 +154,12 @@
     ],
     "year": "2026",
     "month": "June",
+    "month_num": 6,
     "title": "Visible Adoption, Untracked Contribution: GitHub Evidence of the Accountability Gap Across Three Cohorts of an HCI Prototyping Course",
     "venue": "CHIWORK '26: Adjunct Proceedings of the 5th Annual Symposium on Human-Computer Interaction for Work",
     "abbr": "CHIWORK Workshop",
     "note": "Workshop paper at CHIWORK '26 (workshop I co-organized)",
+    "award": "",
     "type": "inproceedings",
     "selected": false
   },
@@ -137,31 +193,14 @@
     ],
     "year": "2026",
     "month": "April",
+    "month_num": 4,
     "title": "Bridge Over Troubled Water: Aligning Commercial Incentives With Ethical Design Practice To Combat Deceptive Patterns",
     "venue": "Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
     "abbr": "CHI Workshop",
     "note": "Workshop co-organizer",
+    "award": "",
     "type": "inproceedings",
     "selected": false
-  },
-  {
-    "key": "Sandhaus2026-deception",
-    "authors": [
-      "Hauke Sandhaus",
-      "Doris Maria Rhomberg"
-    ],
-    "hauke_flags": [
-      true,
-      false
-    ],
-    "year": "2026",
-    "month": "",
-    "title": "Deception Is Ugly: Linking Aesthetic Judgment to Perceived Manipulation in Dark Patterns",
-    "venue": "Zeitschrift für Psychologie",
-    "abbr": "ZfP",
-    "note": "Accepted, forthcoming",
-    "type": "article",
-    "selected": true
   },
   {
     "key": "Sandhaus2025-hc",
@@ -179,11 +218,38 @@
     ],
     "year": "2025",
     "month": "October",
+    "month_num": 10,
     "title": "My Precious Crash Data: Barriers and Opportunities in Encouraging Autonomous Driving Companies to Share Safety-Critical Data",
     "venue": "Proceedings of the ACM on Human-Computer Interaction",
     "abbr": "CSCW",
     "note": "",
+    "award": "",
     "type": "article",
+    "selected": true
+  },
+  {
+    "key": "Sandhaus2025-jc",
+    "authors": [
+      "Hauke Sandhaus",
+      "Qiuquan Gu",
+      "Maria Teresa Parreira",
+      "Wendy Ju"
+    ],
+    "hauke_flags": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "year": "2025",
+    "month": "July",
+    "month_num": 7,
+    "title": "Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education",
+    "venue": "Proceedings of the 2025 ACM Designing Interactive Systems Conference",
+    "abbr": "DIS",
+    "note": "",
+    "award": "",
+    "type": "inproceedings",
     "selected": true
   },
   {
@@ -206,33 +272,12 @@
     ],
     "year": "2025",
     "month": "June",
+    "month_num": 6,
     "title": "Privacy of Groups in Dense Street Imagery",
     "venue": "Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency",
     "abbr": "FAccT",
     "note": "* = equal contribution",
-    "type": "inproceedings",
-    "selected": true
-  },
-  {
-    "key": "Sandhaus2025-jc",
-    "authors": [
-      "Hauke Sandhaus",
-      "Qiuquan Gu",
-      "Maria Teresa Parreira",
-      "Wendy Ju"
-    ],
-    "hauke_flags": [
-      true,
-      false,
-      false,
-      false
-    ],
-    "year": "2025",
-    "month": "July",
-    "title": "Co-Designing with Transformers: Unpacking the Complex Role of GenAI in Interactive System Design Education",
-    "venue": "Proceedings of the 2025 ACM Designing Interactive Systems Conference",
-    "abbr": "DIS",
-    "note": "",
+    "award": "",
     "type": "inproceedings",
     "selected": true
   },
@@ -256,76 +301,13 @@
     ],
     "year": "2024",
     "month": "September",
+    "month_num": 9,
     "title": "Characterizing Cultural Differences in Naturalistic Driving Interactions",
     "venue": "2024 IEEE 27th International Conference on Intelligent Transportation Systems (ITSC)",
     "abbr": "ITSC",
     "note": "",
+    "award": "",
     "type": "inproceedings",
-    "selected": true
-  },
-  {
-    "key": "sandhaus_student_2024",
-    "authors": [
-      "Hauke Sandhaus",
-      "Maria Teresa Parreira",
-      "Wendy Ju"
-    ],
-    "hauke_flags": [
-      true,
-      false,
-      false
-    ],
-    "year": "2024",
-    "month": "May",
-    "title": "Student Reflections on Self-Initiated GenAI Use in HCI Education",
-    "venue": "LLMs as Research Tools Workshop at the CHI Conference on Human Factors in Computing Systems",
-    "abbr": "CHI Workshop",
-    "note": "",
-    "type": "inproceedings",
-    "selected": false
-  },
-  {
-    "key": "rhomberg_towards_2024",
-    "authors": [
-      "Doris Maria Rhomberg*",
-      "Hauke Sandhaus*"
-    ],
-    "hauke_flags": [
-      false,
-      true
-    ],
-    "year": "2024",
-    "month": "May",
-    "title": "Towards Quantifying Ethical User Experience: Evaluating User Perceptions of Dark Patterns in Social Media",
-    "venue": "Mobilizing Research and Regulatory Action on Dark Patterns and Deceptive Design Practices Workshop at the CHI Conference on Human Factors in Computing Systems",
-    "abbr": "CHI Workshop",
-    "note": "* = equal contribution",
-    "type": "inproceedings",
-    "selected": true
-  },
-  {
-    "key": "Harvey2024-gn",
-    "authors": [
-      "Emma Harvey",
-      "Hauke Sandhaus",
-      "Abigail Z Jacobs",
-      "Emanuel Moss",
-      "Mona Sloane"
-    ],
-    "hauke_flags": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "year": "2024",
-    "month": "January",
-    "title": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology",
-    "venue": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
-    "abbr": "CHI",
-    "note": "",
-    "type": "article",
     "selected": true
   },
   {
@@ -345,11 +327,13 @@
       false
     ],
     "year": "2024",
-    "month": "",
+    "month": "September",
+    "month_num": 9,
     "title": "Modeling Social Situation Awareness in Driving Interactions",
     "venue": "Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
     "abbr": "AutoUI",
     "note": "",
+    "award": "",
     "type": "inproceedings",
     "selected": true
   },
@@ -378,11 +362,13 @@
       false
     ],
     "year": "2024",
-    "month": "",
+    "month": "September",
+    "month_num": 9,
     "title": "Changing Lanes Toward Open Science: Openness and Transparency in Automotive User Research",
     "venue": "Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
     "abbr": "AutoUI",
     "note": "",
+    "award": "",
     "type": "inproceedings",
     "selected": true
   },
@@ -399,13 +385,119 @@
       false
     ],
     "year": "2024",
-    "month": "",
+    "month": "September",
+    "month_num": 9,
     "title": "Regaining Trust: Impact of Transparent User Interface Design on Acceptance of Camera-Based In-Car Health Monitoring Systems",
     "venue": "Adjunct Proceedings of the 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
     "abbr": "AutoUI WiP",
     "note": "",
+    "award": "",
     "type": "inproceedings",
     "selected": true
+  },
+  {
+    "key": "sandhaus_student_2024",
+    "authors": [
+      "Hauke Sandhaus",
+      "Maria Teresa Parreira",
+      "Wendy Ju"
+    ],
+    "hauke_flags": [
+      true,
+      false,
+      false
+    ],
+    "year": "2024",
+    "month": "May",
+    "month_num": 5,
+    "title": "Student Reflections on Self-Initiated GenAI Use in HCI Education",
+    "venue": "LLMs as Research Tools Workshop at the CHI Conference on Human Factors in Computing Systems",
+    "abbr": "CHI Workshop",
+    "note": "",
+    "award": "",
+    "type": "inproceedings",
+    "selected": false
+  },
+  {
+    "key": "rhomberg_towards_2024",
+    "authors": [
+      "Doris Maria Rhomberg*",
+      "Hauke Sandhaus*"
+    ],
+    "hauke_flags": [
+      false,
+      true
+    ],
+    "year": "2024",
+    "month": "May",
+    "month_num": 5,
+    "title": "Towards Quantifying Ethical User Experience: Evaluating User Perceptions of Dark Patterns in Social Media",
+    "venue": "Mobilizing Research and Regulatory Action on Dark Patterns and Deceptive Design Practices Workshop at the CHI Conference on Human Factors in Computing Systems",
+    "abbr": "CHI Workshop",
+    "note": "* = equal contribution",
+    "award": "",
+    "type": "inproceedings",
+    "selected": true
+  },
+  {
+    "key": "Harvey2024-gn",
+    "authors": [
+      "Emma Harvey",
+      "Hauke Sandhaus",
+      "Abigail Z Jacobs",
+      "Emanuel Moss",
+      "Mona Sloane"
+    ],
+    "hauke_flags": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "year": "2024",
+    "month": "May",
+    "month_num": 5,
+    "title": "The Cadaver in the Machine: The Social Practices of Measurement and Validation in Motion Capture Technology",
+    "venue": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
+    "abbr": "CHI",
+    "note": "",
+    "award": "Best Paper Honorable Mention at CHI '24",
+    "type": "article",
+    "selected": true
+  },
+  {
+    "key": "Gray2024-ddp",
+    "authors": [
+      "Colin M Gray",
+      "Johanna T Gunawan",
+      "René Schäfer",
+      "Nataliia Bielova",
+      "Lorena Sánchez Chamorro",
+      "Katie Seaborn",
+      "Thomas Mildner",
+      "Hauke Sandhaus"
+    ],
+    "hauke_flags": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "year": "2024",
+    "month": "May",
+    "month_num": 5,
+    "title": "Mobilizing Research and Regulatory Action on Dark Patterns and Deceptive Design Practices",
+    "venue": "Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+    "abbr": "CHI Workshop",
+    "note": "Workshop co-organizer; co-editor of the workshop proceedings, CEUR-WS Vol. 3720",
+    "award": "",
+    "type": "inproceedings",
+    "selected": false
   },
   {
     "key": "Kim2023-no",
@@ -421,12 +513,74 @@
     ],
     "year": "2023",
     "month": "October",
+    "month_num": 10,
     "title": "VR Job Interview Using a Gender-Swapped Avatar",
     "venue": "Computer Supported Cooperative Work and Social Computing",
     "abbr": "CSCW",
     "note": "* = equal contribution",
+    "award": "",
     "type": "inproceedings",
     "selected": true
+  },
+  {
+    "key": "Ebel2023-breaking",
+    "authors": [
+      "Patrick Ebel",
+      "Pavlo Bazilinskyy",
+      "Angel Hsing-Chi Hwang",
+      "Wendy Ju",
+      "Hauke Sandhaus",
+      "Aravinda Ramakrishnan Srinivasan",
+      "Qian Yang",
+      "Philipp Wintersberger"
+    ],
+    "hauke_flags": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "year": "2023",
+    "month": "September",
+    "month_num": 9,
+    "title": "Breaking Barriers: Workshop on Open Data Practices in AutoUI Research",
+    "venue": "Adjunct Proceedings of the 15th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
+    "abbr": "AutoUI Workshop",
+    "note": "Workshop co-organizer",
+    "award": "",
+    "type": "inproceedings",
+    "selected": false
+  },
+  {
+    "key": "vonSawitzky2023-collab",
+    "authors": [
+      "Tamara von Sawitzky",
+      "Ina Marie Koniakowsky",
+      "Qidan Yan",
+      "Hauke Sandhaus",
+      "Ali Askari"
+    ],
+    "hauke_flags": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "year": "2023",
+    "month": "September",
+    "month_num": 9,
+    "title": "Exploring Interactions for Collaborative Driving in Fully Automated Vehicles",
+    "venue": "Adjunct Proceedings of the 15th International Conference on Automotive User Interfaces and Interactive Vehicular Applications",
+    "abbr": "AutoUI WiP",
+    "note": "",
+    "award": "",
+    "type": "inproceedings",
+    "selected": false
   },
   {
     "key": "sandhaus2023promoting",
@@ -438,10 +592,12 @@
     ],
     "year": "2023",
     "month": "April",
+    "month_num": 4,
     "title": "Promoting Bright Patterns",
     "venue": "CHI '23 Workshop: Designing Technology and Policy Simultaneously",
     "abbr": "CHI Workshop",
-    "note": "This paper started the <a href=\"https://brightpatterns.org/\" target=\"_blank\">brightpatterns.org</a> website",
+    "note": "This paper started the brightpatterns.org website",
+    "award": "",
     "type": "inproceedings",
     "selected": true
   },
@@ -459,31 +615,14 @@
     ],
     "year": "2023",
     "month": "April",
+    "month_num": 4,
     "title": "Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously",
     "venue": "CHI '23 Workshop: Designing Technology and Policy Simultaneously",
     "abbr": "CHI Workshop",
     "note": "",
+    "award": "",
     "type": "inproceedings",
     "selected": true
-  },
-  {
-    "key": "Sandhaus2018-el",
-    "authors": [
-      "Hauke Sandhaus",
-      "Eva Hornecker"
-    ],
-    "hauke_flags": [
-      true,
-      false
-    ],
-    "year": "2018",
-    "month": "October",
-    "title": "A WOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars",
-    "venue": "The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings",
-    "abbr": "UIST",
-    "note": "",
-    "type": "inproceedings",
-    "selected": false
   },
   {
     "key": "Martinez2018-xc",
@@ -501,11 +640,34 @@
     ],
     "year": "2018",
     "month": "",
+    "month_num": 13,
     "title": "Smart Textiles in the Performing Arts",
     "venue": "Textiles, Identity and Innovation: Design the Future",
     "abbr": "D TEX",
     "note": "",
+    "award": "",
     "type": "article",
+    "selected": false
+  },
+  {
+    "key": "Sandhaus2018-el",
+    "authors": [
+      "Hauke Sandhaus",
+      "Eva Hornecker"
+    ],
+    "hauke_flags": [
+      true,
+      false
+    ],
+    "year": "2018",
+    "month": "October",
+    "month_num": 10,
+    "title": "A WOZ Study of Feedforward Information on an Ambient Display in Autonomous Cars",
+    "venue": "The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings",
+    "abbr": "UIST",
+    "note": "",
+    "award": "",
+    "type": "inproceedings",
     "selected": false
   },
   {
@@ -518,10 +680,12 @@
     ],
     "year": "2015",
     "month": "",
+    "month_num": 13,
     "title": "Development of a 3D Navigable Interface for a Touchless Showcase",
     "venue": "",
     "abbr": "UT",
     "note": "Bachelor's thesis, University of Twente",
+    "award": "",
     "type": "misc",
     "selected": false
   }
