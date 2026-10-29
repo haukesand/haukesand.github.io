@@ -18,6 +18,7 @@ importance: 3
   <div><span class="k">Co-lead</span>Jae June Lee</div>
   <div><span class="k">Supervisor</span>Helen Nissenbaum, Digital Life Initiative</div>
   <div><span class="k">Funding</span>Public Interest Responsible Technology Fund, Cornell Tech (2026)</div>
+  <div><span class="k">Paper</span>Values in Public Interest Tech: Practicing Conscientious Design (revise and resubmit)</div>
 </div>
 
 <div class="project-links">
@@ -31,3 +32,5 @@ Each summer, Cornell's Siegel PiTech PhD Impact Fellows spend eight weeks embedd
 The method is the Values at Play framework by Mary Flanagan and Helen Nissenbaum, in its three stages. Discovery: which values are at stake, and for whom. Implementation: turning them into design choices. Verification: checking whether the result embodies them. I turned the framework into collaborative whiteboard activities and short assignments so that fellows can apply each stage to their own project. The format is light: a kickoff seminar, bi-weekly one-on-one check-ins, a final cohort session, and a short reflective write-up. About ten hours over eight weeks.
 
 The 2025 cohort's case studies are on the site as a showcase. The 2026 cohort ran with ten fellows working in health care, city government, public safety, and disability services.
+
+We studied the 2025 run with its seven fellows, placed at New York City agencies and non-profits in disability services, government, legal tech, transit advocacy, and emergency management. The short version: Values at Play works as a shared vocabulary. All seven fellows kept using it to make sense of their projects after the canvases were put away. Whether it changes the design itself depends on an open design space, on meeting the project before key decisions are made, and on how long the fellow stays with the host organization. The paper, with Jae June Lee, Andrea Wang, Erica Chiang, Jennah Gosciak, Kiara Liu, Laura Greenstreet, Olzhas Yessenbayev, and Helen Nissenbaum, is in revise and resubmit.

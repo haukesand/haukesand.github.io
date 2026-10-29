@@ -6,7 +6,7 @@
     "email": "sandhaus@duck.com",
     "phone": "",
     "url": "https://hauke.haus/",
-    "planned_research": "\u201cEveryone Is a Manipulator Now\u201d, testing the personalized manipulativeness of adversarial commercial AI.",
+    "planned_research": "“Everyone Is a Manipulator Now”, testing the personalized manipulativeness of adversarial commercial AI.",
     "summary": "PhD Candidate in Information Science at Cornell Tech (expected July 2027), advised by Helen Nissenbaum. Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Dissertation work develops theory that distinguishes legitimate machine influence from manipulation. Prior industry work at Volkswagen Group Future Center; ongoing NYC field studies with autonomous street robots.",
     "location": {
       "address": "2 West Loop Road",
@@ -315,9 +315,10 @@
     },
     {
       "title": "Backslash Microgrant",
-      "date": "2025",
+      "date": "2025-05",
       "awarder": "Backslash at Cornell Tech",
-      "summary": "Art and technology microgrant for the interactive installation 'App Design as a Commodity', a receipt printer that sells AI-built apps for Venmo change."
+      "summary": "Art and technology microgrant for the interactive installation 'App Design as a Commodity', a receipt printer that sells AI-built apps for Venmo change.",
+      "url": "https://backslash.org/artists"
     },
     {
       "title": "DLI Doctoral Fellow",
@@ -356,11 +357,35 @@
       "summary": "Sandhaus, H., Rhomberg, D. M., Nissenbaum, H."
     },
     {
-      "name": "AI Interaction Design for Human Autonomy (working title)",
+      "name": "Autonomy by Design: Co-Designing a Framework to Evaluate Whether AI Interfaces Support User Autonomy",
       "publisher": "Under review, CHI '27. Companion artifact: human-ai-autonomy-rubric.surge.sh",
       "releaseDate": "2026-09",
-      "authors": ["Hauke Sandhaus", "et al."],
-      "summary": "Sandhaus, H., et al."
+      "authors": ["Hauke Sandhaus", "Jen Semler", "Helen Nissenbaum", "Qian Yang"],
+      "summary": "Sandhaus, H., Semler, J., Nissenbaum, H., Yang, Q."
+    },
+    {
+      "name": "I Think We Did This: Erosion and Reassertion of Students' Design Intention in AI-Saturated Work",
+      "publisher": "Under review, CHI '27",
+      "releaseDate": "2026-09",
+      "authors": ["Hauke Sandhaus", "Ruixiang Han", "Maria Teresa Parreira", "Wendy Ju"],
+      "summary": "Sandhaus, H., Han, R., Parreira, M. T., Ju, W."
+    },
+    {
+      "name": "Values in Public Interest Tech: Practicing Conscientious Design",
+      "publisher": "Revise and resubmit",
+      "releaseDate": "2026",
+      "authors": [
+        "Hauke Sandhaus",
+        "Jae June Lee",
+        "Andrea Wang",
+        "Erica Chiang",
+        "Jennah Gosciak",
+        "Kiara Liu",
+        "Laura Greenstreet",
+        "Olzhas Yessenbayev",
+        "Helen Nissenbaum"
+      ],
+      "summary": "Sandhaus, H., Lee, J. J., Wang, A., Chiang, E., Gosciak, J., Liu, K., Greenstreet, L., Yessenbayev, O., Nissenbaum, H."
     }
   ],
   "publications": [

@@ -24,7 +24,7 @@ nav_order: 2
 {% for u in ur %}
   <li>
     <span class="title">{{ u.name }}</span><br />
-    {{ u.summary }} · <span class="venue">{{ u.publisher }}</span>
+    {% if u.summary %}{{ u.summary }}{% else %}{{ u.authors | join: ", " }}{% endif %} · <span class="venue">{{ u.publisher }}</span>
   </li>
 {% endfor %}
 </ul>
@@ -45,7 +45,7 @@ nav_order: 2
 <h2 class="pubtype" id="organized">Workshops organized <span>as co-organizer</span></h2>
 {% bibliography --group_by none --query @*[pubtype=organized]* %}
 
-<h2 class="pubtype" id="other">Other <span>book chapter, thesis, non-archival</span></h2>
+<h2 class="pubtype" id="other">Other <span>thesis, non-archival</span></h2>
 {% bibliography --group_by none --query @*[pubtype=other]* %}
 
 </div>
