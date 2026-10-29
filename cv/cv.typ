@@ -232,7 +232,7 @@
   ("short",      "Short papers, posters & late-breaking work", "peer-reviewed"),
   ("workshop",   "Workshop papers", ""),
   ("organized",  "Workshops organized", "as co-organizer"),
-  ("other",      "Other", "book chapter, thesis, non-archival"),
+  ("other",      "Other", "thesis, non-archival"),
 )
 #let sub-heading(name, hint, n) = {
   v(0.35em)
