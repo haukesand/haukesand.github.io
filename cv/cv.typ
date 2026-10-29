@@ -53,6 +53,10 @@
   #body
 ]
 
+// resume.json carries hidden <span aria-hidden> decoys for the website; drop
+// them (and any other tags) before printing.
+#let clean(s) = s.replace(regex("<span[^>]*>.*?</span>"), "").replace(regex("<[^>]+>"), "").trim()
+
 #let bullets(items) = if items != none and items.len() > 0 [
   #for it in items [
     - #it
@@ -134,6 +138,10 @@
   [Started August 2021 · Expected graduation July 2027 · NYC, NY, USA],
   [
     Advised by Helen Nissenbaum (Chair), Wendy Ju (Co-Chair), and Qian Yang (Committee Member).
+    #let planned = resume.basics.at("planned_research", default: "")
+    #if planned != "" [
+      \ #text(fill: muted)[Planned postdoctoral research:] #planned
+    ]
   ]
 ))
 
@@ -147,7 +155,7 @@
       [*#w.name* / #w.position],
       [#format-range(w.startDate, w.endDate)],
       [
-        #w.summary
+        #clean(w.summary)
         #bullets(w.highlights)
       ]
     )
@@ -181,7 +189,7 @@
     entry(
       [*#v.position* — #v.organization],
       [#v.startDate #if v.endDate != v.startDate [– #v.endDate] #if v.location != "" [ · #v.location]],
-      [#v.summary]
+      [#clean(v.summary)]
     )
   }
 }
@@ -195,7 +203,7 @@
     entry(
       [*#a.title*],
       [#format-date(a.date) · #a.awarder],
-      [#a.summary]
+      [#clean(a.summary)]
     )
   }
 }
@@ -210,16 +218,54 @@
   } else if p.year != "" {
     p.year
   } else { "" }
-  let venue-part = if p.venue != "" { emph(p.venue) } else { text("") }
-  let note-part = if p.note != "" [ · #emph(p.note)]
-  [#render-authors(p) (#date-part). #p.title. #venue-part.#note-part]
+  let venue-part = if p.venue != "" { text(" ") + emph(p.venue) + text(".") } else { text("") }
+  let note-part = if p.note != "" { text(" · ") + emph(p.note) } else { text("") }
+  let award = p.at("award", default: "")
+  let award-part = if award != "" { text(" · ") + text(fill: accent, weight: "bold")[#award] } else { text("") }
+  [#render-authors(p) (#date-part). #p.title.#venue-part#note-part#award-part]
 }
 
+// Grouped by `pubtype` from papers.bib. Order and headings live here.
+#let pub-groups = (
+  ("journal",    "Journal articles", "peer-reviewed"),
+  ("conference", "Conference papers", "full papers, peer-reviewed"),
+  ("short",      "Short papers, posters & late-breaking work", "peer-reviewed"),
+  ("workshop",   "Workshop papers", ""),
+  ("organized",  "Workshops organized", "as co-organizer"),
+  ("other",      "Other", "book chapter, thesis, non-archival"),
+)
+#let sub-heading(name, hint, n) = {
+  v(0.35em)
+  text(size: 7.5pt, weight: "bold", tracking: 0.08em)[#upper(name)]
+  text(size: 7.5pt, fill: muted)[ · #n#if hint != "" [ · #hint]]
+  v(-0.15em)
+}
+// Names given as plain strings (under-review list in resume.json); bold Hauke.
+#let render-names(names) = {
+  let out = []
+  for (i, name) in names.enumerate() {
+    out += if name.contains("Hauke") { strong(name) } else { text(name) }
+    if i < names.len() - 1 { out += text(", ") }
+  }
+  out
+}
 #let pubs-body = {
   set list(indent: 0.4em, body-indent: 0.35em)
-  for p in papers [
-    - #pub-item(p)
-  ]
+  let ur = resume.at("under-review", default: ())
+  if ur.len() > 0 {
+    sub-heading("Under review", "", ur.len())
+    for u in ur [
+      - #render-names(u.at("authors", default: (u.summary,))) (#format-date(u.releaseDate)). #u.name. #emph(u.publisher).
+    ]
+  }
+  for (key, name, hint) in pub-groups {
+    let items = papers.filter(p => p.pubtype == key)
+    if items.len() == 0 { continue }
+    sub-heading(name, hint, items.len())
+    for p in items [
+      - #pub-item(p)
+    ]
+  }
 }
 #section("Publications", pubs-body)
 
