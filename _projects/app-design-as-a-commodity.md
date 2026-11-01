@@ -30,7 +30,7 @@ The amount you pay sets the budget. A quarter buys a quick build; a dollar buys 
 
 The piece asks what you are buying when software costs less than a coffee and takes less time to make than drinking one. The receipt is the only physical trace of a process that is otherwise invisible. The project received a Backslash microgrant from Cornell Tech's art and technology program and was shown on May 6, 2025.
 
-<!--
-Video of the installation in use: drop the file in assets/video/ and uncomment.
+
+
 <video class="project-hero" controls preload="metadata" src="{{ '/assets/video/app-design-as-a-commodity.mp4' | relative_url }}"></video>
--->
+
