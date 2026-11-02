@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Ljay
+published: false # draft: flip to true once the write-up is redone
 description: Live lyrics karaoke and VJ visuals for DJ sets. Reads macOS Now Playing, pulls synced lyrics, and renders audio-reactive scenes in the browser.
 img: assets/img/projects/ljay.png
 years: 2026 – now
