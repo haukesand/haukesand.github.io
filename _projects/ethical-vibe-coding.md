@@ -29,3 +29,8 @@ Good code, good vibes. TECHIE 1121 was a three-week course in Cornell Tech's Sum
 Week one, Vibe Coding: Gaining Control, covered the tools: a personal portfolio page, prompting strategies that steer the output, and a session on bias in vibe coding where students probe which names, stock images, and defaults the tools produce when nobody specifies them. Week two, Ethics: Doing the Right Thing, turned the tools on themselves: values in vibe coding with the Values at Play framework, a red-teaming day where students build dark patterns on purpose in order to recognize them, and AI Against AI, using AI to defend against AI harms. Week three was a multi-day group project.
 
 Each in-class activity has a live page, instructions, and a reflection rubric, so the course site doubles as a reusable curriculum. The course grew out of my research on how students use generative AI in HCI prototyping classes {% cite Sandhaus2025-jc %} {% cite Parreira2026-visible %}.
+
+<!--
+Course video: drop the file in assets/video/ and uncomment.
+<video class="project-hero" controls preload="metadata" src="{{ '/assets/video/ethical-vibe-coding.mp4' | relative_url }}"></video>
+-->

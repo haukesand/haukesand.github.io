@@ -7,7 +7,7 @@
     "phone": "",
     "url": "https://hauke.haus/",
     "planned_research": "“Everyone Is a Manipulator Now”, testing the personalized manipulativeness of adversarial commercial AI.",
-    "summary": "PhD Candidate in Information Science at Cornell Tech (expected July 2027), advised by Helen Nissenbaum. Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Dissertation work develops theory that distinguishes legitimate machine influence from manipulation. Prior industry work at Volkswagen Group Future Center; ongoing NYC field studies with autonomous street robots.",
+    "summary": "PhD Candidate in Information Science at Cornell Tech (expected July 2027), advised by Helen Nissenbaum and Wendy Ju. Designing for user and worker autonomy, imagining AI systems that not just respect but support human autonomy. Dissertation work develops theory that distinguishes legitimate machine influence from manipulation. Prior industry work at Volkswagen Group Future Center; ongoing NYC field studies with autonomous street robots.",
     "location": {
       "address": "2 West Loop Road",
       "postalCode": "10044",
@@ -15,7 +15,9 @@
       "countryCode": "US",
       "region": "New York"
     },
-    "profiles": []
+    "profiles": [],
+    "advisors": "Helen Nissenbaum (Chair) and Wendy Ju (Co-Chair)",
+    "committee": "Daniel Susser (Cornell Tech) and Colin M. Gray (external, Indiana University Bloomington)"
   },
   "work": [
     {
@@ -33,7 +35,7 @@
       "url": "",
       "startDate": "2021-08",
       "endDate": "",
-      "summary": "Working under the advisement of Helen Nissenbaum (Chair) and co-advised by associate professor Wendy Ju, with assistant professor Qian Yang as committee member, focusing on transparent AI & autonomous vehicle interaction. Research focuses on enabling technology designers to develop for positive societal impact while navigating external influences. Expected graduation: July 2027.",
+      "summary": "Advised by Helen Nissenbaum (Chair) and Wendy Ju (Co-Chair); committee members Daniel Susser and Colin M. Gray (external). Research on designing for user and worker autonomy: how designers can tell legitimate machine influence from manipulation, and the methods and metrics that help them resist external pressures. Expected graduation: July 2027.",
       "highlights": [
         "Developing frameworks for responsible and efficient design innovation methodologies",
         "Researching approaches to empower designers to navigate external influences in user-centered design processes",
@@ -637,7 +639,64 @@
       "keywords": []
     }
   ],
-  "references": [],
+  "references": [
+    {
+      "name": "Helen Nissenbaum",
+      "title": "Tisch Professor of Information Science",
+      "affiliation": "Cornell Tech",
+      "relationship": "Ph.D. advisor (Chair); Director, Digital Life Initiative",
+      "url": "https://nissenbaum.tech.cornell.edu/",
+      "reference": "Tisch Professor of Information Science, Cornell Tech. Ph.D. advisor (Chair); Director, Digital Life Initiative."
+    },
+    {
+      "name": "Wendy Ju",
+      "title": "Associate Professor of Information Science",
+      "affiliation": "Cornell Tech",
+      "relationship": "Ph.D. co-advisor (Co-Chair)",
+      "url": "https://tech.cornell.edu/people/wendy-ju/",
+      "reference": "Associate Professor of Information Science, Cornell Tech. Ph.D. co-advisor (Co-Chair)."
+    },
+    {
+      "name": "Colin M. Gray",
+      "title": "Professor of Informatics",
+      "affiliation": "Indiana University Bloomington",
+      "relationship": "External committee member",
+      "url": "https://colingray.me/",
+      "reference": "Professor of Informatics, Indiana University Bloomington. External committee member."
+    },
+    {
+      "name": "Daniel Susser",
+      "title": "Associate Professor of Information Science",
+      "affiliation": "Cornell Tech",
+      "relationship": "Committee member",
+      "url": "https://infosci.cornell.edu/people/daniel-susser",
+      "reference": "Associate Professor of Information Science, Cornell Tech. Committee member."
+    },
+    {
+      "name": "Eva Hornecker",
+      "title": "Professor of Human-Computer Interaction",
+      "affiliation": "Bauhaus-Universität Weimar",
+      "relationship": "M.Sc. thesis advisor",
+      "url": "http://www.ehornecker.de",
+      "reference": "Professor of Human-Computer Interaction, Bauhaus-Universität Weimar. M.Sc. thesis advisor."
+    },
+    {
+      "name": "Klaus Zyciora",
+      "title": "President, Changan Automobile (global design)",
+      "affiliation": "formerly Head of Volkswagen Group Design",
+      "relationship": "Worked together during my UX Technologist years, 2018–2021",
+      "url": "https://en.wikipedia.org/wiki/Klaus_Zyciora",
+      "reference": "President, Changan Automobile (global design), formerly Head of Volkswagen Group Design. Worked together during my UX Technologist years, 2018–2021."
+    },
+    {
+      "name": "Ulrike Müller",
+      "title": "Former Managing Director, VW Group Future Center Europe",
+      "affiliation": "",
+      "relationship": "Worked together during my UX Technologist years, 2018–2021",
+      "url": "https://autocontact.at/ac/team-member/ulrike-mueller/",
+      "reference": "Former Managing Director, VW Group Future Center Europe. Worked together during my UX Technologist years, 2018–2021."
+    }
+  ],
   "projects": [
     {
       "name": "Benevolent User Interface Design",
