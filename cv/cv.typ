@@ -137,7 +137,7 @@
   [*#phd.name* / #phd.position],
   [Started August 2021 · Expected graduation July 2027 · NYC, NY, USA],
   [
-    Advised by Helen Nissenbaum (Chair), Wendy Ju (Co-Chair), and Qian Yang (Committee Member).
+    Advised by #resume.basics.advisors. Committee: #resume.basics.committee.
     #let planned = resume.basics.at("planned_research", default: "")
     #if planned != "" [
       \ #text(fill: muted)[Planned postdoctoral research:] #planned
@@ -279,3 +279,25 @@
   ]
 }
 #section("Skills", skills-body)
+
+// ============================================================================
+// REFERENCES (resume.json `references`; email printed only when filled in)
+// ============================================================================
+#let refs-body = {
+  // two columns so the block stays compact
+  let cells = ()
+  for r in resume.references {
+    let who = (r.at("title", default: ""), r.at("affiliation", default: "")).filter(x => x != "").join(" · ")
+    // public CV: a link instead of an email address
+    let url = r.at("url", default: "")
+    let host = url.replace(regex("^https?://(www\\.)?"), "").split("/").at(0)
+    let label = if host.contains("wikipedia") { "Wikipedia" } else { host }
+    cells.push(block(spacing: 0.3em)[
+      *#r.name*#if url != "" [ #h(0.4em) #text(size: 7.5pt, fill: muted)[#link(url)[#label]]] \
+      #text(size: 8pt, fill: muted)[#who] \
+      #text(size: 8.5pt)[#r.relationship]
+    ])
+  }
+  grid(columns: (1fr, 1fr), column-gutter: 1.4em, row-gutter: 0.45em, ..cells)
+}
+#if resume.references.len() > 0 { section("References", refs-body) }
