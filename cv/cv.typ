@@ -234,12 +234,10 @@
   ("organized",  "Workshops organized", "as co-organizer"),
   ("other",      "Other", "thesis, non-archival"),
 )
-#let sub-heading(name, hint, n) = {
-  v(0.35em)
-  text(size: 7.5pt, weight: "bold", tracking: 0.08em)[#upper(name)]
-  text(size: 7.5pt, fill: muted)[ · #n#if hint != "" [ · #hint]]
-  v(-0.15em)
-}
+// sticky: the label always moves to the next page together with its first item
+#let sub-heading(name, hint, n) = block(sticky: true, above: 0.9em, below: 0.4em)[
+  #text(size: 7.5pt, weight: "bold", tracking: 0.08em)[#upper(name)]#text(size: 7.5pt, fill: muted)[ · #n#if hint != "" [ · #hint]]
+]
 // Names given as plain strings (under-review list in resume.json); bold Hauke.
 #let render-names(names) = {
   let out = []
@@ -281,23 +279,32 @@
 #section("Skills", skills-body)
 
 // ============================================================================
-// REFERENCES (resume.json `references`; email printed only when filled in)
+// REFERENCES (resume.json `references`). Name links to `url`; the line shows
+// `email` when filled in, otherwise the link's host.
 // ============================================================================
 #let refs-body = {
   // two columns so the block stays compact
   let cells = ()
+  let missing = 0
   for r in resume.references {
     let who = (r.at("title", default: ""), r.at("affiliation", default: "")).filter(x => x != "").join(" · ")
-    // public CV: a link instead of an email address
     let url = r.at("url", default: "")
+    let email = r.at("email", default: "")
+    if email == "" { missing += 1 }
     let host = url.replace(regex("^https?://(www\\.)?"), "").split("/").at(0)
-    let label = if host.contains("wikipedia") { "Wikipedia" } else { host }
+    let host-label = if host.contains("wikipedia") { "Wikipedia" } else { host }
+    let name = if url != "" { link(url)[*#r.name*] } else { strong(r.name) }
+    let contact = if email != "" { link("mailto:" + email)[#email] } else if url != "" { link(url)[#host-label] } else { none }
     cells.push(block(spacing: 0.3em)[
-      *#r.name*#if url != "" [ #h(0.4em) #text(size: 7.5pt, fill: muted)[#link(url)[#label]]] \
+      #name#if contact != none [ #h(0.4em) #text(size: 7.5pt, fill: muted)[#contact]] \
       #text(size: 8pt, fill: muted)[#who] \
       #text(size: 8.5pt)[#r.relationship]
     ])
   }
   grid(columns: (1fr, 1fr), column-gutter: 1.4em, row-gutter: 0.45em, ..cells)
+  if missing > 0 {
+    v(0.5em)
+    text(size: 7.5pt, fill: muted)[Contact details for the remaining references available on request.]
+  }
 }
 #if resume.references.len() > 0 { section("References", refs-body) }
