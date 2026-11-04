@@ -6,7 +6,7 @@ img: assets/img/projects/portfolio.png
 years: 2014 – 2021
 status: archived
 category: archive
-importance: 1
+importance: 2
 redirect: https://hauke.haus/sandhaus.de/
 ---
 

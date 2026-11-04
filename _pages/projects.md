@@ -9,6 +9,8 @@ nav_order: 3
 
 <!-- _pages/projects.md: tiles come from _projects/*.md via _includes/project_tile.liquid -->
 
+Selected creative work is also collected in a [PDF portfolio]({{ '/assets/pdf/Portfolio_Sandhaus.pdf' | relative_url }}).
+
 {% assign tools = site.projects | where: "category", "tools" | sort: "importance" %}
 {% assign experiments = site.projects | where: "category", "experiments" | sort: "importance" %}
 {% assign archive = site.projects | where: "category", "archive" | sort: "importance" %}

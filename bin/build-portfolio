@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Build the creative-work portfolio PDF from cv/portfolio.typ (images in cv/portfolio/).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+echo "→ typst compile cv/portfolio.typ → assets/pdf/Portfolio_Sandhaus.pdf"
+typst compile --root . cv/portfolio.typ assets/pdf/Portfolio_Sandhaus.pdf
+echo "✓ Built assets/pdf/Portfolio_Sandhaus.pdf ($(du -h assets/pdf/Portfolio_Sandhaus.pdf | cut -f1))"

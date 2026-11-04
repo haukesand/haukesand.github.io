@@ -981,3 +981,30 @@ a.project-tile {
     }
   }
 }
+
+// Project detail pages: a row of small cards (image, heading, paragraph).
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid var(--global-divider-color);
+    margin: 0 0 0.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 0 0 0.4rem;
+  }
+
+  p {
+    font-size: 0.88rem;
+  }
+}
