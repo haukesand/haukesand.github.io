@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Build the private references PDF (with phone numbers) from cv/references.typ.
+# Usage: bin/build-references [-o "Nissenbaum,Ju,Gray"] [-t "References for X"] [-f out.pdf]
+set -euo pipefail
+cd "$(dirname "$0")/.."
+only=""; title="References"; out="cv/private/References_Sandhaus.pdf"
+while getopts "o:t:f:" opt; do
+  case $opt in
+    o) only=$OPTARG ;;
+    t) title=$OPTARG ;;
+    f) out=$OPTARG ;;
+    *) echo "usage: $0 [-o names] [-t title] [-f out.pdf]" >&2; exit 2 ;;
+  esac
+done
+mkdir -p cv/private
+[[ -f cv/private/references.json ]] || echo '{}' > cv/private/references.json
+typst compile --root . --input "only=$only" --input "title=$title" cv/references.typ "$out"
+echo "✓ Built $out ($(du -h "$out" | cut -f1))"
