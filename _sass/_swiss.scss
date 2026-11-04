@@ -995,6 +995,8 @@ a.project-tile {
 
   img {
     width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border: 1px solid var(--global-divider-color);
     margin: 0 0 0.6rem;
   }
