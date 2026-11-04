@@ -298,10 +298,10 @@
     cells.push(block(spacing: 0.3em)[
       #name#if contact != none [ #h(0.4em) #text(size: 7.5pt, fill: muted)[#contact]] \
       #text(size: 8pt, fill: muted)[#who] \
-      #text(size: 8.5pt)[#r.relationship]
+      #text(size: 8pt)[#r.relationship]
     ])
   }
-  grid(columns: (1fr, 1fr), column-gutter: 1.4em, row-gutter: 0.45em, ..cells)
+  grid(columns: (1fr, 1fr, 1fr), column-gutter: 1.2em, row-gutter: 0.5em, ..cells)
   if missing > 0 {
     v(0.5em)
     text(size: 7.5pt, fill: muted)[Contact details for the remaining references available on request.]
