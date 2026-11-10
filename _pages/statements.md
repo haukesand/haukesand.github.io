@@ -14,14 +14,14 @@ toc:
 
 <ul class="statement-index">
 {% for s in statements %}
-  <li><a href="#{{ s.title | slugify }}">{{ s.title }}</a> · <a href="{{ '/assets/pdf/' | append: s.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a><br><span class="statement-summary">{{ s.summary }}</span></li>
+  <li><a href="#{{ s.title | slugify }}">{{ s.title }}</a> · <a href="{{ '/assets/pdf/' | append: s.pdf | relative_url }}" target="_blank" rel="noopener">PDF<span class="sr-only"> of the {{ s.title }}</span></a><br><span class="statement-summary">{{ s.summary }}</span></li>
 {% endfor %}
 </ul>
 
 {% for s in statements %}
 
 <h2 id="{{ s.title | slugify }}" class="statement-title">{{ s.title }}</h2>
-<p class="statement-meta">Generic version, updated {{ s.updated | date: "%B %Y" }}. <a class="statement-pdf" href="{{ '/assets/pdf/' | append: s.pdf | relative_url }}" target="_blank" rel="noopener">Download PDF</a></p>
+<p class="statement-meta">Generic version, updated {{ s.updated | date: "%B %Y" }}. <a class="statement-pdf" href="{{ '/assets/pdf/' | append: s.pdf | relative_url }}" target="_blank" rel="noopener">Download PDF<span class="sr-only"> of the {{ s.title }}</span></a></p>
 
 <div class="statement-body">
 {{ s.content | markdownify }}

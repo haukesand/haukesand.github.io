@@ -5,6 +5,11 @@
 
 //swiss colors
 $swiss-red: #f2511b !default;
+// Accent for text on white: same hue, 4.9:1 contrast (WCAG AA). Dark mode keeps $swiss-red.
+$swiss-red-text: #c9410f !default;
+// Secondary text: 5.3:1 on white, 6.1:1 on the dark background.
+$grey-color-text: #6b6b6b !default;
+$grey-color-text-dark: #9a9a9a !default;
 $red-color-dark: #b71c1c !default;
 $light-swiss-red-color: lighten($swiss-red, 25%);
 

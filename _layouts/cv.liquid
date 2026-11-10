@@ -12,7 +12,9 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
+            aria-label="Download the CV as PDF"
+            title="Download the CV as PDF"
+            ><i class="fa-solid fa-file-pdf" aria-hidden="true"></i
           ></a>
         {% endif %}
       </h1>
@@ -30,7 +32,7 @@ layout: default
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            <h2 class="card-title font-weight-medium">{{ entry.title }}</h2>
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -62,7 +64,9 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
+            aria-label="Download the CV as PDF"
+            title="Download the CV as PDF"
+            ><i class="fa-solid fa-file-pdf" aria-hidden="true"></i
           ></a>
         {% endif %}
       </h1>
@@ -86,7 +90,7 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            <h2 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h2>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}

@@ -1,4 +1,6 @@
 {% if site.bib_search %}
   <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
+  {% comment %} Keep the input on one line: this include is rendered inside Markdown, where indented lines become code. {% endcomment %}
+  <!-- prettier-ignore -->
+  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter" aria-label="Filter publications">
 {% endif %}

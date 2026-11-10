@@ -11,11 +11,11 @@ nav_order: 6
 
 Generic versions of my application statements. The full texts are on the [statements page](/statements/); each is also a PDF.
 
-- **[Research Statement](/statements/#research-statement)** · [PDF](/assets/pdf/Statement_Research_Sandhaus.pdf)  
+- **[Research Statement](/statements/#research-statement)** · [PDF<span class="sr-only"> of the research statement</span>](/assets/pdf/Statement_Research_Sandhaus.pdf)  
   Designing with and for AI so that users and the designers who build with it keep deciding.
-- **[Teaching Statement](/statements/#teaching-statement)** · [PDF](/assets/pdf/Statement_Teaching_Sandhaus.pdf)  
+- **[Teaching Statement](/statements/#teaching-statement)** · [PDF<span class="sr-only"> of the teaching statement</span>](/assets/pdf/Statement_Teaching_Sandhaus.pdf)  
   Teaching for autonomy: intent before generation, process over polish, boundaries and exits as competences.
-- **[Mentoring Statement](/statements/#mentoring-statement)** · [PDF](/assets/pdf/Statement_Mentoring_Sandhaus.pdf)  
+- **[Mentoring Statement](/statements/#mentoring-statement)** · [PDF<span class="sr-only"> of the mentoring statement</span>](/assets/pdf/Statement_Mentoring_Sandhaus.pdf)  
   How I mentor, what mentees learn, what I expect, and what my mentees have gone on to do.
 
 ## Teaching Experience
@@ -81,24 +81,24 @@ Generic versions of my application statements. The full texts are on the [statem
 <!-- ### Invited Talks -->
 
 - **AI and Design Autonomy** (Fall 2026)  
-   _Guest lecture in HCI and Design (INFO 6410 / CS 5682), Cornell Tech, USA. Given twice._ · [📑 Slides](https://www.figma.com/deck/uztNi4SBxA8XT188VlMATO/AI-And-Design-Autonomy?node-id=1-32)  
+   _Guest lecture in HCI and Design (INFO 6410 / CS 5682), Cornell Tech, USA. Given twice._ · [<span aria-hidden="true">📑</span> Slides<span class="sr-only">: AI and Design Autonomy</span>](https://www.figma.com/deck/uztNi4SBxA8XT188VlMATO/AI-And-Design-Autonomy?node-id=1-32)  
   The long version of the Pathetic Designer talk, as a full guest lecture for the master's HCI design course taught by Nicki Dell and Thijs Roumen. How AI tools, metrics, and deadlines shape what designers decide; where design intent erodes in AI-saturated work, with evidence from four cohorts of a prototyping course; and how to keep deciding: intent before generation, process over polish, and boundaries and exits as competences.
 
 - **The Pathetic Designer: How AI Infrastructure Can Erode Design Intention — and How Designers Can Push Back** (October 2026)  
-   _Digital Life Initiative, Cornell Tech, USA_ · [📑 Slides](https://www.figma.com/deck/1zLdF19Ngc6mw4vKpimKTY/DLI-%E2%80%94-The-Pathetic-Designer--Hauke-Sandhaus-?node-id=2-2)  
+   _Digital Life Initiative, Cornell Tech, USA_ · [<span aria-hidden="true">📑</span> Slides<span class="sr-only">: The Pathetic Designer</span>](https://www.figma.com/deck/1zLdF19Ngc6mw4vKpimKTY/DLI-%E2%80%94-The-Pathetic-Designer--Hauke-Sandhaus-?node-id=2-2)  
   A 20-minute talk. Lessig's pathetic dot is moved by law, markets, norms, and architecture, and may take those forces for its own choices. Designers today are moved by the metrics they are handed, their deadlines, their teams' norms, and the AI tools in every step of their work. The talk draws on my studies of students' design intent in AI-saturated courses and of how evaluation data changes which interfaces UX professionals reject, and ends with what designers can do about it.
 
 - **Bright Patterns: Towards Extra Ethical User Experience Design** (March 2024)  
-   _Digital Life Initiative, Cornell Tech, USA_ · [📑 Slides](https://docs.google.com/presentation/d/1HNU8c5veMYzNhvuhTO9g0KvuFStQ4ddr5ja7xKzAUBY/edit?usp=sharing)  
-  Dark Patterns have received significant attention from the academic Human-Computer Interaction community since 2010, when Brignull launched darkpatterns.org and initially described them as "tricks used in websites and apps that make you do things that you didn't mean to." In this presentation, DLI Doctoral Fellow Hauke Sandhaus will introduce two ongoing projects: firstly, his definition of Bright Patterns as an antonym to Dark Patterns, and secondly, an empirical study examining how the evaluation standards of user experience designers do not necessarily guide them towards ethical design practices. [Read more >](https://www.dli.tech.cornell.edu/seminars/%22bright-patterns%3A-towards-extra-ethical-user-experience-design%22-%26-%22explorable-explainable-ai%3A-improving-ai-understanding-for-community-health-workers-in-india%22)
+   _Digital Life Initiative, Cornell Tech, USA_ · [<span aria-hidden="true">📑</span> Slides<span class="sr-only">: Bright Patterns at DLI</span>](https://docs.google.com/presentation/d/1HNU8c5veMYzNhvuhTO9g0KvuFStQ4ddr5ja7xKzAUBY/edit?usp=sharing)  
+  Dark Patterns have received significant attention from the academic Human-Computer Interaction community since 2010, when Brignull launched darkpatterns.org and initially described them as "tricks used in websites and apps that make you do things that you didn't mean to." In this presentation, DLI Doctoral Fellow Hauke Sandhaus will introduce two ongoing projects: firstly, his definition of Bright Patterns as an antonym to Dark Patterns, and secondly, an empirical study examining how the evaluation standards of user experience designers do not necessarily guide them towards ethical design practices. [Read more<span class="sr-only"> about the DLI seminar</span> >](https://www.dli.tech.cornell.edu/seminars/%22bright-patterns%3A-towards-extra-ethical-user-experience-design%22-%26-%22explorable-explainable-ai%3A-improving-ai-understanding-for-community-health-workers-in-india%22)
 
 - **Conceptualizing Bright Patterns** (January 2024)  
-   _Lorentz Workshop on Fair Patterns, Leiden University, Netherlands_ · [📑 Slides](https://docs.google.com/presentation/d/1_RUTMhAYq6cJlihzO3ZZUnPn76EKJkpYOBbG0FRyWE0/edit?usp=sharing)  
-  This workshop brings together legal, human-computer interaction and economic experts coming from academia, businesses and enforcement agencies. Dark patterns, or deceptive design, are present on an overwhelming majority of digital services: they do not only clutter the interfaces of websites and mobile applications, but they are also widespread in emerging technologies such as voice assistants that provide personalized recommendations. [Read more >](https://www.lorentzcenter.nl/fair-patterns-for-online-interfaces.html)
+   _Lorentz Workshop on Fair Patterns, Leiden University, Netherlands_ · [<span aria-hidden="true">📑</span> Slides<span class="sr-only">: Conceptualizing Bright Patterns</span>](https://docs.google.com/presentation/d/1_RUTMhAYq6cJlihzO3ZZUnPn76EKJkpYOBbG0FRyWE0/edit?usp=sharing)  
+  This workshop brings together legal, human-computer interaction and economic experts coming from academia, businesses and enforcement agencies. Dark patterns, or deceptive design, are present on an overwhelming majority of digital services: they do not only clutter the interfaces of websites and mobile applications, but they are also widespread in emerging technologies such as voice assistants that provide personalized recommendations. [Read more<span class="sr-only"> about the Lorentz workshop</span> >](https://www.lorentzcenter.nl/fair-patterns-for-online-interfaces.html)
 
 - **Towards Prototyping Driverless Vehicle Behaviors, City Design, and Policies Simultaneously** (October 2023)  
-   _Smart Cities as Knowledge Commons, Villanova University Charles Widger School of Law, USA_ · [📑 Slides](https://docs.google.com/presentation/d/1zOP5aSnHkJUmGMANGceYTDUmbuR60iRG/edit?usp=sharing&ouid=115041818286926436811&rtpof=true&sd=true)  
-   This Governing Knowledge Commons (GKC) workshop, to be followed by a book collecting case studies focused on Smart Cities and knowledge commons, offers a strategic opportunity to advance knowledge on how cities should respond to the challenges presented by digital networked technologies. Emerging smart cities will require trusted governance and engaged citizens. Integrating surveillance, AI, automation and smart tech within basic infrastructure as well as public and private services and spaces raises a complex set of ethical, economic, political, social, and technological questions [Read more >](https://knowledge-commons.net/projects/smart-cities/)
+   _Smart Cities as Knowledge Commons, Villanova University Charles Widger School of Law, USA_ · [<span aria-hidden="true">📑</span> Slides<span class="sr-only">: Prototyping Driverless Vehicle Behaviors</span>](https://docs.google.com/presentation/d/1zOP5aSnHkJUmGMANGceYTDUmbuR60iRG/edit?usp=sharing&ouid=115041818286926436811&rtpof=true&sd=true)  
+   This Governing Knowledge Commons (GKC) workshop, to be followed by a book collecting case studies focused on Smart Cities and knowledge commons, offers a strategic opportunity to advance knowledge on how cities should respond to the challenges presented by digital networked technologies. Emerging smart cities will require trusted governance and engaged citizens. Integrating surveillance, AI, automation and smart tech within basic infrastructure as well as public and private services and spaces raises a complex set of ethical, economic, political, social, and technological questions [Read more<span class="sr-only"> about the Smart Cities workshop</span> >](https://knowledge-commons.net/projects/smart-cities/)
 
 <!-- ### Workshop Presentations
 

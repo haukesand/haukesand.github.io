@@ -15,6 +15,21 @@ $(document).ready(function () {
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
   });
+  // Keyboard access and state for the toggle buttons above (anchors without href).
+  $("a.abstract, a.award, a.bibtex")
+    .filter("[role=button]")
+    .on("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        $(this).trigger("click");
+      }
+    })
+    .on("click", function () {
+      var row = $(this).parent().parent();
+      row.find("a.abstract[role=button]").attr("aria-expanded", row.find(".abstract.hidden").hasClass("open"));
+      row.find("a.award[role=button]").attr("aria-expanded", row.find(".award.hidden").hasClass("open"));
+      row.find("a.bibtex[role=button]").attr("aria-expanded", row.find(".bibtex.hidden").hasClass("open"));
+    });
   $("a").removeClass("waves-effect waves-light");
 
   // bootstrap-toc
