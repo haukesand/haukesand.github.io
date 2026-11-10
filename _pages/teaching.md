@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching & talks
-description: Courses taught and academic presentations.
+description: Courses taught and academic presentations. How I teach is in my <a href="/statements/">teaching and mentoring statements</a>.
 nav: true
 nav_order: 6
 ---
@@ -68,6 +68,14 @@ nav_order: 6
   Brief description or key points. -->
 
 <!-- ### Invited Talks -->
+
+- **AI and Design Autonomy** (Fall 2026)  
+   _Guest lecture in HCI and Design (INFO 6410 / CS 5682), Cornell Tech, USA. Given twice._ · [📑 Slides](https://www.figma.com/deck/uztNi4SBxA8XT188VlMATO/AI-And-Design-Autonomy?node-id=1-32)  
+  The long version of the Pathetic Designer talk, as a full guest lecture for the master's HCI design course taught by Nicki Dell and Thijs Roumen. How AI tools, metrics, and deadlines shape what designers decide; where design intent erodes in AI-saturated work, with evidence from four cohorts of a prototyping course; and how to keep deciding: intent before generation, process over polish, and boundaries and exits as competences.
+
+- **The Pathetic Designer: How AI Infrastructure Can Erode Design Intention — and How Designers Can Push Back** (October 2026)  
+   _Digital Life Initiative, Cornell Tech, USA_ · [📑 Slides](https://www.figma.com/deck/1zLdF19Ngc6mw4vKpimKTY/DLI-%E2%80%94-The-Pathetic-Designer--Hauke-Sandhaus-?node-id=2-2)  
+  A 20-minute talk. Lessig's pathetic dot is moved by law, markets, norms, and architecture, and may take those forces for its own choices. Designers today are moved by the metrics they are handed, their deadlines, their teams' norms, and the AI tools in every step of their work. The talk draws on my studies of students' design intent in AI-saturated courses and of how evaluation data changes which interfaces UX professionals reject, and ends with what designers can do about it.
 
 - **Bright Patterns: Towards Extra Ethical User Experience Design** (March 2024)  
    _Digital Life Initiative, Cornell Tech, USA_ · [📑 Slides](https://docs.google.com/presentation/d/1HNU8c5veMYzNhvuhTO9g0KvuFStQ4ddr5ja7xKzAUBY/edit?usp=sharing)  

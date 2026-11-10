@@ -18,3 +18,7 @@ assets/img/news/*-sdr.jpg
 assets/img/news/*-sdr.jpeg
 # Private reference contact details and the PDFs built from them (bin/build-references).
 cv/private/
+
+# Generated Typst bodies for the statement PDFs (bin/build-statements)
+cv/statements/*.typ
+!cv/statements/template.typ

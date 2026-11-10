@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Build one PDF per statement in _statements/*.md via pandoc (Markdown → Typst)
+# and the header in cv/statements/template.typ. Output: assets/pdf/<pdf> from
+# each file's front matter.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+for md in _statements/*.md; do
+  name=$(basename "$md" .md)
+  title=$(awk '/^title:/{sub(/^title: */,""); print; exit}' "$md")
+  pdf=$(awk '/^pdf:/{sub(/^pdf: */,""); print; exit}' "$md")
+  updated=$(awk '/^updated:/{sub(/^updated: */,""); print; exit}' "$md")
+  month=$(date -j -f "%Y-%m-%d" "$updated" "+%B %Y" 2>/dev/null || date -d "$updated" "+%B %Y")
+  body="cv/statements/$name.typ"
+  # drop the front matter, convert the rest, append to the template
+  { cat cv/statements/template.typ
+    awk 'BEGIN{n=0} /^---$/ && n<2 {n++; next} n>=2 {print}' "$md" | pandoc -f markdown -t typst --wrap=none
+  } > "$body"
+  typst compile --root . --input "title=$title" --input "updated=$month" "$body" "assets/pdf/$pdf"
+  echo "✓ $md → assets/pdf/$pdf ($(pdfinfo "assets/pdf/$pdf" | awk '/Pages/{print $2}') pages)"
+done

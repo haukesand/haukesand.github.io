@@ -1010,3 +1010,54 @@ a.project-tile {
     font-size: 0.88rem;
   }
 }
+
+// Statements page: index list, section titles with a PDF link, body text.
+.statement-index {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+
+  li {
+    margin: 0 0 0.7rem;
+  }
+
+  .statement-summary {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+.statement-title {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 2.5rem;
+}
+
+.statement-meta {
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+
+  .statement-pdf {
+    font-family: $swiss-sans;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid var(--global-divider-color);
+    padding: 0.15rem 0.5rem;
+    margin-left: 0.4rem;
+    text-decoration: none;
+  }
+}
+
+.statement-body {
+  h3 {
+    font-size: 1.05rem;
+    margin: 1.6rem 0 0.5rem;
+  }
+
+  ol li,
+  ul li {
+    margin-bottom: 0.4rem;
+  }
+}
