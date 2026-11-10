@@ -352,21 +352,21 @@
   "under-review": [
     {
       "name": "Persuading Metrics: How User Evaluation Data Shapes Professional Designers' Willingness to Reject Dark Patterns",
-      "publisher": "Under review, CHI '27",
+      "publisher": "Under review",
       "releaseDate": "2026-09",
       "authors": ["Hauke Sandhaus", "Doris Maria Rhomberg", "Helen Nissenbaum"],
       "summary": "Sandhaus, H., Rhomberg, D. M., Nissenbaum, H."
     },
     {
       "name": "Autonomy by Design: Co-Designing a Framework to Evaluate Whether AI Interfaces Support User Autonomy",
-      "publisher": "Under review, CHI '27. Companion artifact: human-ai-autonomy-rubric.surge.sh",
+      "publisher": "Under review. Companion artifact: human-ai-autonomy-rubric.surge.sh",
       "releaseDate": "2026-09",
       "authors": ["Hauke Sandhaus", "Jen Semler", "Helen Nissenbaum", "Qian Yang"],
       "summary": "Sandhaus, H., Semler, J., Nissenbaum, H., Yang, Q."
     },
     {
       "name": "I Think We Did This: Erosion and Reassertion of Students' Design Intention in AI-Saturated Work",
-      "publisher": "Under review, CHI '27",
+      "publisher": "Under review",
       "releaseDate": "2026-09",
       "authors": ["Hauke Sandhaus", "Ruixiang Han", "Maria Teresa Parreira", "Wendy Ju"],
       "summary": "Sandhaus, H., Han, R., Parreira, M. T., Ju, W."

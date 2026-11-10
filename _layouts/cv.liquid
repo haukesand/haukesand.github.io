@@ -21,6 +21,10 @@ layout: default
       {% endif %}
     </header>
 
+    {% if content and content != '' %}
+      <div class="cv-intro">{{ content }}</div>
+    {% endif %}
+
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
@@ -66,6 +70,10 @@ layout: default
         <p class="post-description">{{ page.description }}</p>
       {% endif %}
     </header>
+
+    {% if content and content != '' %}
+      <div class="cv-intro">{{ content }}</div>
+    {% endif %}
 
     <article>
       <div class="cv">

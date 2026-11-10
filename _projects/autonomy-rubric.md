@@ -13,7 +13,7 @@ importance: 6
 <img class="project-hero" src="{{ '/assets/img/projects/rubric.png' | relative_url }}" alt="Human–AI Autonomy Rubric v12, interactive web version" />
 
 <div class="project-facts">
-  <div><span class="k">Status</span>rubric v12 live; paper under review at CHI '27</div>
+  <div><span class="k">Status</span>rubric v12 live; paper under review</div>
   <div><span class="k">Co-designed with</span>8 philosophers of autonomy, 13 designers of AI systems, 3 AI regulators</div>
   <div><span class="k">Presented</span>Philosophy of AI Summer School, Venice, June 2026</div>
 </div>
@@ -27,4 +27,4 @@ Everyone agrees AI systems should respect user autonomy. Few can say what that m
 
 The rubric starts from a definition. A user is autonomous when they make decisions they can recognize and endorse as their own, true to their deeper values and steered by them. Autonomy comes in degrees and along several dimensions. For each criterion, such as authentic values, the link between values and actions, and the user as informed decider, the rubric describes four levels: Undermining, Appropriately Limiting, Respecting, and Supporting. The second level matters. It covers cases where a feature reduces autonomy on purpose, for a reason that can be stated to the user, which is different from doing so by disregard or by accident. Criteria also sit on a time horizon, from a single moment to a practice to a whole life, which separates habituation from pre-commitment.
 
-The site holds version 12 of the rubric with an overview mode, an evaluate-and-act mode for placing your own feature and then changing it, a glossary of neighboring terms (agency, control, manipulation, paternalism), and worked examples. I presented early work at the Philosophy of AI Summer School in Venice in June 2026. The paper is under review at CHI '27.
+The site holds version 12 of the rubric with an overview mode, an evaluate-and-act mode for placing your own feature and then changing it, a glossary of neighboring terms (agency, control, manipulation, paternalism), and worked examples. I presented early work at the Philosophy of AI Summer School in Venice in June 2026. The paper is under review.

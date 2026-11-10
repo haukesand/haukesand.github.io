@@ -2,10 +2,21 @@
 layout: page
 permalink: /teaching/
 title: teaching & talks
-description: Courses taught and academic presentations. How I teach is in my <a href="/statements/">teaching and mentoring statements</a>.
+description: Courses taught, academic presentations, and application statements.
 nav: true
 nav_order: 6
 ---
+
+## Statements
+
+Generic versions of my application statements. The full texts are on the [statements page](/statements/); each is also a PDF.
+
+- **[Research Statement](/statements/#research-statement)** · [PDF](/assets/pdf/Statement_Research_Sandhaus.pdf)  
+  Designing with and for AI so that users and the designers who build with it keep deciding.
+- **[Teaching Statement](/statements/#teaching-statement)** · [PDF](/assets/pdf/Statement_Teaching_Sandhaus.pdf)  
+  Teaching for autonomy: intent before generation, process over polish, boundaries and exits as competences.
+- **[Mentoring Statement](/statements/#mentoring-statement)** · [PDF](/assets/pdf/Statement_Mentoring_Sandhaus.pdf)  
+  How I mentor, what mentees learn, what I expect, and what my mentees have gone on to do.
 
 ## Teaching Experience
 
