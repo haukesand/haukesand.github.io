@@ -180,6 +180,7 @@ h2.bibliography {
   }
 
   .paper-chip-venue {
+    color: var(--global-bg-color);
     border-radius: 0;
     // Base sets white-space: nowrap, which pushes long venues like
     // "CHIWORK LBW" or "CHI WORKSHOP" past the chip on narrow viewports.
@@ -336,7 +337,7 @@ blockquote {
 .publications ol.bibliography li .abbr abbr,
 .publications ol.bibliography li .abbr abbr.badge {
   background-color: var(--global-theme-color) !important;
-  color: #fff !important;
+  color: var(--global-bg-color) !important;
   border-radius: 0 !important;
   padding: 0.28rem 0.5rem !important;
   font-size: 0.62rem !important;
@@ -350,7 +351,7 @@ blockquote {
 
   a,
   div {
-    color: #fff !important;
+    color: var(--global-bg-color) !important;
     letter-spacing: inherit;
   }
 }
