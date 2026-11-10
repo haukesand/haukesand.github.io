@@ -341,7 +341,7 @@
     Standard UX questionnaires measure whether a product is pragmatic and hedonic, not whether it is honest. The User Experienced Ethics Questionnaire adds five scales to the UEQ-S: deception, addictiveness, coercion, disguise, and annoyance. In an experiment with 141 UX professionals, putting these items on an evaluation dashboard nearly doubled the rate at which designers rejected manipulative interfaces. Best late-breaking work award, CHIWORK '26.
   ],
   tile("rubric.png", "Human–AI Autonomy Rubric", "2025 to now", url: "https://human-ai-autonomy-rubric.surge.sh/", height: 2.8in, size: 9pt)[
-    Everyone agrees AI should respect user autonomy. Few can say what that means for a specific feature. The rubric, co-designed with eight philosophers of autonomy, thirteen designers of AI systems, and three regulators, rates a feature as undermining, appropriately limiting, respecting, or supporting autonomy on each criterion. Version 12 is live with an evaluate-and-act mode and worked examples. Paper under review at CHI '27.
+    Everyone agrees AI should respect user autonomy. Few can say what that means for a specific feature. The rubric, co-designed with eight philosophers of autonomy, thirteen designers of AI systems, and three regulators, rates a feature as undermining, appropriately limiting, respecting, or supporting autonomy on each criterion. Version 12 is live with an evaluate-and-act mode and worked examples. Paper under review.
   ],
 )
 
