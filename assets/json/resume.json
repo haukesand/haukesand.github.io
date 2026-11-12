@@ -660,6 +660,34 @@
       "context": "Ph.D. co-advisor and committee co-chair. Co-author on my work on human–autonomous vehicle interaction and on generative AI in HCI prototyping education, among them Co-Designing with Transformers (DIS '25), and co-instructor of the Ethical Vibe Coding course in summer 2026."
     },
     {
+      "name": "Mona Sloane",
+      "title": "Assistant Professor of Data Science and Media Studies",
+      "affiliation": "University of Virginia",
+      "relationship": "Supervisor at the NYU Center for Responsible AI, 2023; co-author",
+      "url": "https://www.monasloane.org/",
+      "email": "gbz9xx@virginia.edu",
+      "reference": "Assistant Professor of Data Science and Media Studies, University of Virginia. Supervisor at the NYU Center for Responsible AI (2023); co-author.",
+      "context": "Supervisor at the NYU Center for Responsible AI in 2023, on the Notre Dame–IBM Technology Ethics Lab project auditing motion capture technology. Co-author of The Cadaver in the Machine (CHI '24, Best Paper Honorable Mention)."
+    },
+    {
+      "name": "Ulrike Müller",
+      "title": "Former Managing Director, VW Group Future Center Europe",
+      "affiliation": "",
+      "relationship": "Worked together during my UX Technologist years, 2018–2021",
+      "url": "https://autocontact.at/ac/team-member/ulrike-mueller/",
+      "reference": "Former Managing Director, VW Group Future Center Europe. Worked together during my UX Technologist years, 2018–2021.",
+      "context": "Managing Director of the Volkswagen Group Future Center Europe during my years there as UX Technologist, 2018–2021."
+    },
+    {
+      "name": "Klaus Zyciora",
+      "title": "President, Changan Automobile (global design)",
+      "affiliation": "formerly Head of Volkswagen Group Design",
+      "relationship": "Worked together at the Future Center Europe in 2019",
+      "url": "https://en.wikipedia.org/wiki/Klaus_Zyciora",
+      "reference": "President, Changan Automobile (global design), formerly Head of Volkswagen Group Design. Worked together at the Future Center Europe in 2019.",
+      "context": "We worked together at the Volkswagen Group Future Center Europe in 2019, when he led design at Volkswagen. Later Head of Volkswagen Group Design; now President at Changan Automobile, in charge of the group's global design."
+    },
+    {
       "name": "Colin M. Gray",
       "title": "Professor of Informatics",
       "affiliation": "Indiana University Bloomington",
@@ -680,16 +708,6 @@
       "context": "Minor committee member since 2026. His work with Helen Nissenbaum on online manipulation is a foundation of my dissertation's account of legitimate and illegitimate machine influence."
     },
     {
-      "name": "Mona Sloane",
-      "title": "Assistant Professor of Data Science and Media Studies",
-      "affiliation": "University of Virginia",
-      "relationship": "Supervisor at the NYU Center for Responsible AI, 2023; co-author",
-      "url": "https://www.monasloane.org/",
-      "email": "gbz9xx@virginia.edu",
-      "reference": "Assistant Professor of Data Science and Media Studies, University of Virginia. Supervisor at the NYU Center for Responsible AI (2023); co-author.",
-      "context": "Supervisor at the NYU Center for Responsible AI in 2023, on the Notre Dame–IBM Technology Ethics Lab project auditing motion capture technology. Co-author of The Cadaver in the Machine (CHI '24, Best Paper Honorable Mention)."
-    },
-    {
       "name": "Eva Hornecker",
       "title": "Professor of Human-Computer Interaction",
       "affiliation": "Bauhaus-Universität Weimar",
@@ -706,24 +724,6 @@
       "url": "https://edwindertien.nl/",
       "reference": "Assistant Professor, Robotics and Mechatronics; Creative Technology, University of Twente. B.Sc. thesis supervisor.",
       "context": "B.Sc. thesis supervisor in Creative Technology at the University of Twente, 2015. The thesis, a touchless showcase interface for 100%FAT, received the Thesis of the Year award. He has written letters for me before."
-    },
-    {
-      "name": "Klaus Zyciora",
-      "title": "President, Changan Automobile (global design)",
-      "affiliation": "formerly Head of Volkswagen Group Design",
-      "relationship": "Worked together at the Future Center Europe in 2019",
-      "url": "https://en.wikipedia.org/wiki/Klaus_Zyciora",
-      "reference": "President, Changan Automobile (global design), formerly Head of Volkswagen Group Design. Worked together at the Future Center Europe in 2019.",
-      "context": "We worked together at the Volkswagen Group Future Center Europe in 2019, when he led design at Volkswagen. Later Head of Volkswagen Group Design; now President at Changan Automobile, in charge of the group's global design."
-    },
-    {
-      "name": "Ulrike Müller",
-      "title": "Former Managing Director, VW Group Future Center Europe",
-      "affiliation": "",
-      "relationship": "Worked together during my UX Technologist years, 2018–2021",
-      "url": "https://autocontact.at/ac/team-member/ulrike-mueller/",
-      "reference": "Former Managing Director, VW Group Future Center Europe. Worked together during my UX Technologist years, 2018–2021.",
-      "context": "Managing Director of the Volkswagen Group Future Center Europe during my years there as UX Technologist, 2018–2021."
     }
   ],
   "projects": [
