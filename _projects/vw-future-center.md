@@ -21,7 +21,7 @@ importance: 1
   <a href="{{ '/assets/pdf/Archive/Job_Portfolio_2021.pdf' | relative_url }}" target="_blank" rel="noopener">2021 work portfolio (PDF)</a>
 </div>
 
-The Future Center is an independent organization in the Volkswagen Group that develops concepts for the group's many brands. Its UX department had worked on autonomous driving since it was set up, under the vision "mobility for all, at the push of a button". I joined as a UX Technologist and sat between the strategy, research, and software circles, turning concepts into tangible prototypes that could be tested with users and written down as requirements. Everything below is concept work shown at a high level; the details remain unpublished.
+The Future Center is an independent organization in the Volkswagen Group that develops concepts for the group's many brands. Its UX department had worked on autonomous driving since it was set up, under the vision "mobility for all, at the push of a button". I joined as a UX Technologist and sat between the strategy, research, and software circles, turning concepts into tangible prototypes that could be tested with users and written down as requirements. For the AI voice assistant and the productive driver cockpit I led participatory design and co-design projects with visually impaired and older adults. What the autonomous service and the AI could do informed the hardware, and universal and accessible design principles were the brief. Everything below is concept work shown at a high level; the details remain unpublished.
 
 ### Self-driving pods
 
@@ -43,6 +43,6 @@ The main goal was the user experience of fully autonomous pods, which break with
   <div>
     <h3>Digital driver UI</h3>
     <img src="{{ '/assets/img/projects/vw-driver-ui.jpg' | relative_url }}" alt="Steering wheel and dashboard display render on black" />
-    <p>Interfaces for connected cars with growing automation that make productivity and entertainment possible on the road. High-fidelity interactive prototypes, fully explorable, integrated with a driving simulator and meant for production. I did the ideation, the front-end software and hardware, and the qualitative and quantitative research.</p>
+    <p>Interfaces for connected cars with growing automation that make productivity and entertainment possible on the road. High-fidelity interactive prototypes, fully explorable, integrated with a driving simulator and meant for production. I did the ideation, the front-end software and hardware, and the qualitative and quantitative research. Co-designed with visually impaired participants, which made the steering wheel functions more accessible without affecting driving performance.</p>
   </div>
 </div>

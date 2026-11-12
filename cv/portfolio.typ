@@ -308,7 +308,7 @@
 // ================================================================= VOLKSWAGEN
 #metadata(none) <p-vw>
 #page-head("Volkswagen Group Future Center", "2018–2021", "Industry · UX Technologist, Digital User Experience Design")
-#text(size: 9.5pt)[From October 2018 to August 2021 I was a UX Technologist at the Volkswagen Group Future Center, the group's independent concept studio, under the vision "mobility for all, at the push of a button". I sat between the strategy, research, and software circles and turned concepts into tangible prototypes that could be tested with users. Everything here is concept work shown at a high level; the details remain unpublished.]
+#text(size: 9.5pt)[From October 2018 to August 2021 I was a UX Technologist at the Volkswagen Group Future Center, the group's independent concept studio, under the vision "mobility for all, at the push of a button". I sat between the strategy, research, and software circles and turned concepts into tangible prototypes that could be tested with users. For the AI voice assistant and the productive driver cockpit I led participatory design with visually impaired and older adults; the autonomous service and the AI capabilities informed the hardware, and universal design was the brief. Everything here is concept work shown at a high level; the details remain unpublished.]
 #v(0.4em)
 #links(("Project page", "https://hauke.haus/projects/vw-future-center/"), ("2021 work portfolio", "https://hauke.haus/assets/pdf/Archive/Job_Portfolio_2021.pdf"))
 #v(0.5em)
@@ -323,7 +323,7 @@
     An empathic voice assistant for fully and semi-autonomous vehicles, developed with visually impaired and older adults. I trained the models and built the embedded voice recognition (Snips), prototypes with OpenPose, YOLO, and Runway for proactive use cases, and motorized camera shutters for in-cabin privacy. I also tested the voice feedback of autonomous vehicles with visually impaired passengers.
   ],
   tile("vw-driver-ui.jpg", "Digital driver UI", "front-end development, measuring UX, ideation", height: 1.75in)[
-    Interfaces for connected cars with growing automation that make productivity and entertainment possible on the road. High-fidelity interactive prototypes, fully explorable, integrated with a driving simulator and meant for production. I did the ideation, the front-end software and hardware, and the qualitative and quantitative research.
+    Interfaces for connected cars with growing automation that make productivity and entertainment possible on the road. High-fidelity interactive prototypes, fully explorable, integrated with a driving simulator and meant for production. I did the ideation, the front-end software and hardware, and the qualitative and quantitative research. Co-designed with visually impaired participants.
   ],
 )
 
@@ -356,7 +356,7 @@
   tile("conscientious.png", "Conscientious Technology Design Workshop", "2025 to now, with Jae June Lee and Helen Nissenbaum", url: "https://conscientious.tech.cornell.edu/", height: 1.7in)[
     An eight-week summer workshop for Siegel PiTech PhD Impact Fellows embedded at New York City agencies and non-profits. I turned the Values at Play framework into whiteboard activities and short assignments that fellows apply to their own placement. Two cohorts so far; funded by Cornell Tech's Public Interest Responsible Technology Fund.
   ],
-  tile("vibecoding.png", "Ethical Vibe Coding", "Summer 2026, with Jonathan Segal and Wendy Ju", url: "https://vibe-coding-ethics.tech.cornell.edu/", height: 1.7in)[
+  tile("vibecoding.png", "Ethical Vibe Coding", "Summer 2026, with Jonathan Segal and Wendy Ju", url: "https://cornell-tech-vibe-coding-summer-2026.github.io/website/", height: 1.7in)[
     TECHIE 1121, a three-week course for high school students with no programming background. Students build hosted web apps with AI coding tools from day one, probe which defaults and biases the tools produce when nobody specifies them, and build dark patterns on purpose in order to recognize them. The course site doubles as a reusable curriculum.
   ],
   tile("obfuscation.jpg", "Obfuscation.tech", "2026 to now, with Helen Nissenbaum", url: "https://obfuscation.tech.cornell.edu/", height: 1.7in)[

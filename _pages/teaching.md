@@ -26,9 +26,9 @@ Generic versions of my application statements. The full texts are on the [statem
    _Course Materials, for [Prof. Hadar Averbuch-Elor](https://tech.cornell.edu/people/hadar-averbuch-elor/)_  
   Revised assignments and homework to account for student use of generative AI tools. Built a pipeline for generating final exam questions that resist AI-assisted answers.
 
-- **TECHIE 1121: [Ethical Vibe Coding](https://vibe-coding-ethics.tech.cornell.edu/website/)** (Summer 2026)  
+- **TECHIE 1121: [Ethical Vibe Coding](https://cornell-tech-vibe-coding-summer-2026.github.io/website/)** (Summer 2026)  
    _Instructor, with Jonathan Segal and [Prof. Wendy Ju](https://tech.cornell.edu/people/wendy-ju/)_  
-  Designed and taught a three-week course for high school students as part of Cornell Tech's [Summer Innovation Intensives](https://tech.cornell.edu/programs/summer-innovation-intensives/). Students learn to build real applications with AI coding tools while centering human values—exploring bias in AI systems, probing the limits and vulnerabilities of these tools, and applying the Values at Play framework to their own projects. No prior programming experience required.
+  Designed and taught a three-week course for high school students as part of Cornell Tech's [Summer Innovation Intensives](https://tech.cornell.edu/programs/summer-innovation-intensives/). Students learn to build real applications with AI coding tools while centering human values—exploring bias in AI systems, probing the limits and vulnerabilities of these tools, and applying the Values at Play framework to their own projects. No prior programming experience required. The course site is a 3D scene; a [lite mode](https://cornell-tech-vibe-coding-summer-2026.github.io/website/#lite) without the 3D is there for screen readers and slow connections.
 
   _Good Code, Good Vibes—Building Ethical Apps with AI. The course teaches students not only how to build applications quickly with AI, but how to build them right: understanding how AI-assisted coding tools work, identifying bias and risks in generated outputs, and reasoning about the social and ethical implications of their design decisions._
 

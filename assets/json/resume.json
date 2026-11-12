@@ -80,13 +80,13 @@
       "endDate": "2021-08",
       "summary": "Led the design of inclusive user experiences for fully autonomous vehicles and developed next-generation driver interfaces. Involved in the creation and transformation of CARIAD.",
       "highlights": [
+        "Led participatory design and co-design with visually impaired and older adults for the AI voice assistant and the productive driver cockpit; the autonomous service and the AI capabilities informed the hardware, and universal design principles made steering wheel functions more accessible without affecting driving performance",
         "Improved User Experience Questionnaire (UEQ) benchmarks by 30% over state-of-the-art through inclusive design approaches",
-        "Developed and implemented a next-generation digital cockpit that improved accessibility of steering wheel functions without affecting driving performance",
         "Created high-fidelity AI prototypes using cutting-edge research papers and custom computer vision pipelines that were adopted for production development",
         "Conducted on-road studies for ambient in-cabin lighting systems that identified critical safety, comfort, and motion sickness factors for AV passengers",
-        "Designed and prototyped LLM-based digital assistant interfaces for in-vehicle use, now in final stages before market release",
+        "Prototyped LLM-based in-vehicle assistant interfaces, now in final stages before release",
         "Established GDPR-compliant research practices that were adopted across the VW Group",
-        "Successfully transferred multiple vision projects to strategy teams, with implementations adopted by Porsche, Skoda, and Audi"
+        "Transferred vision projects to strategy teams; adopted by Porsche, Skoda, and Audi"
       ]
     },
     {
@@ -153,7 +153,7 @@
       "organization": "Cornell Tech",
       "location": "New York City",
       "position": "Instructor, Ethical Vibe Coding",
-      "url": "https://vibe-coding-ethics.tech.cornell.edu/website/",
+      "url": "https://cornell-tech-vibe-coding-summer-2026.github.io/website/",
       "startDate": "Summer 2026",
       "endDate": "Summer 2026",
       "summary": "Three-week course on ethical AI-assisted coding for high school students at Cornell Tech's Summer Innovation Intensives. With Jonathan Segal and Wendy Ju.",
@@ -588,12 +588,20 @@
     {
       "name": "User Research",
       "level": "Expert",
-      "keywords": ["Contextual & expert interviews", "Ethnography", "Surveys", "Usability testing", "On-road studies"]
+      "keywords": [
+        "Contextual & expert interviews",
+        "Ethnography",
+        "Surveys",
+        "Usability testing",
+        "On-road studies",
+        "Participatory design",
+        "Co-design"
+      ]
     },
     {
       "name": "UX",
       "level": "Expert",
-      "keywords": ["Personas", "Wireframes", "Focus groups", "Human factors", "Inclusive design", "Accessibility"]
+      "keywords": ["Personas", "Wireframes", "Focus groups", "Human factors", "Universal design", "Accessibility"]
     },
     {
       "name": "Hardware",
@@ -603,7 +611,13 @@
     {
       "name": "Management",
       "level": "Advanced",
-      "keywords": ["Team leadership", "Conflict resolution", "Strategy", "Scaled agile methods (certified)", "UX strategy"]
+      "keywords": [
+        "Team leadership",
+        "Conflict resolution",
+        "Strategy workshop design and facilitation",
+        "Scaled agile methods (certified)",
+        "UX strategy"
+      ]
     }
   ],
   "languages": [
