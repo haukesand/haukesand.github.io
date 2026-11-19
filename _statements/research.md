@@ -60,7 +60,7 @@ Together, my work develops an account of human autonomy as a value that must inc
 
 5.  **Hauke Sandhaus**, Jen Semler, Helen Nissenbaum, and Qian Yang. Autonomy by Design: Co-Designing a Framework to Evaluate Whether AI Interfaces Support User Autonomy. Under review.
 
-6.  **Hauke Sandhaus** and Doris Maria Rhomberg. 2026. Deception Is Ugly: Linking Aesthetic Judgment to Perceived Manipulation in Dark Patterns. Zeitschrift für Psychologie. https://doi.org/10.1027/2151-2604/a000635
+6.  **Hauke Sandhaus** and Doris Maria Rhomberg. 2026. Deception Is Ugly – Linking Aesthetic Judgment to Perceived Manipulation in Dark Patterns. Zeitschrift für Psychologie 234(4), 232–242. https://doi.org/10.1027/2151-2604/a000635
 
 7.  **Hauke Sandhaus**, Doris Maria Rhomberg, and Helen Nissenbaum. 2026. Making Indecent Persuasion Visible: How Evaluation Metrics Shape UX Designers' Ethical Reasoning. In CHIWORK '26 Late-Breaking Work. https://doi.org/10.1145/3805029.3818279 Best Late-Breaking Work Award.
 
