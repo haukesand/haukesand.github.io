@@ -1,0 +1,11 @@
+# Written by bin/scholar-metrics (weekly via .github/workflows/scholar-metrics.yml).
+# Rendered on the CV page and in cv/cv.typ. Do not edit by hand.
+profile: https://scholar.google.com/citations?user=fZzd8BMAAAAJ
+citations: 302
+citations_recent: 293
+h_index: 9
+h_index_recent: 9
+i10_index: 8
+i10_index_recent: 6
+since_year: 2021
+updated: "2026-11-23"

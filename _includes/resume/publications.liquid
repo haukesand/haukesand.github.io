@@ -1,3 +1,11 @@
+{% if site.data.scholar and site.data.scholar.citations %}
+  <p class="scholar-metrics">
+    {{ site.data.scholar.citations }} citations · h-index {{ site.data.scholar.h_index }} ·
+    <a href="{{ site.data.scholar.profile }}">Google Scholar<span class="sr-only"> profile</span></a
+    >,
+    {{ site.data.scholar.updated | date: '%B %-d, %Y' }}
+  </p>
+{% endif %}
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign publications = data[1] | sort: 'releaseDate' | reverse %}
   {% for content in publications %}

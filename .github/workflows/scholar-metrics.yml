@@ -1,0 +1,42 @@
+name: Scholar metrics
+
+# Reads the public Google Scholar profile once a week and commits
+# _data/scholar.yml when the numbers changed, then redeploys the site.
+# A push made with the workflow token does not start other workflows, so the
+# deploy is dispatched explicitly. Run by hand from the Actions tab to refresh.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch profile stats
+        run: python3 bin/scholar-metrics
+
+      - name: Commit and redeploy if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- _data/scholar.yml; then
+            echo "No change in _data/scholar.yml"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Scholar metrics: $(date -u +%Y-%m-%d)" -- _data/scholar.yml
+          git push
+          gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"

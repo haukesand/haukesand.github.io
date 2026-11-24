@@ -727,6 +727,19 @@ article .zoom-photo img {
     }
   }
 
+  // Citation metrics line under the Publications title (from _data/scholar.yml).
+  .scholar-metrics {
+    font-family: $swiss-sans;
+    font-size: 0.82rem;
+    color: var(--global-text-color-light);
+    margin: -0.4rem 0 1rem 1.4rem;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
   // CV mini-buttons.
   a.btncv {
     border-radius: 0 !important;

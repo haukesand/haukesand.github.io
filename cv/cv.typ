@@ -247,8 +247,13 @@
   }
   out
 }
+#let scholar = yaml("../_data/scholar.yml")
 #let pubs-body = {
   set list(indent: 0.4em, body-indent: 0.35em)
+  // Profile totals from Google Scholar, refreshed weekly by bin/scholar-metrics.
+  block(below: 0.7em)[
+    #text(size: 8pt, fill: muted)[#scholar.citations citations · h-index #scholar.h_index · #link(scholar.profile)[Google Scholar], #format-date(scholar.updated)]
+  ]
   let ur = resume.at("under-review", default: ())
   if ur.len() > 0 {
     sub-heading("Under review", "", ur.len())

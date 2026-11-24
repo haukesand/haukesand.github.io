@@ -13,8 +13,21 @@
 set -e
 cd "$(dirname "$0")/.."
 
-echo "→ Regenerating cv/papers.json from _bibliography/papers.bib"
-python3 cv/build_papers.py
+# Use the first interpreter that has bibtexparser (a conda python3 may shadow
+# the Homebrew one on PATH).
+PY=""
+for candidate in python3 /opt/homebrew/bin/python3 python3.14 python3.13 python3.12; do
+  if command -v "$candidate" >/dev/null 2>&1 && "$candidate" -c "import bibtexparser" >/dev/null 2>&1; then
+    PY=$candidate; break
+  fi
+done
+if [[ -z "$PY" ]]; then
+  echo "No python3 with bibtexparser found; see the Requires note above." >&2
+  exit 1
+fi
+
+echo "→ Regenerating cv/papers.json from _bibliography/papers.bib ($PY)"
+"$PY" cv/build_papers.py
 
 # build_papers.py also rewrites the publications list in resume.json; keep it
 # in the repo's Prettier style so the CI format check stays green.

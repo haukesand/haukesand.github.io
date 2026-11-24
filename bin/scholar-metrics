@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+"""Read the public Google Scholar profile and write _data/scholar.yml.
+
+Usage: bin/scholar-metrics [--check]
+
+Fetches the citation count, h-index, and i10-index from the profile set as
+scholar_userid in _config.yml and writes them to _data/scholar.yml, which the
+CV page and cv/cv.typ render. Exits non-zero and leaves the file untouched when
+Scholar does not answer or the page has no stats table, so a blocked request
+never wipes the last good numbers. --check only prints what it finds.
+"""
+import html
+import re
+import sys
+import urllib.request
+from datetime import date
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "_data" / "scholar.yml"
+UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
+
+
+def scholar_id() -> str:
+    cfg = (ROOT / "_config.yml").read_text(encoding="utf-8")
+    m = re.search(r"^scholar_userid:\s*([A-Za-z0-9_-]+)", cfg, re.M)
+    if not m:
+        sys.exit("scholar_userid not set in _config.yml")
+    return m.group(1)
+
+
+def fetch(user: str) -> str:
+    url = f"https://scholar.google.com/citations?user={user}&hl=en"
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", errors="replace")
+
+
+def parse(page: str) -> dict:
+    cells = re.findall(r'<td class="gsc_rsb_std">([\d,]+)</td>', page)
+    if len(cells) < 6:
+        sys.exit("no stats table in the Scholar page (blocked or layout changed)")
+    n = [int(c.replace(",", "")) for c in cells[:6]]
+    since = re.search(r"Since (\d{4})", html.unescape(page))
+    return {
+        "citations": n[0],
+        "citations_recent": n[1],
+        "h_index": n[2],
+        "h_index_recent": n[3],
+        "i10_index": n[4],
+        "i10_index_recent": n[5],
+        "since_year": int(since.group(1)) if since else None,
+    }
+
+
+def main() -> None:
+    user = scholar_id()
+    stats = parse(fetch(user))
+    if "--check" in sys.argv:
+        print(stats)
+        return
+    lines = [
+        "# Written by bin/scholar-metrics (weekly via .github/workflows/scholar-metrics.yml).",
+        "# Rendered on the CV page and in cv/cv.typ. Do not edit by hand.",
+        f"profile: https://scholar.google.com/citations?user={user}",
+        f"citations: {stats['citations']}",
+        f"citations_recent: {stats['citations_recent']}",
+        f"h_index: {stats['h_index']}",
+        f"h_index_recent: {stats['h_index_recent']}",
+        f"i10_index: {stats['i10_index']}",
+        f"i10_index_recent: {stats['i10_index_recent']}",
+        f"since_year: {stats['since_year']}",
+        f'updated: "{date.today().isoformat()}"',
+    ]
+    OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"✓ Wrote {OUT.relative_to(ROOT)}: {stats['citations']} citations, h-index {stats['h_index']}")
+
+
+if __name__ == "__main__":
+    main()
