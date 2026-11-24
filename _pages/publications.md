@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: "Grouped by type, newest first within each group. Also see my <a href='https://scholar.google.com/citations?user=fZzd8BMAAAAJ&hl=en&oi=ao' target='_blank'>scholar profile</a>."
+description: Grouped by type, newest first within each group.
 nav: true
 nav_order: 2
 ---
@@ -11,6 +11,8 @@ nav_order: 2
      Sections are driven by the `pubtype` field in _bibliography/papers.bib
      (journal | conference | short | workshop | organized | other).
      The under-review list comes from assets/json/resume.json. -->
+
+{% include scholar_metrics.liquid %}
 
 {% include bib_search.liquid %}
 

@@ -641,6 +641,19 @@ article .zoom-photo img {
 // ── CV page ────────────────────────────────────────────────────────────────
 // Al-folio wraps each CV section in a Bootstrap .card with borders +
 // backgrounds. Flatten into a page-flow list separated by hairline rules.
+// Citation metrics line (from _data/scholar.yml) on the publications page and the CV.
+.scholar-metrics {
+  font-family: $swiss-sans;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin: 0 0 1.25rem;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
 .cv {
   .card {
     background: transparent !important;
@@ -727,17 +740,9 @@ article .zoom-photo img {
     }
   }
 
-  // Citation metrics line under the Publications title (from _data/scholar.yml).
+  // Citation metrics line sits under the Publications title; align with its text.
   .scholar-metrics {
-    font-family: $swiss-sans;
-    font-size: 0.82rem;
-    color: var(--global-text-color-light);
     margin: -0.4rem 0 1rem 1.4rem;
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-    }
   }
 
   // CV mini-buttons.

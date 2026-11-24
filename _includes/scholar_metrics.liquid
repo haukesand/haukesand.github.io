@@ -1,0 +1,5 @@
+{% if site.data.scholar and site.data.scholar.citations %}
+  {% comment %} One line: this include is also rendered inside Markdown, where indented lines become code. {% endcomment %}
+  <!-- prettier-ignore -->
+  <p class="scholar-metrics">{{ site.data.scholar.citations }} citations · h-index {{ site.data.scholar.h_index }} · <a href="{{ site.data.scholar.profile }}">Google Scholar<span class="sr-only"> profile</span></a>, {{ site.data.scholar.updated | date: '%B %-d, %Y' }}</p>
+{% endif %}
