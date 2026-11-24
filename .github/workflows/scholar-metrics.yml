@@ -31,8 +31,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet -- _data/scholar.yml; then
-            echo "No change in _data/scholar.yml"
+          # Ignore the fetch date so unchanged numbers do not produce a weekly commit.
+          if git diff --quiet -I '^updated:' -- _data/scholar.yml; then
+            echo "Numbers unchanged; not committing"
+            git checkout -- _data/scholar.yml
             exit 0
           fi
           git config user.name "github-actions[bot]"
