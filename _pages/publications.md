@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Grouped by type, newest first within each group.
+description: Grouped by type, newest first within each group. Filter by theme or by text.
 nav: true
 nav_order: 2
 ---
@@ -14,6 +14,8 @@ nav_order: 2
 
 {% include scholar_metrics.liquid %}
 
+{% include bib_themes.liquid %}
+
 {% include bib_search.liquid %}
 
 <div class="publications">
@@ -24,7 +26,7 @@ nav_order: 2
 <h2 class="pubtype" id="under-review">Under review <span>{{ ur.size }}</span></h2>
 <ul class="under-review">
 {% for u in ur %}
-  <li>
+  <li data-themes="{{ u.themes | join: ' ' }}">
     <span class="title">{{ u.name }}</span><br />
     {% if u.summary %}{{ u.summary }}{% else %}{{ u.authors | join: ", " }}{% endif %} · <span class="venue">{{ u.publisher }}</span>
   </li>

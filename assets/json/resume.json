@@ -355,21 +355,24 @@
       "publisher": "Under review",
       "releaseDate": "2026-09",
       "authors": ["Hauke Sandhaus", "Doris Maria Rhomberg", "Helen Nissenbaum"],
-      "summary": "Sandhaus, H., Rhomberg, D. M., Nissenbaum, H."
+      "summary": "Sandhaus, H., Rhomberg, D. M., Nissenbaum, H.",
+      "themes": ["autonomy"]
     },
     {
       "name": "Autonomy by Design: Co-Designing a Framework to Evaluate Whether AI Interfaces Support User Autonomy",
       "publisher": "Under review. Companion artifact: human-ai-autonomy-rubric.surge.sh",
       "releaseDate": "2026-09",
       "authors": ["Hauke Sandhaus", "Jen Semler", "Helen Nissenbaum", "Qian Yang"],
-      "summary": "Sandhaus, H., Semler, J., Nissenbaum, H., Yang, Q."
+      "summary": "Sandhaus, H., Semler, J., Nissenbaum, H., Yang, Q.",
+      "themes": ["autonomy", "genai"]
     },
     {
       "name": "I Think We Did This: Erosion and Reassertion of Students' Design Intention in AI-Saturated Work",
       "publisher": "Under review",
       "releaseDate": "2026-09",
       "authors": ["Hauke Sandhaus", "Ruixiang Han", "Maria Teresa Parreira", "Wendy Ju"],
-      "summary": "Sandhaus, H., Han, R., Parreira, M. T., Ju, W."
+      "summary": "Sandhaus, H., Han, R., Parreira, M. T., Ju, W.",
+      "themes": ["genai"]
     },
     {
       "name": "Values in Public Interest Tech: Practicing Conscientious Design",
@@ -386,7 +389,8 @@
         "Olzhas Yessenbayev",
         "Helen Nissenbaum"
       ],
-      "summary": "Sandhaus, H., Lee, J. J., Wang, A., Chiang, E., Gosciak, J., Liu, K., Greenstreet, L., Yessenbayev, O., Nissenbaum, H."
+      "summary": "Sandhaus, H., Lee, J. J., Wang, A., Chiang, E., Gosciak, J., Liu, K., Greenstreet, L., Yessenbayev, O., Nissenbaum, H.",
+      "themes": ["autonomy"]
     }
   ],
   "publications": [

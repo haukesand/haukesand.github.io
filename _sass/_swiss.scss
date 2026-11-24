@@ -272,6 +272,55 @@ blockquote {
 
 // ── Bibsearch input on /publications/ — a rule below instead of a rounded
 // pill, matching the section-eyebrow language.
+// ── Publications page: theme chips. Same tokens as the home-page value
+// pills; the pressed chip inverts. bibsearch.js fills the counts and
+// filters entries across the type sections.
+.bib-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+
+  .bib-theme {
+    font-family: $swiss-sans;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0;
+    background: transparent;
+    color: var(--global-text-color-light);
+    cursor: pointer;
+
+    .count {
+      font-weight: 400;
+      margin-left: 0.25em;
+      // The base sheet colors every span with the text color, which on the
+      // pressed chip is the background. Follow the chip instead.
+      color: inherit;
+    }
+
+    &:hover {
+      color: var(--global-text-color);
+      border-color: var(--global-text-color);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+    }
+
+    &[aria-pressed="true"] {
+      background: var(--global-text-color);
+      border-color: var(--global-text-color);
+      color: var(--global-bg-color);
+    }
+  }
+}
+
 #bibsearch {
   border: 0 !important;
   border-bottom: 1px solid var(--global-divider-color) !important;

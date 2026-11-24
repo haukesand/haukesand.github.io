@@ -1,0 +1,5 @@
+{% if site.data.themes %}
+  {% comment %} One line and hidden until bibsearch.js wires it up: this include is rendered inside Markdown, where indented lines become code. Counts are filled in by the script. {% endcomment %}
+  <!-- prettier-ignore -->
+  <nav class="bib-themes" aria-label="Filter publications by theme" hidden><button type="button" class="bib-theme" data-theme="" aria-pressed="true">All</button>{% for t in site.data.themes %}<button type="button" class="bib-theme" data-theme="{{ t.key }}" aria-pressed="false">{{ t.label }} <span class="count"></span></button>{% endfor %}</nav>
+{% endif %}

@@ -369,6 +369,7 @@ filtered_bibtex_keywords:
     slides,
     supp,
     tldr,
+    theme,
     video,
     website,
   ]

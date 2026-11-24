@@ -1,0 +1,13 @@
+# Research themes for the publications page chips. Entries in
+# _bibliography/papers.bib carry `theme = {key, key}`; under-review items in
+# assets/json/resume.json carry `themes: [key]`.
+- key: autonomy
+  label: Autonomy & manipulation
+- key: privacy
+  label: Privacy & data sharing
+- key: vehicles
+  label: Human–vehicle interaction
+- key: bias
+  label: Bias & auditing
+- key: genai
+  label: GenAI in design & work
