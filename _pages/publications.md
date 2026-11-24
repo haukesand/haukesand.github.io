@@ -32,22 +32,22 @@ nav_order: 2
 </ul>
 {% endif %}
 
-<h2 class="pubtype" id="journal">Journal articles <span>peer-reviewed</span></h2>
+<h2 class="pubtype" id="journal">Journal articles <span>{% bibliography_count --query @*[pubtype=journal]* %} · peer-reviewed</span></h2>
 {% bibliography --group_by none --query @*[pubtype=journal]* %}
 
-<h2 class="pubtype" id="conference">Conference papers <span>full papers, peer-reviewed</span></h2>
+<h2 class="pubtype" id="conference">Conference papers <span>{% bibliography_count --query @*[pubtype=conference]* %} · full papers, peer-reviewed</span></h2>
 {% bibliography --group_by none --query @*[pubtype=conference]* %}
 
-<h2 class="pubtype" id="short">Short papers, posters &amp; late-breaking work <span>peer-reviewed</span></h2>
+<h2 class="pubtype" id="short">Short papers, posters &amp; late-breaking work <span>{% bibliography_count --query @*[pubtype=short]* %} · peer-reviewed</span></h2>
 {% bibliography --group_by none --query @*[pubtype=short]* %}
 
-<h2 class="pubtype" id="workshop">Workshop papers</h2>
+<h2 class="pubtype" id="workshop">Workshop papers <span>{% bibliography_count --query @*[pubtype=workshop]* %}</span></h2>
 {% bibliography --group_by none --query @*[pubtype=workshop]* %}
 
-<h2 class="pubtype" id="organized">Workshops organized <span>as co-organizer</span></h2>
+<h2 class="pubtype" id="organized">Workshops organized <span>{% bibliography_count --query @*[pubtype=organized]* %} · as co-organizer</span></h2>
 {% bibliography --group_by none --query @*[pubtype=organized]* %}
 
-<h2 class="pubtype" id="other">Other <span>thesis, non-archival</span></h2>
+<h2 class="pubtype" id="other">Other <span>{% bibliography_count --query @*[pubtype=other]* %} · thesis, non-archival</span></h2>
 {% bibliography --group_by none --query @*[pubtype=other]* %}
 
 </div>
