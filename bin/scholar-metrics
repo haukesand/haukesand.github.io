@@ -7,11 +7,14 @@ Fetches the citation count, h-index, and i10-index from the profile set as
 scholar_userid in _config.yml and writes them to _data/scholar.yml, which the
 CV page and cv/cv.typ render. Exits non-zero and leaves the file untouched when
 Scholar does not answer or the page has no stats table, so a blocked request
-never wipes the last good numbers. --check only prints what it finds.
+never wipes the last good numbers; a blocked or failed request prints a
+warning and exits 0 so the weekly job stays green. --check only prints what it finds.
 """
 import html
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -32,17 +35,31 @@ def scholar_id() -> str:
     return m.group(1)
 
 
+def skip(reason: str) -> None:
+    """Leave the data file alone and end green: a block must not fail the job."""
+    print(f"::warning::Scholar metrics not updated: {reason}")
+    sys.exit(0)
+
+
 def fetch(user: str) -> str:
     url = f"https://scholar.google.com/citations?user={user}&hl=en"
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8", errors="replace")
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8", errors="replace")
+        except urllib.error.HTTPError as e:
+            last = f"HTTP {e.code}"
+        except urllib.error.URLError as e:
+            last = f"{e.reason}"
+        time.sleep(30 * (attempt + 1))
+    skip(f"Scholar did not answer after 3 attempts ({last})")
 
 
 def parse(page: str) -> dict:
     cells = re.findall(r'<td class="gsc_rsb_std">([\d,]+)</td>', page)
     if len(cells) < 6:
-        sys.exit("no stats table in the Scholar page (blocked or layout changed)")
+        skip("no stats table in the Scholar page (blocked or layout changed)")
     n = [int(c.replace(",", "")) for c in cells[:6]]
     since = re.search(r"Since (\d{4})", html.unescape(page))
     return {
